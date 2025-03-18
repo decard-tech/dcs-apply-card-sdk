@@ -1,0 +1,315 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "iProov",
+        "printedName": "iProov",
+        "declKind": "Import",
+        "moduleName": "JumioIProov",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IProovVersionProvider",
+        "printedName": "IProovVersionProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JumioIProov0B15VersionProviderV7versionSSvpZ",
+            "mangledName": "$s11JumioIProov0B15VersionProviderV7versionSSvpZ",
+            "moduleName": "JumioIProov",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JumioIProov0B15VersionProviderV7versionSSvgZ",
+                "mangledName": "$s11JumioIProov0B15VersionProviderV7versionSSvgZ",
+                "moduleName": "JumioIProov",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11JumioIProov0B15VersionProviderV",
+        "mangledName": "$s11JumioIProov0B15VersionProviderV",
+        "moduleName": "JumioIProov",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JumioIProov",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "iProov",
+        "printedName": "iProov",
+        "declKind": "Import",
+        "moduleName": "JumioIProov"
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioIProov"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JumioIProov",
+        "printedName": "JumioIProov",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JumioIProovAAC7versionSSvpZ",
+            "mangledName": "$s11JumioIProovAAC7versionSSvpZ",
+            "moduleName": "JumioIProov",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JumioIProovAAC7versionSSvgZ",
+                "mangledName": "$s11JumioIProovAAC7versionSSvgZ",
+                "moduleName": "JumioIProov",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iProovVersion",
+            "printedName": "iProovVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JumioIProovAAC13iProovVersionSSvpZ",
+            "mangledName": "$s11JumioIProovAAC13iProovVersionSSvpZ",
+            "moduleName": "JumioIProov",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JumioIProovAAC13iProovVersionSSvgZ",
+                "mangledName": "$s11JumioIProovAAC13iProovVersionSSvgZ",
+                "moduleName": "JumioIProov",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JumioIProov",
+                "printedName": "JumioIProov.JumioIProov",
+                "usr": "s:11JumioIProovAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11JumioIProovAACABycfc",
+            "mangledName": "$s11JumioIProovAACABycfc",
+            "moduleName": "JumioIProov",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startIProov",
+            "printedName": "startIProov(token:url:options:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JumioIProovOptions",
+                "printedName": "Jumio.JumioIProovOptions",
+                "usr": "s:5Jumio0A13IProovOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Jumio.JumioIProovStatus) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Jumio.JumioIProovStatus) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JumioIProovStatus",
+                        "printedName": "Jumio.JumioIProovStatus",
+                        "usr": "s:5Jumio0A12IProovStatusO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11JumioIProovAAC05startB05token3url7options8callbackySS_10Foundation3URLV0A00aB7OptionsVyAK0aB6StatusOcSgtF",
+            "mangledName": "$s11JumioIProovAAC05startB05token3url7options8callbackySS_10Foundation3URLV0A00aB7OptionsVyAK0aB6StatusOcSgtF",
+            "moduleName": "JumioIProov",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11JumioIProovAAC",
+        "mangledName": "$s11JumioIProovAAC",
+        "moduleName": "JumioIProov",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JumioDynamicIProov",
+            "printedName": "JumioDynamicIProov",
+            "usr": "s:5Jumio0A13DynamicIProovP",
+            "mangledName": "$s5Jumio0A13DynamicIProovP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioIProov\/JumioIProov\/Classes\/JumioIProov.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 8,
+      "value": "\"4.11.0\""
+    }
+  ]
+}

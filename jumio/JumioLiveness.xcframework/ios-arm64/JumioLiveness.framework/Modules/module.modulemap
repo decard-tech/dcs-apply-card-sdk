@@ -1,0 +1,11 @@
+framework module JumioLiveness {
+  umbrella header "JumioLiveness.h"
+  export *
+
+  module * { export * }
+}
+
+module JumioLiveness.Swift {
+  header "JumioLiveness-Swift.h"
+  requires objc
+}

@@ -1,0 +1,21 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JumioDatadog
+import Foundation
+import Jumio
+@_exported import JumioDatadog
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class JumioDatadog : JumioDynamicMonitoring {
+  public static let version: String
+  required public init()
+  public func run(clientID: String, appID: String, sessionSampleRate: Float, attributes: [String : String])
+  public func reportRequest(id: String, url: String, size: Int, method: String)
+  public func reportResponse(id: String, size: Int?, statusCode: Int, error: Error?, response: URLResponse?)
+  public func reportViewStart(view: String)
+  public func reportViewStop(view: String)
+  public func stopInstance()
+  @objc deinit
+}

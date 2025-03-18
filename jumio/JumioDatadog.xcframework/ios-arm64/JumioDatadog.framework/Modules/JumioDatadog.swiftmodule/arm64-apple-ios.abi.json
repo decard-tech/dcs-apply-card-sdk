@@ -1,0 +1,429 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "DatadogInternal",
+        "printedName": "DatadogInternal",
+        "declKind": "Import",
+        "moduleName": "JumioDatadog",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogCore",
+        "printedName": "DatadogCore",
+        "declKind": "Import",
+        "moduleName": "JumioDatadog",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogRUM",
+        "printedName": "DatadogRUM",
+        "declKind": "Import",
+        "moduleName": "JumioDatadog",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JumioDatadog"
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDatadog"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JumioDatadog",
+        "printedName": "JumioDatadog",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12JumioDatadogAAC7versionSSvpZ",
+            "mangledName": "$s12JumioDatadogAAC7versionSSvpZ",
+            "moduleName": "JumioDatadog",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12JumioDatadogAAC7versionSSvgZ",
+                "mangledName": "$s12JumioDatadogAAC7versionSSvgZ",
+                "moduleName": "JumioDatadog",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JumioDatadog",
+                "printedName": "JumioDatadog.JumioDatadog",
+                "usr": "s:12JumioDatadogAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12JumioDatadogAACABycfc",
+            "mangledName": "$s12JumioDatadogAACABycfc",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "run",
+            "printedName": "run(clientID:appID:sessionSampleRate:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC3run8clientID03appE017sessionSampleRate10attributesySS_SSSfSDyS2SGtF",
+            "mangledName": "$s12JumioDatadogAAC3run8clientID03appE017sessionSampleRate10attributesySS_SSSfSDyS2SGtF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportRequest",
+            "printedName": "reportRequest(id:url:size:method:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC13reportRequest2id3url4size6methodySS_SSSiSStF",
+            "mangledName": "$s12JumioDatadogAAC13reportRequest2id3url4size6methodySS_SSSiSStF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportResponse",
+            "printedName": "reportResponse(id:size:statusCode:error:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC14reportResponse2id4size10statusCode5error8responseySS_SiSgSis5Error_pSgSo13NSURLResponseCSgtF",
+            "mangledName": "$s12JumioDatadogAAC14reportResponse2id4size10statusCode5error8responseySS_SiSgSis5Error_pSgSo13NSURLResponseCSgtF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportViewStart",
+            "printedName": "reportViewStart(view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC15reportViewStart4viewySS_tF",
+            "mangledName": "$s12JumioDatadogAAC15reportViewStart4viewySS_tF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportViewStop",
+            "printedName": "reportViewStop(view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC14reportViewStop4viewySS_tF",
+            "mangledName": "$s12JumioDatadogAAC14reportViewStop4viewySS_tF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopInstance",
+            "printedName": "stopInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12JumioDatadogAAC12stopInstanceyyF",
+            "mangledName": "$s12JumioDatadogAAC12stopInstanceyyF",
+            "moduleName": "JumioDatadog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12JumioDatadogAAC",
+        "mangledName": "$s12JumioDatadogAAC",
+        "moduleName": "JumioDatadog",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JumioDynamicMonitoring",
+            "printedName": "JumioDynamicMonitoring",
+            "usr": "s:5Jumio0A17DynamicMonitoringP",
+            "mangledName": "$s5Jumio0A17DynamicMonitoringP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 8,
+      "value": "\"4.11.0\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 458,
+      "length": 4,
+      "value": "1500"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 22,
+      "value": "\"JumioDatadogInstance\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 11,
+      "value": "\"jumio-sdk\""
+    }
+  ]
+}

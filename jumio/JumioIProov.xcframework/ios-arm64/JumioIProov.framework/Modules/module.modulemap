@@ -1,0 +1,11 @@
+framework module JumioIProov {
+  umbrella header "JumioIProov.h"
+  export *
+
+  module * { export * }
+}
+
+module JumioIProov.Swift {
+  header "JumioIProov-Swift.h"
+  requires objc
+}

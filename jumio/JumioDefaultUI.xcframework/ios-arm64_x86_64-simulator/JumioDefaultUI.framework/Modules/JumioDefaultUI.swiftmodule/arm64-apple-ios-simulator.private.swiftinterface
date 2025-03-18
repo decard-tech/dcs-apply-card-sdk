@@ -1,0 +1,342 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JumioDefaultUI
+import AudioToolbox
+import Combine
+import CoreFoundation
+import DeveloperToolsSupport
+import Foundation
+import Jumio
+@_exported import JumioDefaultUI
+import MobileCoreServices
+import PDFKit
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol Resolving : JumioDefaultUI.ManagedContainer {
+  func register<T>(_ type: T.Type, factory: @escaping () -> T) -> Factory<T>
+  func factory<T>(_ type: T.Type) -> Factory<T>?
+  func resolve<T>(_ type: T.Type) -> T?
+}
+extension Resolving {
+  @discardableResult
+  public func register<T>(_ type: T.Type = T.self, factory: @escaping () -> T) -> Factory<T>
+  public func factory<T>(_ type: T.Type = T.self) -> Factory<T>?
+  public func resolve<T>(_ type: T.Type = T.self) -> T?
+}
+public struct FactoryRegistration<P, T> {
+}
+public enum FactoryResetOptions {
+  case all
+  case none
+  case registration
+  case context
+  case scope
+  public static func == (a: JumioDefaultUI.FactoryResetOptions, b: JumioDefaultUI.FactoryResetOptions) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class Container : SharedContainer {
+  public static let shared: JumioDefaultUI.Container
+  final public let manager: ContainerManager
+  public init()
+  @objc deinit
+}
+public protocol SharedContainer : JumioDefaultUI.ManagedContainer {
+  static var shared: Self { get }
+}
+public protocol ManagedContainer : AnyObject {
+  var manager: ContainerManager { get }
+}
+extension ManagedContainer {
+  @inline(__always) public func callAsFunction<T>(key: StaticString = #function, _ factory: @escaping () -> T) -> Factory<T>
+  @inline(__always) public func callAsFunction<P, T>(key: StaticString = #function, _ factory: @escaping (P) -> T) -> ParameterFactory<P, T>
+  public func promised<T>(key: StaticString = #function) -> Factory<T?>
+  public func promised<P, T>(key: StaticString = #function) -> ParameterFactory<P, T?>
+  public func decorator(_ decorator: ((Any) -> ())?)
+  @inlinable public func reset(options: FactoryResetOptions = .all) {
+        manager.reset(options: options)
+    }
+  @discardableResult
+  public func with(_ transform: (Self) -> Void) -> Self
+}
+final public class ContainerManager {
+  public init()
+  final public var defaultScope: Scope?
+  @objc deinit
+}
+extension ContainerManager {
+  final public func reset(options: FactoryResetOptions = .all)
+  final public func reset(scope: Scope)
+  final public func push()
+  final public func pop()
+}
+public protocol AutoRegistering {
+  func autoRegister()
+}
+public class JumioDefaultUI : Jumio.Dynamic.DefaultUI {
+  public static var version: String
+  public var activeViewController: UIViewController {
+    get
+  }
+  required public init()
+  public func setup(sdk: Jumio.SDK, controller: Jumio.Controller, delegate: JumioDefaultUIDelegate?)
+  public func set(localizationBundle: Bundle?)
+  public func set(theme: Jumio.Theme?)
+  public func start()
+  @objc deinit
+}
+extension JumioDefaultUI : Jumio.Controller.Delegate {
+  public func jumio(controller: Jumio.Controller, didInitializeWith credentialInformations: [Jumio.Credential.Info], consentItems: [Jumio.ConsentItem]?)
+  public func jumio(controller: Jumio.Controller, error: Jumio.Error)
+  public func jumio(controller: Jumio.Controller, finished result: Jumio.Result)
+  public func jumio(controller: Jumio.Controller, logicalError: Jumio.LogicalError)
+}
+extension JumioDefaultUI {
+  public func jumio(scanPart: Jumio.Scan.Part, updates update: Jumio.Scan.Update, data: Any?)
+  public func jumio(scanPart: Jumio.Scan.Part, step: Jumio.Scan.Step, data: Any?)
+}
+public protocol FactoryModifying {
+  associatedtype P
+  associatedtype T
+  var registration: FactoryRegistration<P, T> { get set }
+}
+extension FactoryModifying {
+  @discardableResult
+  public func scope(_ scope: Scope) -> Self
+  public var cached: Self {
+    get
+  }
+  public var graph: Self {
+    get
+  }
+  public var shared: Self {
+    get
+  }
+  public var singleton: Self {
+    get
+  }
+  public var unique: Self {
+    get
+  }
+  @discardableResult
+  public func timeToLive(_ seconds: TimeInterval) -> Self
+}
+extension FactoryModifying {
+  @discardableResult
+  public func decorator(_ decorator: @escaping (_ instance: T) -> Void) -> Self
+}
+extension FactoryModifying {
+  @discardableResult
+  public func context(_ contexts: FactoryContextType..., factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onArg(_ argument: String, factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onArgs(_ args: [String], factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onPreview(factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onTest(factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onDebug(factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onSimulator(factory: @escaping (P) -> T) -> Self
+  @discardableResult
+  public func onDevice(factory: @escaping (P) -> T) -> Self
+}
+extension FactoryModifying {
+  @discardableResult
+  public func once() -> Self
+}
+extension FactoryModifying {
+  @discardableResult
+  public func reset(_ options: FactoryResetOptions = .all) -> Self
+}
+public typealias FactoryAutoRegistering = AutoRegistering
+public typealias FactoryContainer = Container
+public typealias FactoryContainerManager = ContainerManager
+public typealias FactoryManagedContainer = ManagedContainer
+public typealias FactoryResolving = Resolving
+public typealias FactoryScope = Scope
+public typealias FactorySharedContainer = SharedContainer
+public enum FactoryContextType : Equatable {
+  case arg(String)
+  case args([String])
+  case preview
+  case test
+  case debug
+  case simulator
+  case device
+  public static func == (a: JumioDefaultUI.FactoryContextType, b: JumioDefaultUI.FactoryContextType) -> Swift.Bool
+}
+public struct FactoryContext {
+  public var arguments: [String]
+  public var runtimeArguments: [String : String]
+  public var isPreview: Bool
+  public var isTest: Bool
+  public var isSimulator: Bool
+  public var isDebug: Bool
+}
+extension FactoryContext {
+  public static var current: JumioDefaultUI.FactoryContext
+}
+extension FactoryContext {
+  public static func setArg(_ arg: String, forKey key: String)
+  public static func removeArg(forKey key: String)
+}
+public struct Factory<T> : FactoryModifying {
+  public init(_ container: ManagedContainer, key: StaticString = #function, _ factory: @escaping () -> T)
+  public func callAsFunction() -> T
+  public func resolve() -> T
+  @discardableResult
+  public func register(factory: @escaping () -> T) -> JumioDefaultUI.Factory<T>
+  public var registration: FactoryRegistration<Void, T>
+  public typealias P = Swift.Void
+}
+public struct ParameterFactory<P, T> : FactoryModifying {
+  public init(_ container: ManagedContainer, key: StaticString = #function, _ factory: @escaping (P) -> T)
+  public func callAsFunction(_ parameters: P) -> T
+  public func resolve(_ parameters: P) -> T
+  @discardableResult
+  public func register(factory: @escaping (P) -> T) -> JumioDefaultUI.ParameterFactory<P, T>
+  public var registration: FactoryRegistration<P, T>
+}
+@_hasMissingDesignatedInitializers public class JumioDispatchQueue {
+  public static func asyncAfter(deadline: DispatchTime = .now(), qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping @convention(block) () -> Void)
+  public static func globalAsync(qos: DispatchQoS.QoSClass, execute work: @escaping @convention(block) () -> Void)
+  @objc deinit
+}
+extension Jumio.Credential.Part : Comparable {
+  public static func == (lhs: Jumio.Credential.Part, rhs: Jumio.Credential.Part) -> Bool
+  public static func < (lhs: Jumio.Credential.Part, rhs: Jumio.Credential.Part) -> Bool
+}
+@propertyWrapper public struct Injected<T> {
+  public init(_ keyPath: KeyPath<Container, Factory<T>>)
+  public init<C>(_ keyPath: KeyPath<C, Factory<T>>) where C : JumioDefaultUI.SharedContainer
+  public var wrappedValue: T {
+    get
+    set
+  }
+  public var projectedValue: Injected<T> {
+    get
+    set
+  }
+  public var factory: Factory<T> {
+    get
+  }
+  public mutating func resolve(reset options: FactoryResetOptions = .none)
+}
+@propertyWrapper public struct LazyInjected<T> {
+  public init(_ keyPath: KeyPath<Container, Factory<T>>)
+  public init<C>(_ keyPath: KeyPath<C, Factory<T>>) where C : JumioDefaultUI.SharedContainer
+  public var wrappedValue: T {
+    mutating get
+    set
+  }
+  public var projectedValue: LazyInjected<T> {
+    get
+    set
+  }
+  public var factory: Factory<T> {
+    get
+  }
+  public mutating func resolve(reset options: FactoryResetOptions = .none)
+  public func resolvedOrNil() -> T?
+}
+@propertyWrapper public struct WeakLazyInjected<T> {
+  public init(_ keyPath: KeyPath<Container, Factory<T>>)
+  public init<C>(_ keyPath: KeyPath<C, Factory<T>>) where C : JumioDefaultUI.SharedContainer
+  public var wrappedValue: T? {
+    mutating get
+    set
+  }
+  public var projectedValue: WeakLazyInjected<T> {
+    get
+    set
+  }
+  public var factory: Factory<T> {
+    get
+  }
+  public mutating func resolve(reset options: FactoryResetOptions = .none)
+  public func resolvedOrNil() -> T?
+}
+@propertyWrapper public struct InjectedType<T> {
+  public init()
+  public init(_ container: ManagedContainer)
+  public var wrappedValue: T? {
+    get
+    set
+  }
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+@frozen @propertyWrapper @_Concurrency.MainActor(unsafe) public struct InjectedObject<T> : DynamicProperty where T : Combine.ObservableObject {
+  @_Concurrency.MainActor(unsafe) private var _dependency: SwiftUI.StateObject<T>
+  @_Concurrency.MainActor(unsafe) public init(_ keyPath: KeyPath<Container, Factory<T>>)
+  @_Concurrency.MainActor(unsafe) public init<C>(_ keyPath: KeyPath<C, Factory<T>>) where C : JumioDefaultUI.SharedContainer
+  @_Concurrency.MainActor(unsafe) public var wrappedValue: T {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var projectedValue: ObservedObject<T>.Wrapper {
+    get
+  }
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+extension InjectedObject {
+  @_Concurrency.MainActor(unsafe) public init(_ wrappedValue: T)
+}
+@_hasMissingDesignatedInitializers public class Scope {
+  @objc deinit
+}
+extension Scope {
+  public static let cached: JumioDefaultUI.Scope.Cached
+  @_inheritsConvenienceInitializers final public class Cached : Scope {
+    public init()
+    @objc deinit
+  }
+  public static let graph: JumioDefaultUI.Scope.Graph
+  @_inheritsConvenienceInitializers final public class Graph : Scope {
+    public init()
+    @objc deinit
+  }
+  public static let shared: JumioDefaultUI.Scope.Shared
+  @_inheritsConvenienceInitializers final public class Shared : Scope {
+    public init()
+    @objc deinit
+  }
+  public static let singleton: JumioDefaultUI.Scope.Singleton
+  @_inheritsConvenienceInitializers final public class Singleton : Scope {
+    public init()
+    final public func reset()
+    @objc deinit
+  }
+  public static let unique: JumioDefaultUI.Scope.Unique
+  @_inheritsConvenienceInitializers final public class Unique : Scope {
+    public init()
+    @objc deinit
+  }
+}
+extension Optional {
+  @inlinable internal var hasWrappedValue: Bool {
+    get {
+        wrappedValue != nil
+    }
+  }
+  @inlinable internal var wrappedValue: Any? {
+    get {
+        if case .some(let value) = self {
+            return value
+        }
+        return nil
+    }
+  }
+}
+public func resolve<T>(_ keyPath: KeyPath<Container, Factory<T>>) -> T
+public func resolve<C, T>(_ keyPath: KeyPath<C, Factory<T>>) -> T where C : JumioDefaultUI.SharedContainer
+extension JumioDefaultUI.FactoryResetOptions : Swift.Equatable {}
+extension JumioDefaultUI.FactoryResetOptions : Swift.Hashable {}
+extension JumioDefaultUI.JumioDefaultUI : Jumio.JumioScanPartDelegate {}

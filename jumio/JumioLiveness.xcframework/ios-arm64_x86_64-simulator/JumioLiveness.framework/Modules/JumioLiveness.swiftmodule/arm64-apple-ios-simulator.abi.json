@@ -1,0 +1,253 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioLiveness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JumioLiveness",
+        "printedName": "JumioLiveness",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13JumioLivenessAAC7versionSSvpZ",
+            "mangledName": "$s13JumioLivenessAAC7versionSSvpZ",
+            "moduleName": "JumioLiveness",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13JumioLivenessAAC7versionSSvgZ",
+                "mangledName": "$s13JumioLivenessAAC7versionSSvgZ",
+                "moduleName": "JumioLiveness",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JumioLiveness",
+                "printedName": "JumioLiveness.JumioLiveness",
+                "usr": "s:13JumioLivenessAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13JumioLivenessAACABycfc",
+            "mangledName": "$s13JumioLivenessAACABycfc",
+            "moduleName": "JumioLiveness",
+            "declAttributes": [
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setupLiveness",
+            "printedName": "setupLiveness(assets:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13JumioLivenessAAC05setupB06assets8responsey10Foundation4DataV_ySDySSypGcSgtF",
+            "mangledName": "$s13JumioLivenessAAC05setupB06assets8responsey10Foundation4DataV_ySDySSypGcSgtF",
+            "moduleName": "JumioLiveness",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processLiveness",
+            "printedName": "processLiveness(data:width:height:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13JumioLivenessAAC07processB04data5width6height9timestampyyp_s5Int32VAIs5Int64VtF",
+            "mangledName": "$s13JumioLivenessAAC07processB04data5width6height9timestampyyp_s5Int32VAIs5Int64VtF",
+            "moduleName": "JumioLiveness",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clean",
+            "printedName": "clean()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13JumioLivenessAAC5cleanyyF",
+            "mangledName": "$s13JumioLivenessAAC5cleanyyF",
+            "moduleName": "JumioLiveness",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13JumioLivenessAAC",
+        "mangledName": "$s13JumioLivenessAAC",
+        "moduleName": "JumioLiveness",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JumioDynamicLiveness",
+            "printedName": "JumioDynamicLiveness",
+            "usr": "s:5Jumio0A15DynamicLivenessP",
+            "mangledName": "$s5Jumio0A15DynamicLivenessP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioLiveness\/JumioLiveness\/EmptyClasses\/JumioLiveness.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

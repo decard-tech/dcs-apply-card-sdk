@@ -1,0 +1,11 @@
+framework module JumioDefaultUI {
+  umbrella header "JumioDefaultUI.h"
+  export *
+
+  module * { export * }
+}
+
+module JumioDefaultUI.Swift {
+  header "JumioDefaultUI-Swift.h"
+  requires objc
+}

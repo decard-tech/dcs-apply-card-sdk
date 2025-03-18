@@ -1,0 +1,11 @@
+framework module JumioDatadog {
+  umbrella header "JumioDatadog.h"
+  export *
+
+  module * { export * }
+}
+
+module JumioDatadog.Swift {
+  header "JumioDatadog-Swift.h"
+  requires objc
+}

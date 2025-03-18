@@ -1,0 +1,470 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "DcsCardSdk"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2172,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2276,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2305,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2428,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2462,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2500,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2537,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2575,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2607,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2634,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2665,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2704,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2428,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2462,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2500,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2537,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2575,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2607,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2634,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2665,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2704,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2428,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2462,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2500,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2537,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2575,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2607,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2634,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2665,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2704,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-qrscanner-12\/QRScanner.swift",
+      "kind": "FloatLiteral",
+      "offset": 3705,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 4,
+      "value": "-100"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 142,
+      "length": 4,
+      "value": "-101"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 4,
+      "value": "-102"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 239,
+      "length": 4,
+      "value": "-105"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 4,
+      "value": "-106"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 4,
+      "value": "-108"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 4,
+      "value": "-110"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 4,
+      "value": "-111"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 4,
+      "value": "-113"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 1,
+      "value": "-100"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 142,
+      "length": 1,
+      "value": "-101"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 1,
+      "value": "-102"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 239,
+      "length": 1,
+      "value": "-105"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 1,
+      "value": "-106"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 1,
+      "value": "-108"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 1,
+      "value": "-110"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 1,
+      "value": "-111"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 1,
+      "value": "-113"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 1,
+      "value": "-100"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 142,
+      "length": 1,
+      "value": "-101"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 1,
+      "value": "-102"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 239,
+      "length": 1,
+      "value": "-105"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 1,
+      "value": "-106"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 1,
+      "value": "-108"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 1,
+      "value": "-110"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 1,
+      "value": "-111"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 1,
+      "value": "-113"
+    },
+    {
+      "filePath": "\/Users\/ran\/Desktop\/company\/dcs-apply-card-sdk\/myDemo\/ios\/DcsCardSdk\/DcsCardSdk\/plugins\/cordova-plugin-fingerprint-aio\/Fingerprint.swift",
+      "kind": "StringLiteral",
+      "offset": 9610,
+      "length": 11,
+      "value": "\"__aio_key\""
+    }
+  ]
+}
