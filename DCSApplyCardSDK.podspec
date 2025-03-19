@@ -30,7 +30,7 @@ DCSApplyCardSDK is optimized for iOS applications and supports seamless integrat
   spec.author              = { "Ryan" => "ryan.an@dcsserv.com" }
   spec.source              = {
     :git => 'https://github.com/decard-tech/dcs-apply-card-sdk.git', 
-    :tag => "1.4.3"
+    :tag => "#{spec.version}"
   }
   
   spec.platform            = :ios, '14.0'

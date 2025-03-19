@@ -1,0 +1,6 @@
+platform :ios, '14.0'
+use_frameworks! # 必须启用动态框架
+
+target 'dcs-apply-card-sdk-demo' do
+  pod 'DCSApplyCardSDK', :path => '/Users/ran/Desktop/company/public/dcs-apply-card-sdk/DCSApplyCardSDK.podspec'
+end

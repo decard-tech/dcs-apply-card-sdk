@@ -1,0 +1,11 @@
+framework module DcsCardSdk {
+  umbrella header "DcsCardSdk.h"
+  export *
+
+  module * { export * }
+}
+
+module DcsCardSdk.Swift {
+  header "DcsCardSdk-Swift.h"
+  requires objc
+}

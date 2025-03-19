@@ -1,0 +1,1 @@
+import{r as s,b9 as t,b7 as o,j as a}from"./index-45243e94.js";const l=s.memo(c=>{const e=t(),r=o();return a("div",{className:"desc",children:[r.formatMessage({id:"layout.error.element.content"}),e.stack]})});export{l as default};

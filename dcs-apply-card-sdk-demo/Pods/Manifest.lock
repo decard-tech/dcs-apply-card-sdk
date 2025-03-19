@@ -1,0 +1,36 @@
+PODS:
+  - DCSApplyCardSDK (1.4.1):
+    - Jumio/All (= 4.12.0)
+  - iProov (11.1.1)
+  - Jumio/All (4.12.0):
+    - Jumio/DefaultUI (= 4.12.0)
+    - Jumio/IProov (= 4.12.0)
+    - Jumio/Jumio (= 4.12.0)
+    - Jumio/Liveness (= 4.12.0)
+  - Jumio/DefaultUI (4.12.0)
+  - Jumio/IProov (4.12.0):
+    - iProov (~> 11.1.1)
+    - Jumio/Liveness (= 4.12.0)
+  - Jumio/Jumio (4.12.0)
+  - Jumio/Liveness (4.12.0)
+
+DEPENDENCIES:
+  - DCSApplyCardSDK (from `/Users/ran/Desktop/company/public/dcs-apply-card-sdk/DCSApplyCardSDK.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - iProov
+    - Jumio
+
+EXTERNAL SOURCES:
+  DCSApplyCardSDK:
+    :path: "/Users/ran/Desktop/company/public/dcs-apply-card-sdk/DCSApplyCardSDK.podspec"
+
+SPEC CHECKSUMS:
+  DCSApplyCardSDK: d3951bd13ad62dc66f28333b05832368bbcbb4b5
+  iProov: 14fa45ff813bccd32274ecce2694445aba4956e4
+  Jumio: 866a7e419fbd98afef0df0d1ae5ba7ff5a7e4af2
+
+PODFILE CHECKSUM: bf03b0cc860957aaf8b42b1caf4dc7d5c8bdf778
+
+COCOAPODS: 1.16.2

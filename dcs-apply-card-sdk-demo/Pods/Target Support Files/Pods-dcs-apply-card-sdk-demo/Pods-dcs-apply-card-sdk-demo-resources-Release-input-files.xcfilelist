@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/DatadogCore/DatadogCore.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DatadogRUM/DatadogRUM.bundle

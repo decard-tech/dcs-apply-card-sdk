@@ -1,0 +1,6 @@
+framework module Pods_dcs_apply_card_sdk_demo {
+  umbrella header "Pods-dcs-apply-card-sdk-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

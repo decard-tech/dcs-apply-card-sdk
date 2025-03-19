@@ -1,0 +1,11 @@
+framework module Jumio {
+  umbrella header "Jumio.h"
+  export *
+
+  module * { export * }
+}
+
+module Jumio.Swift {
+  header "Jumio-Swift.h"
+  requires objc
+}

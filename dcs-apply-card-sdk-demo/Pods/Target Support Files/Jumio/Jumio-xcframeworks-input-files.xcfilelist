@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Jumio/Jumio-xcframeworks.sh
+${PODS_ROOT}/Jumio/JumioDefaultUI.xcframework
+${PODS_ROOT}/Jumio/JumioIProov.xcframework
+${PODS_ROOT}/Jumio/Jumio/Jumio.xcframework
+${PODS_ROOT}/Jumio/JumioLiveness.xcframework

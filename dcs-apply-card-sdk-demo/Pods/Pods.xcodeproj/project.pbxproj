@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8EF30808211605CE3FE5A5552D1DB85E /* Build configuration list for PBXAggregateTarget "Jumio" */;
+			buildPhases = (
+				24B13CA247E57C980F6514BB5AE49FF2 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				BDF397813CC8B75384BF4C0535C74ECA /* PBXTargetDependency */,
+			);
+			name = Jumio;
+		};
+		E5AC5AC934E2329318F0521CB7331825 /* DCSApplyCardSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C5A495DB1F76095A8B645CB6DEC4F80F /* Build configuration list for PBXAggregateTarget "DCSApplyCardSDK" */;
+			buildPhases = (
+				D3E50CF1A3F1E5F9D6C923889F30759E /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				5E1D824D55CF28DCE71D44A4510DC64D /* PBXTargetDependency */,
+			);
+			name = DCSApplyCardSDK;
+		};
+		F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 344CF0228B15FD37D8DAF0C98E0A2722 /* Build configuration list for PBXAggregateTarget "iProov" */;
+			buildPhases = (
+				67E0F19EA78628B04A1F08FBAF93365B /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = iProov;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		292B36F650FADE19B89C548D654655D7 /* Pods-dcs-apply-card-sdk-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F3B9828DFAB2FE21717BE3020CCD4A /* Pods-dcs-apply-card-sdk-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DAA193F92F8EC5D450DA4C0F81B0D8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		8C4CB50709A136BC8497884F5D4C4BF5 /* Pods-dcs-apply-card-sdk-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 411E26F611ED90EB46D14F4EA4083D73 /* Pods-dcs-apply-card-sdk-demo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0274422CA778A4511702753356215C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F89EB14AF5857747BDD74A05B1DAE59;
+			remoteInfo = Jumio;
+		};
+		359A6F1DE7EEE4B474AD3A049ECC4221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
+			remoteInfo = iProov;
+		};
+		80C334C6D5036F9AB47C41F7B8FA849C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
+			remoteInfo = iProov;
+		};
+		A975D47DACD0A48529A6510F54E272C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F89EB14AF5857747BDD74A05B1DAE59;
+			remoteInfo = Jumio;
+		};
+		F194370D75FE2283C249831E72505E72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5AC5AC934E2329318F0521CB7331825;
+			remoteInfo = DCSApplyCardSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0081BDB12B8BCAC362D4FF1DB8DCBB38 /* Pods-dcs-apply-card-sdk-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dcs-apply-card-sdk-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		08C2471A916BBAA523410B4641919B46 /* Pods-dcs-apply-card-sdk-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dcs-apply-card-sdk-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.debug.xcconfig; sourceTree = "<group>"; };
+		29A26C31D152B6FBFCD62360B272695E /* Pods-dcs-apply-card-sdk-demo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dcs-apply-card-sdk-demo"; path = Pods_dcs_apply_card_sdk_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		411E26F611ED90EB46D14F4EA4083D73 /* Pods-dcs-apply-card-sdk-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dcs-apply-card-sdk-demo-dummy.m"; sourceTree = "<group>"; };
+		4DB689BC6DFFF10C4AFBE7597FF17A33 /* DcsCardSdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = DcsCardSdk.xcframework; path = framework/DcsCardSdk.xcframework; sourceTree = "<group>"; };
+		56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.release.xcconfig; sourceTree = "<group>"; };
+		5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.release.xcconfig; sourceTree = "<group>"; };
+		5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.debug.xcconfig; sourceTree = "<group>"; };
+		60B930D749C787DC92992F59AF09249E /* JumioDefaultUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioDefaultUI.xcframework; sourceTree = "<group>"; };
+		6E61951FA9AF85D31B0E45895E6DB190 /* JumioLiveness.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioLiveness.xcframework; sourceTree = "<group>"; };
+		6F92C8676CBF9F3440C5F21032E82AA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		719F878ECEC9E7318179175869DD492B /* Pods-dcs-apply-card-sdk-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dcs-apply-card-sdk-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		76C3D193BA1F8FE407F8F47A7A666F4C /* Jumio-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Jumio-xcframeworks.sh"; sourceTree = "<group>"; };
+		78B60E6AD950C89DD8B09CC5574689A6 /* DCSApplyCardSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DCSApplyCardSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		82F3B9828DFAB2FE21717BE3020CCD4A /* Pods-dcs-apply-card-sdk-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dcs-apply-card-sdk-demo-umbrella.h"; sourceTree = "<group>"; };
+		96062D52EDE505835B513009C522D967 /* Jumio.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Jumio.xcframework; path = Jumio/Jumio.xcframework; sourceTree = "<group>"; };
+		9A6A0BD82B50B13790B7175DAAC3EBDF /* Pods-dcs-apply-card-sdk-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dcs-apply-card-sdk-demo-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A5CC9F404AEDD41BB8783663CB2B3D /* JumioIProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioIProov.xcframework; sourceTree = "<group>"; };
+		A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.release.xcconfig; sourceTree = "<group>"; };
+		AD185C82C8496E55D7D9C41D3910E4B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B1413061186E784895E87C011DF08D91 /* Pods-dcs-apply-card-sdk-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dcs-apply-card-sdk-demo.release.xcconfig"; sourceTree = "<group>"; };
+		B9A9E4164E0855ABE4EF1E9770FA6A4A /* DCSApplyCardSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DCSApplyCardSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC5DA8E88E9829B5C71F6635A65C7C3C /* Pods-dcs-apply-card-sdk-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dcs-apply-card-sdk-demo.modulemap"; sourceTree = "<group>"; };
+		DD8E7607A2DB8ADFFFC992E25446806E /* iProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = iProov.xcframework; sourceTree = "<group>"; };
+		E5BA3754F6F40F6A6F0000AA53CD4562 /* Pods-dcs-apply-card-sdk-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dcs-apply-card-sdk-demo-frameworks.sh"; sourceTree = "<group>"; };
+		EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.debug.xcconfig; sourceTree = "<group>"; };
+		F59B67E4B793D1A3C51FEAA11E3921B9 /* iProov-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "iProov-xcframeworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A909E06CCBB337FDD250A81DCCB9D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA193F92F8EC5D450DA4C0F81B0D8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039BAEC1201BFE901344D07F95966CBE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B9A9E4164E0855ABE4EF1E9770FA6A4A /* DCSApplyCardSDK.podspec */,
+				6F92C8676CBF9F3440C5F21032E82AA3 /* LICENSE */,
+				AD185C82C8496E55D7D9C41D3910E4B7 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		062265620F43C8E668F81971C9FE49DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A5CC9F404AEDD41BB8783663CB2B3D /* JumioIProov.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2681704FC8BD012B346BB127F304F6B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78B60E6AD950C89DD8B09CC5574689A6 /* DCSApplyCardSDK-xcframeworks.sh */,
+				5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */,
+				A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "dcs-apply-card-sdk-demo/Pods/Target Support Files/DCSApplyCardSDK";
+			sourceTree = "<group>";
+		};
+		2C205F5A51A06C803D6EF4170A533B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E61951FA9AF85D31B0E45895E6DB190 /* JumioLiveness.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		325B7EFB0604EE3BFCB71A35AD7982D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B930D749C787DC92992F59AF09249E /* JumioDefaultUI.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		333773DBE584B4F7CA6C5C6F6B147F11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96062D52EDE505835B513009C522D967 /* Jumio.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EA4DF3ECC656B63128453C7A2C5FAB4 /* Jumio */ = {
+			isa = PBXGroup;
+			children = (
+				AA316EADEC22D08E6624082179ECB2AB /* DefaultUI */,
+				C13B3C3FE8FF7A6DAE8B60410E02B6B3 /* IProov */,
+				859F823B45C7BD350CC6EB125E169CF9 /* Jumio */,
+				DF73DA0E6201A91702635B7A9C6BFD5F /* Liveness */,
+				8682CE0E6C879996B44A48BCEDC4EE8F /* Support Files */,
+			);
+			name = Jumio;
+			path = Jumio;
+			sourceTree = "<group>";
+		};
+		3F69A24781918D38881B1D767B95BF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A26C31D152B6FBFCD62360B272695E /* Pods-dcs-apply-card-sdk-demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC0E557C6A48E7AB987020167947042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D48D3E1E185A0B5A4888BDB603C0FC37 /* iProov */,
+				3EA4DF3ECC656B63128453C7A2C5FAB4 /* Jumio */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5200AE9A8EA0658B26A80FC292FBBFA9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F13F2F9BD3421F04CF521ABEB278CBE /* Pods-dcs-apply-card-sdk-demo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		63B858488A9DC063B5E9EB1F9135990E /* DCSApplyCardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7744FF7075949898CBE550B91FD9F4AE /* Frameworks */,
+				039BAEC1201BFE901344D07F95966CBE /* Pod */,
+				2681704FC8BD012B346BB127F304F6B4 /* Support Files */,
+			);
+			name = DCSApplyCardSDK;
+			path = "/Users/ran/Desktop/company/public/dcs-apply-card-sdk";
+			sourceTree = "<absolute>";
+		};
+		7744FF7075949898CBE550B91FD9F4AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB689BC6DFFF10C4AFBE7597FF17A33 /* DcsCardSdk.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F13F2F9BD3421F04CF521ABEB278CBE /* Pods-dcs-apply-card-sdk-demo */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DA8E88E9829B5C71F6635A65C7C3C /* Pods-dcs-apply-card-sdk-demo.modulemap */,
+				08C2471A916BBAA523410B4641919B46 /* Pods-dcs-apply-card-sdk-demo-acknowledgements.markdown */,
+				719F878ECEC9E7318179175869DD492B /* Pods-dcs-apply-card-sdk-demo-acknowledgements.plist */,
+				411E26F611ED90EB46D14F4EA4083D73 /* Pods-dcs-apply-card-sdk-demo-dummy.m */,
+				E5BA3754F6F40F6A6F0000AA53CD4562 /* Pods-dcs-apply-card-sdk-demo-frameworks.sh */,
+				9A6A0BD82B50B13790B7175DAAC3EBDF /* Pods-dcs-apply-card-sdk-demo-Info.plist */,
+				82F3B9828DFAB2FE21717BE3020CCD4A /* Pods-dcs-apply-card-sdk-demo-umbrella.h */,
+				0081BDB12B8BCAC362D4FF1DB8DCBB38 /* Pods-dcs-apply-card-sdk-demo.debug.xcconfig */,
+				B1413061186E784895E87C011DF08D91 /* Pods-dcs-apply-card-sdk-demo.release.xcconfig */,
+			);
+			name = "Pods-dcs-apply-card-sdk-demo";
+			path = "Target Support Files/Pods-dcs-apply-card-sdk-demo";
+			sourceTree = "<group>";
+		};
+		801FFFBEC6261D01938F8B4E8D7EDD5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD8E7607A2DB8ADFFFC992E25446806E /* iProov.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		859F823B45C7BD350CC6EB125E169CF9 /* Jumio */ = {
+			isa = PBXGroup;
+			children = (
+				333773DBE584B4F7CA6C5C6F6B147F11 /* Frameworks */,
+			);
+			name = Jumio;
+			sourceTree = "<group>";
+		};
+		8682CE0E6C879996B44A48BCEDC4EE8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76C3D193BA1F8FE407F8F47A7A666F4C /* Jumio-xcframeworks.sh */,
+				EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */,
+				56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Jumio";
+			sourceTree = "<group>";
+		};
+		8CDB3C26EB674DF2402F7C986C4BEF7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F59B67E4B793D1A3C51FEAA11E3921B9 /* iProov-xcframeworks.sh */,
+				22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */,
+				5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iProov";
+			sourceTree = "<group>";
+		};
+		9C36F40BB5CD33E59AB533AD3B96BF01 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B858488A9DC063B5E9EB1F9135990E /* DCSApplyCardSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AA316EADEC22D08E6624082179ECB2AB /* DefaultUI */ = {
+			isa = PBXGroup;
+			children = (
+				325B7EFB0604EE3BFCB71A35AD7982D9 /* Frameworks */,
+			);
+			name = DefaultUI;
+			sourceTree = "<group>";
+		};
+		C13B3C3FE8FF7A6DAE8B60410E02B6B3 /* IProov */ = {
+			isa = PBXGroup;
+			children = (
+				062265620F43C8E668F81971C9FE49DB /* Frameworks */,
+			);
+			name = IProov;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9C36F40BB5CD33E59AB533AD3B96BF01 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3FC0E557C6A48E7AB987020167947042 /* Pods */,
+				3F69A24781918D38881B1D767B95BF24 /* Products */,
+				5200AE9A8EA0658B26A80FC292FBBFA9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D48D3E1E185A0B5A4888BDB603C0FC37 /* iProov */ = {
+			isa = PBXGroup;
+			children = (
+				801FFFBEC6261D01938F8B4E8D7EDD5F /* Frameworks */,
+				8CDB3C26EB674DF2402F7C986C4BEF7C /* Support Files */,
+			);
+			name = iProov;
+			path = iProov;
+			sourceTree = "<group>";
+		};
+		DF73DA0E6201A91702635B7A9C6BFD5F /* Liveness */ = {
+			isa = PBXGroup;
+			children = (
+				2C205F5A51A06C803D6EF4170A533B87 /* Frameworks */,
+			);
+			name = Liveness;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED08C1927A1A35A7007633C01F15422A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B36F650FADE19B89C548D654655D7 /* Pods-dcs-apply-card-sdk-demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34F95B1B54413BCFF2AC44E7CB7E505A /* Pods-dcs-apply-card-sdk-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6447D4082113CB8BBC7FE0171DA47C1A /* Build configuration list for PBXNativeTarget "Pods-dcs-apply-card-sdk-demo" */;
+			buildPhases = (
+				ED08C1927A1A35A7007633C01F15422A /* Headers */,
+				1528EA0C89A7EDBD17AC9B475F15C9C9 /* Sources */,
+				6A909E06CCBB337FDD250A81DCCB9D13 /* Frameworks */,
+				264E132C77547E37448A3D64EEB6AC33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67AB18CDC68C903EF0B14C2480664FF /* PBXTargetDependency */,
+				49D98B8D8E19C3FCD85523ADC7711D4F /* PBXTargetDependency */,
+				F97E3661EB89F7B8C5E67FE985E3257D /* PBXTargetDependency */,
+			);
+			name = "Pods-dcs-apply-card-sdk-demo";
+			productName = Pods_dcs_apply_card_sdk_demo;
+			productReference = 29A26C31D152B6FBFCD62360B272695E /* Pods-dcs-apply-card-sdk-demo */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F69A24781918D38881B1D767B95BF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5AC5AC934E2329318F0521CB7331825 /* DCSApplyCardSDK */,
+				F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */,
+				2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */,
+				34F95B1B54413BCFF2AC44E7CB7E505A /* Pods-dcs-apply-card-sdk-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264E132C77547E37448A3D64EEB6AC33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B13CA247E57C980F6514BB5AE49FF2 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Jumio/Jumio-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Jumio/Jumio-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Jumio/Jumio-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E0F19EA78628B04A1F08FBAF93365B /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/iProov/iProov-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/iProov/iProov-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/iProov/iProov-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E50CF1A3F1E5F9D6C923889F30759E /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DCSApplyCardSDK/DCSApplyCardSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DCSApplyCardSDK/DCSApplyCardSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/DCSApplyCardSDK/DCSApplyCardSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1528EA0C89A7EDBD17AC9B475F15C9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4CB50709A136BC8497884F5D4C4BF5 /* Pods-dcs-apply-card-sdk-demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D98B8D8E19C3FCD85523ADC7711D4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jumio;
+			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
+			targetProxy = 0274422CA778A4511702753356215C6B /* PBXContainerItemProxy */;
+		};
+		5E1D824D55CF28DCE71D44A4510DC64D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jumio;
+			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
+			targetProxy = A975D47DACD0A48529A6510F54E272C5 /* PBXContainerItemProxy */;
+		};
+		BDF397813CC8B75384BF4C0535C74ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iProov;
+			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
+			targetProxy = 359A6F1DE7EEE4B474AD3A049ECC4221 /* PBXContainerItemProxy */;
+		};
+		D67AB18CDC68C903EF0B14C2480664FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCSApplyCardSDK;
+			target = E5AC5AC934E2329318F0521CB7331825 /* DCSApplyCardSDK */;
+			targetProxy = F194370D75FE2283C249831E72505E72 /* PBXContainerItemProxy */;
+		};
+		F97E3661EB89F7B8C5E67FE985E3257D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iProov;
+			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
+			targetProxy = 80C334C6D5036F9AB47C41F7B8FA849C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6D7AD30DF55BE5B1F628B344A101ABC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FBFE18C360228398D3FE400DF837B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0081BDB12B8BCAC362D4FF1DB8DCBB38 /* Pods-dcs-apply-card-sdk-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81B97B433D5E58F695F189B304F15795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		852CAC58D93D327D020D6F9F03ED6AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA6C2C4EB0445E0E775FC7E77CE5520F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1413061186E784895E87C011DF08D91 /* Pods-dcs-apply-card-sdk-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF7033D38D5705136CA77C4CAFB4E801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0CEF657BB8DA00E927506A533942C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF189A33E1433E686ED9FB3FDE1B4AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344CF0228B15FD37D8DAF0C98E0A2722 /* Build configuration list for PBXAggregateTarget "iProov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF189A33E1433E686ED9FB3FDE1B4AC8 /* Debug */,
+				B0CEF657BB8DA00E927506A533942C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6447D4082113CB8BBC7FE0171DA47C1A /* Build configuration list for PBXNativeTarget "Pods-dcs-apply-card-sdk-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBFE18C360228398D3FE400DF837B0F /* Debug */,
+				AA6C2C4EB0445E0E775FC7E77CE5520F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF30808211605CE3FE5A5552D1DB85E /* Build configuration list for PBXAggregateTarget "Jumio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B97B433D5E58F695F189B304F15795 /* Debug */,
+				852CAC58D93D327D020D6F9F03ED6AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A495DB1F76095A8B645CB6DEC4F80F /* Build configuration list for PBXAggregateTarget "DCSApplyCardSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7AD30DF55BE5B1F628B344A101ABC8 /* Debug */,
+				AF7033D38D5705136CA77C4CAFB4E801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

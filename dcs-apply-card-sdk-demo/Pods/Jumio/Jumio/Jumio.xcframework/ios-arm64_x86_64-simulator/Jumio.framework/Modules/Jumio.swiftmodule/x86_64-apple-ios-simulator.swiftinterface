@@ -1,0 +1,1352 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Jumio
+import Combine
+import Foundation
+@_exported import Jumio
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Jumio.Theme {
+  public struct NFC {
+    public init()
+    public var passportCover: Jumio.Theme.Value
+    public var passportPageDark: Jumio.Theme.Value
+    public var passportPageLight: Jumio.Theme.Value
+    public var passportForeground: Jumio.Theme.Value
+    public var phoneCover: Jumio.Theme.Value
+  }
+}
+extension Jumio {
+  public struct Theme {
+    public struct Value {
+      public init(light: UIColor, dark: UIColor)
+      public init(_ standard: UIColor)
+      public var value: UIColor {
+        get
+      }
+    }
+    public init()
+    public var primaryButton: Jumio.Theme.PrimaryButton
+    public var secondaryButton: Jumio.Theme.SecondaryButton
+    public var scanOverlay: Jumio.Theme.ScanOverlay
+    public var scanView: Jumio.Theme.ScanView
+    public var loading: Jumio.Theme.Loading
+    public var bubble: Jumio.Theme.Bubble
+    public var searchBubble: Jumio.Theme.SearchBubble
+    public var iProov: Jumio.Theme.IProov
+    public var nfc: Jumio.Theme.NFC
+    public var confirmation: Jumio.Theme.Confirmation
+    public var scanHelp: Jumio.Theme.ScanHelp
+    public var face: Jumio.Theme.Face
+    public var background: Jumio.Theme.Value
+    public var primaryColor: Jumio.Theme.Value
+    public var textForegroundColor: Jumio.Theme.Value
+    public var navigationIconColor: Jumio.Theme.Value
+    public var selectionIconForeground: Jumio.Theme.Value
+  }
+}
+extension Jumio.Theme {
+  public struct ScanOverlay {
+    public init()
+    public var scanOverlay: Jumio.Theme.Value
+    public var scanBackground: Jumio.Theme.Value
+    public var livenessStroke: Jumio.Theme.Value
+    public var livenessStrokeAnimation: Jumio.Theme.Value
+    public var livenessStrokeAnimationCompleted: Jumio.Theme.Value
+  }
+}
+extension Jumio {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IDCredential : Credential {
+    @available(*, deprecated, message: "Use `Jumio.IDCredential.supportedCountries` together with `Jumio.IDCredential.physicalDocuments(for:)` and `Jumio.IDCredential.digitalDocuments(for:)` instead")
+    public var countries: [String : [Jumio.Document]] {
+      get
+    }
+    public var supportedCountries: [String] {
+      get
+    }
+    public var suggestedCountry: String? {
+      get
+    }
+    public func isSupportedConfiguration(country: String, document: Jumio.Document) -> Bool
+    public func setConfiguration(country: String, document: Jumio.Document)
+    public func physicalDocuments(for country: String) -> [Jumio.Document.Physical]
+    public func digitalDocuments(for country: String) -> [Jumio.Document.Digital]
+    @objc deinit
+  }
+}
+extension Jumio.Theme {
+  public struct Loading {
+    public init()
+    public var circlePlain: Jumio.Theme.Value
+    public var loadingCircleGradientStart: Jumio.Theme.Value?
+    public var loadingCircleGradientEnd: Jumio.Theme.Value?
+    public var errorCircleGradientStart: Jumio.Theme.Value?
+    public var errorCircleGradientEnd: Jumio.Theme.Value?
+    public var circleIcon: Jumio.Theme.Value
+    public var loadingAnimationGradient: [UIColor]? {
+      get
+    }
+    public var loadingAnimationErrorGradient: [UIColor]? {
+      get
+    }
+  }
+}
+extension Jumio.Theme {
+  public struct ScanHelp {
+    public init()
+    public var faceAnimationForeground: Jumio.Theme.Value
+    @available(*, deprecated, message: "This property is no longer used and will be removed in a future SDK update")
+    public var faceAnimationBackground: Jumio.Theme.Value
+  }
+}
+public protocol JumioDynamicSPM {
+  static var bundle: Bundle { get }
+}
+extension Jumio.Dynamic {
+  public typealias SPM = JumioDynamicSPM
+}
+extension Jumio {
+  public enum CameraFacing {
+    case front
+    case back
+    public static func == (a: Jumio.CameraFacing, b: Jumio.CameraFacing) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class JumioViewController : UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public var shouldAutorotate: Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var preferredStatusBarStyle: UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    @objc get
+  }
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Jumio {
+  public typealias ViewController = JumioViewController
+}
+extension Jumio {
+  public enum RejectReason : String {
+    case generic
+    case blurry
+    case digitalCopy
+    case blackWhiteCopy
+    case noDoc
+    case glare
+    case missingFront
+    case missingBack
+    case notReadable
+    case missingPartDoc
+    case damagedDocument
+    case hiddenPartDoc
+    case colorPhotocopy
+    case unsupportedDocument
+    case invalidCertificate
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class JumioRejectView : UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Jumio.Reject {
+  public typealias View = JumioRejectView
+}
+@available(iOS 13.0.0, *)
+extension Jumio.Reject.View : UIViewRepresentable {
+  @_Concurrency.MainActor(unsafe) final public func makeUIView(context: Context) -> some UIView
+  
+  @_Concurrency.MainActor(unsafe) final public func updateUIView(_ uiView: UIViewType, context: Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = @_opaqueReturnTypeOf("$s5Jumio0A10RejectViewC10makeUIView7contextQr7SwiftUI0E20RepresentableContextVyACG_tF", 0) __
+}
+extension Jumio.Confirmation {
+  public class Handler {
+    public var parts: [Jumio.Credential.Part] {
+      get
+    }
+    public init()
+    public func attach(scanPart: Jumio.Scan.Part)
+    public func renderPart(part: Jumio.Credential.Part, view: Jumio.Confirmation.View)
+    public func retake()
+    public func confirm()
+    @objc deinit
+  }
+}
+public protocol JumioDefaultUIDelegate : AnyObject {
+  func jumio(sdk: Jumio.SDK, finished result: Jumio.Result)
+}
+extension Jumio {
+  public typealias DefaultUIDelegate = JumioDefaultUIDelegate
+}
+extension Jumio.Credential {
+  public enum Part {
+    case front
+    case back
+    case face
+    case nfc
+    case document
+    case multipart
+    case digital
+    public static func == (a: Jumio.Credential.Part, b: Jumio.Credential.Part) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public protocol JumioDynamicDocFinder : AnyObject {
+  init()
+  static var version: String { get }
+  func setupDocFinder(data: Data)
+  func setupDocClassifier(data: Data)
+  func processDocFinder(data: Any) -> Any?
+  func processDocClassifier(data: Any) -> Any?
+  func clean()
+}
+extension Jumio.Dynamic {
+  public typealias DocFinder = JumioDynamicDocFinder
+}
+public enum JumioIProovStatus {
+  case connecting
+  case connected
+  case processing
+  case success(UIImage?)
+  case cancelled
+  case failure(UIImage?, Int)
+  case error(Int)
+}
+public protocol JumioDynamicLiveness : AnyObject {
+  init()
+  static var version: String { get }
+  func setupLiveness(assets: Data, options: Data, premiumNonce: String?, poseResponse: (([String : Any]) -> Void)?, serverBlobResponse: (([String : Any]) -> Void)?, uxResponse: (([String : Any]) -> Void)?, cameraLivenessResponse: (([String : Any]) -> Void)?)
+  func processLiveness(image: Jumio.Dynamic.Liveness.Image, depthData: Jumio.Dynamic.Liveness.Image?)
+  func reset()
+  func clean()
+}
+extension Jumio.Dynamic {
+  public typealias Liveness = JumioDynamicLiveness
+}
+public protocol JumioDynamicLivenessImage {
+  var data: Any { get }
+  var width: Int32 { get }
+  var height: Int32 { get }
+  var exifAttachments: NSDictionary { get }
+}
+extension Jumio.Dynamic.Liveness {
+  public typealias Image = JumioDynamicLivenessImage
+}
+extension Jumio.Reject {
+  public class Handler {
+    public var parts: [Jumio.Credential.Part] {
+      get
+    }
+    public init()
+    public func attach(scanPart: Jumio.Scan.Part)
+    public func renderPart(part: Jumio.Credential.Part, view: Jumio.Reject.View)
+    public func retake()
+    @objc deinit
+  }
+}
+extension Jumio.Scan {
+  @_hasMissingDesignatedInitializers public class Part {
+    weak public var delegate: Delegate? {
+      get
+    }
+    public var scanMode: Mode {
+      get
+    }
+    public var hasFallback: Bool {
+      get
+    }
+    public func start()
+    public func retry(reason: Jumio.Retry.Reason)
+    public func fallback()
+    public func cancel()
+    public func finish()
+    @available(*, deprecated, message: "This function will be removed in a future SDK update")
+    public func getHelpAnimation() -> UIView?
+    @objc deinit
+  }
+}
+extension Jumio {
+  public class Preloader {
+    public static let shared: Jumio.Preloader
+    weak public var delegate: Delegate?
+    public init()
+    public func preloadIfNeeded()
+    public func cancel()
+    public func setResourcesBundle(_ bundle: Bundle)
+    public static func clean()
+    @objc deinit
+  }
+}
+extension Jumio {
+  public struct Acquire {
+    public enum Mode : String {
+      case camera
+      case file
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) final public class JumioDigitalIdentityView : UIView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: NSCoder)
+  @_Concurrency.MainActor(unsafe) final public func attach(scanPart: Jumio.Scan.Part)
+  @objc deinit
+}
+@available(iOS 13.0.0, *)
+extension Jumio.DigitalIdentity.View : UIViewRepresentable {
+  @_Concurrency.MainActor(unsafe) final public func makeUIView(context: Context) -> some UIView
+  
+  @_Concurrency.MainActor(unsafe) final public func updateUIView(_ uiView: UIViewType, context: Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = @_opaqueReturnTypeOf("$s5Jumio0A19DigitalIdentityViewC10makeUIView7contextQr7SwiftUI0F20RepresentableContextVyACG_tF", 0) __
+}
+extension Jumio {
+  @objc @_inheritsConvenienceInitializers public class CredentialResult : NSObject {
+    public var imageData: ImageData? {
+      get
+    }
+    public var extractionMode: Scan.Mode? {
+      get
+    }
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class ConsentItem {
+    final public let id: String
+    final public let url: String
+    final public let text: String
+    public var attributedText: NSAttributedString?
+    final public let type: ConsentType
+    @objc deinit
+  }
+  public enum ConsentType {
+    case active
+    case passive
+    public static func == (a: Jumio.ConsentType, b: Jumio.ConsentType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio {
+  @objc @_inheritsConvenienceInitializers public class IDResult : CredentialResult {
+    public var issuingCountry: String? {
+      get
+    }
+    public var idType: String? {
+      get
+    }
+    public var idSubType: String? {
+      get
+    }
+    public var firstName: String? {
+      get
+    }
+    public var lastName: String? {
+      get
+    }
+    public var dateOfBirth: String? {
+      get
+    }
+    public var issuingDate: String? {
+      get
+    }
+    public var expiryDate: String? {
+      get
+    }
+    public var documentNumber: String? {
+      get
+    }
+    public var personalNumber: String? {
+      get
+    }
+    public var curp: String? {
+      get
+    }
+    public var gender: String? {
+      get
+    }
+    public var nationality: String? {
+      get
+    }
+    public var placeOfBirth: String? {
+      get
+    }
+    public var country: String? {
+      get
+    }
+    public var address: String? {
+      get
+    }
+    public var city: String? {
+      get
+    }
+    public var subdivision: String? {
+      get
+    }
+    public var postalCode: String? {
+      get
+    }
+    public var mrzLine1: String? {
+      get
+    }
+    public var mrzLine2: String? {
+      get
+    }
+    public var mrzLine3: String? {
+      get
+    }
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
+@_inheritsConvenienceInitializers @objc public class JumioSDK : NSObject {
+  @objc public static var sdkVersion: String {
+    @objc get
+  }
+  @objc public var dataCenter: JumioDataCenter {
+    @objc get
+    @objc set
+  }
+  @objc public var token: String {
+    @objc get
+    @objc set
+  }
+  @objc weak public var defaultUIDelegate: JumioDefaultUIDelegateObjC?
+  @objc override dynamic public init()
+  @objc public func startDefaultUI()
+  @available(*, unavailable, message: "This function is no longer used")
+  @objc(giveDataDogConsentWithEnabled:) public func giveDataDogConsent(enabled: Bool)
+  @objc(handleDeeplinkWithURL:) public static func handleDeeplinkURL(url: URL) -> Bool
+  @objc(viewControllerOrError:) public func viewController() throws -> Jumio.ViewController
+  @objc deinit
+}
+@objc(JumioDefaultUIDelegate) public protocol JumioDefaultUIDelegateObjC {
+  @objc func jumioSDK(_ sdk: JumioSDK, finished: JumioResult)
+}
+@objc(JumioError) public class ObjCJumioError : NSObject {
+  @objc final public let code: String
+  @objc final public let message: String
+  @objc final public let domain: String
+  @objc final public let isRetryable: Bool
+  @objc public init(code: String, message: String, domain: String, isRetryable: Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(JumioConfirmation) public class ObjCJumioConfirmation : NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(JumioInformation) public class ObjCJumioInformation : NSObject {
+  @objc final public let view: UIView?
+  @objc final public let error: ObjCJumioError?
+  @objc final public let confirmation: ObjCJumioConfirmation?
+  @objc deinit
+}
+@objc public enum JumioDataCenter : Int {
+  case EU = 0
+  case US = 1
+  case SG = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum JumioCredentialCategory : Int {
+  case id = 0
+  case face = 1
+  case document = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class JumioCredentialInfo : NSObject {
+  @objc final public let category: JumioCredentialCategory
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class JumioIDResult : NSObject {
+  @objc final public let issuingCountry: String?
+  @objc final public let idType: String?
+  @objc final public let idSubType: String?
+  @objc final public let firstName: String?
+  @objc final public let lastName: String?
+  @objc final public let dateOfBirth: String?
+  @objc final public let issuingDate: String?
+  @objc final public let expiryDate: String?
+  @objc final public let documentNumber: String?
+  @objc final public let personalNumber: String?
+  @objc final public let gender: String?
+  @objc final public let nationality: String?
+  @objc final public let placeOfBirth: String?
+  @objc final public let country: String?
+  @objc final public let address: String?
+  @objc final public let city: String?
+  @objc final public let subdivision: String?
+  @objc final public let postalCode: String?
+  @objc final public let mrzLine1: String?
+  @objc final public let mrzLine2: String?
+  @objc final public let mrzLine3: String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class JumioFaceResult : NSObject {
+  @objc final public let passed: Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class JumioResult : NSObject {
+  @objc final public let isSuccess: Bool
+  @objc final public let credentialInfos: [JumioCredentialInfo]
+  @objc final public let workflowExecutionId: String?
+  @objc final public let accountId: String?
+  @objc final public let error: ObjCJumioError?
+  @objc public func getIDResult(of credentialInfo: JumioCredentialInfo) -> JumioIDResult?
+  @objc public func getFaceResult(of credentialInfo: JumioCredentialInfo) -> JumioFaceResult?
+  @objc deinit
+}
+extension Jumio {
+  public struct DigitalIdentity {
+    public typealias View = JumioDigitalIdentityView
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class JumioConfirmationView : UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Jumio.Confirmation {
+  public typealias View = JumioConfirmationView
+}
+@available(iOS 13.0.0, *)
+extension JumioConfirmationView : UIViewRepresentable {
+  @_Concurrency.MainActor(unsafe) final public func makeUIView(context: Context) -> some UIView
+  
+  @_Concurrency.MainActor(unsafe) final public func updateUIView(_ uiView: UIViewType, context: Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = @_opaqueReturnTypeOf("$s5Jumio0A16ConfirmationViewC10makeUIView7contextQr7SwiftUI0E20RepresentableContextVyACG_tF", 0) __
+}
+extension Jumio {
+  @objc @_inheritsConvenienceInitializers public class FaceResult : CredentialResult {
+    public var passed: Bool? {
+      get
+    }
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
+extension Jumio {
+  public struct Dynamic {
+  }
+}
+public protocol JumioPreloaderDelegate : AnyObject {
+  func jumio(finished: Jumio.Preloader)
+}
+extension Jumio.Preloader {
+  public typealias Delegate = JumioPreloaderDelegate
+}
+extension Jumio {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FaceCredential : Credential {
+    public func initScanPart(scanPartDelegate: Jumio.Scan.Part.Delegate) -> Jumio.Scan.Part?
+    @objc deinit
+  }
+}
+extension Jumio.Theme {
+  public struct PrimaryButton {
+    public init()
+    public var background: Jumio.Theme.Value
+    public var backgroundPressed: Jumio.Theme.Value
+    public var backgroundDisabled: Jumio.Theme.Value
+    public var foreground: Jumio.Theme.Value
+    public var foregroundPressed: Jumio.Theme.Value
+    public var foregroundDisabled: Jumio.Theme.Value
+    public var outline: Jumio.Theme.Value
+    @available(*, deprecated, renamed: "Jumio.Theme.PrimaryButton.foreground")
+    public var text: Value?
+  }
+  public struct SecondaryButton {
+    public init()
+    public var background: Jumio.Theme.Value
+    public var backgroundPressed: Jumio.Theme.Value
+    public var backgroundDisabled: Jumio.Theme.Value
+    public var foreground: Jumio.Theme.Value
+    public var foregroundPressed: Jumio.Theme.Value
+    public var foregroundDisabled: Jumio.Theme.Value
+    public var outline: Jumio.Theme.Value
+    @available(*, deprecated, renamed: "Jumio.Theme.SecondaryButton.foreground")
+    public var text: Value?
+  }
+}
+extension Jumio {
+  public struct Reject {
+  }
+}
+public struct Jumio {
+}
+extension Jumio {
+  @objc @_inheritsConvenienceInitializers public class SDK : NSObject {
+    public static var version: String {
+      get
+    }
+    public static var isJailbroken: Bool {
+      get
+    }
+    public var dataCenter: Jumio.DataCenter?
+    public var token: String
+    weak public var defaultUIDelegate: DefaultUIDelegate?
+    @objc override dynamic public init()
+    public func viewController() throws -> Jumio.ViewController
+    public func startDefaultUI()
+    public func start(_ delegate: Jumio.Controller.Delegate) -> Jumio.Controller
+    public func customize(theme: Jumio.Theme)
+    @available(*, unavailable, message: "This function is no longer used")
+    public func giveDataDogConsent(enabled: Bool)
+    public static func handleDeeplinkURL(_ url: URL) -> Bool
+    public func setResourcesBundle(_ bundle: Bundle)
+    @objc deinit
+  }
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class Result {
+    public var workflowExecutionId: String? {
+      get
+    }
+    public var accountId: String? {
+      get
+    }
+    public var isSuccess: Bool {
+      get
+    }
+    public var credentialInfos: [Jumio.Credential.Info] {
+      get
+    }
+    public var error: Jumio.Error? {
+      get
+    }
+    public func getIDResult(of credentialInfo: Jumio.Credential.Info) -> IDResult?
+    public func getFaceResult(of credentialInfo: Jumio.Credential.Info) -> FaceResult?
+    public func getResult(of credentialInfo: Jumio.Credential.Info) -> CredentialResult?
+    @objc deinit
+  }
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class ImageData {
+    public var images: [Credential.Part : UIImage] {
+      get
+    }
+    public func has(part: Credential.Part) -> Bool
+    public func clear()
+    @objc deinit
+  }
+}
+public protocol JumioDynamicMonitoring : AnyObject {
+  init()
+  static var version: String { get }
+  func run(clientID: String, appID: String, sessionSampleRate: Float, attributes: [String : String])
+  func reportRequest(id: String, url: String, size: Int, method: String)
+  func reportResponse(id: String, size: Int?, statusCode: Int, error: Error?, response: URLResponse?)
+  func reportViewStart(view: String)
+  func reportViewStop(view: String)
+}
+extension Jumio.Dynamic {
+  public typealias Monitoring = JumioDynamicMonitoring
+}
+extension Jumio.Theme {
+  public struct Bubble {
+    public init()
+    public var background: Jumio.Theme.Value
+    public var foreground: Jumio.Theme.Value
+    public var backgroundSelected: Jumio.Theme.Value
+    public var outline: Jumio.Theme.Value
+  }
+  public struct SearchBubble {
+    public init()
+    public var background: Jumio.Theme.Value
+    public var foreground: Jumio.Theme.Value
+    public var outline: Jumio.Theme.Value
+  }
+}
+extension Jumio.Credential {
+  public struct Info {
+    public var category: Category {
+      get
+    }
+    public var id: String {
+      get
+    }
+  }
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class ISOCountryConverter {
+    public class func toAlpha2(_ code: String) -> String?
+    public class func toAlpha3(_ code: String) -> String?
+    @objc deinit
+  }
+}
+extension Jumio {
+  public struct Retry {
+  }
+}
+extension Jumio.Retry {
+  @_hasMissingDesignatedInitializers public class Reason {
+    public var message: String {
+      get
+    }
+    public var code: Int {
+      get
+    }
+    public static var generic: Jumio.Retry.Reason {
+      get
+    }
+    @objc deinit
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum Generic : Int {
+    case generic
+    case userCancel
+    case attemptFailed
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum iProov : Int {
+    case unknown
+    case tooMuchMovement
+    case lightingTooBright
+    case lightingTooDark
+    case faceMisaligned
+    case eyesClosed
+    case faceTooFar
+    case faceTooClose
+    case sunglasses
+    case obscuredFace
+    case multipleFaces
+    case cameraPermission
+    case captureAlreadyActive
+    case unexpected
+    case server
+    case network
+    case notSupported
+    case userTimeout
+    case genericError
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum NFC : Int {
+    case bacError
+    case tagLost
+    case userCancelled
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum DocumentVerification : Int {
+    case notReadable
+    case encrypted
+    case pageLimit
+    case sizeLimit
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum DigitalIdentity : Int {
+    case unknown
+    case expired
+    case thirdPartyVerificationError
+    case serviceError
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Retry.Reason {
+  public enum Face : Int {
+    case generic
+    case tooMuchMovement
+    case lightingTooBright
+    case lightingTooDark
+    case eyesClosed
+    case obscuredFace
+    case multipleFaces
+    case sunglasses
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DocumentCredential : Credential {
+    final public let acquireModes: [Jumio.Acquire.Mode]
+    public func isSupportedConfiguration(acquireMode: Jumio.Acquire.Mode) -> Bool
+    public func setConfiguration(acquireMode: Jumio.Acquire.Mode)
+    @objc deinit
+  }
+}
+extension Jumio {
+  public typealias Document = JumioDocument
+}
+public protocol JumioDocument {
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class Credential {
+    public var parts: [Jumio.Credential.Part] {
+      get
+    }
+    public var isConfigured: Bool {
+      get
+    }
+    public var isComplete: Bool {
+      get
+    }
+    public func initScanPart(_ credentialPart: Jumio.Credential.Part, scanPartDelegate: Jumio.Scan.Part.Delegate) -> Jumio.Scan.Part?
+    public func getAddonScanPart(scanPartDelegate: Jumio.Scan.Part.Delegate) -> Jumio.Scan.Part?
+    public func cancel()
+    public func finish()
+    @objc deinit
+  }
+}
+public protocol JumioControllerDelegate : AnyObject {
+  func jumio(controller: Jumio.Controller, didInitializeWith credentialInformations: [Jumio.Credential.Info], consentItems: [Jumio.ConsentItem]?)
+  func jumio(controller: Jumio.Controller, error: Jumio.Error)
+  func jumio(controller: Jumio.Controller, finished result: Jumio.Result)
+  func jumio(controller: Jumio.Controller, logicalError: Jumio.LogicalError)
+}
+extension Jumio.Controller {
+  public typealias Delegate = JumioControllerDelegate
+}
+extension Jumio.Theme {
+  public struct ScanView {
+    public init()
+    public var foreground: Jumio.Theme.Value
+    public var darkForeground: Jumio.Theme.Value
+    public var tooltipBackground: Jumio.Theme.Value
+    public var tooltipForeground: Jumio.Theme.Value
+    public var documentShutter: Jumio.Theme.Value
+    public var faceShutter: Jumio.Theme.Value
+  }
+}
+extension Jumio {
+  public struct DigitalDocument : CustomDebugStringConvertible, Equatable, Jumio.Document {
+    public var debugDescription: String {
+      get
+    }
+    public var type: String {
+      get
+    }
+    public var title: String {
+      get
+    }
+    public static func == (lhs: DigitalDocument, rhs: DigitalDocument) -> Bool
+  }
+}
+extension Jumio.Document {
+  public typealias Digital = Jumio.DigitalDocument
+}
+extension Jumio {
+  public enum DataCenter : Int {
+    case EU
+    case US
+    case SG
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio.Theme {
+  public struct IProov {
+    public init()
+    public var filterForegroundColor: Jumio.Theme.Value
+    public var filterBackgroundColor: Jumio.Theme.Value
+    public var titleTextColor: Jumio.Theme.Value
+    public var closeButtonTintColor: Jumio.Theme.Value
+    public var surroundColor: Jumio.Theme.Value
+    public var promptTextColor: Jumio.Theme.Value
+    public var promptBackgroundColor: Jumio.Theme.Value
+    public var promptRoundedCorners: Swift.Bool
+    public var genuinePresenceAssuranceReadyOvalStrokeColor: Jumio.Theme.Value
+    public var genuinePresenceAssuranceNotReadyOvalStrokeColor: Jumio.Theme.Value
+    public var livenessAssuranceOvalStrokeColor: Jumio.Theme.Value
+    public var livenessAssuranceCompletedOvalStrokeColor: Jumio.Theme.Value
+  }
+}
+public protocol JumioScanPartDelegate : AnyObject {
+  func jumio(scanPart: Jumio.Scan.Part, updates update: Jumio.Scan.Update, data: Any?)
+  func jumio(scanPart: Jumio.Scan.Part, step: Jumio.Scan.Step, data: Any?)
+}
+extension Jumio.Scan.Part {
+  public typealias Delegate = JumioScanPartDelegate
+}
+public struct JumioIProovOptions {
+  public var closeButtonImage: UIImage?
+  public var filterForegroundColor: UIColor
+  public var filterBackgroundColor: UIColor
+  public var titleTextColor: UIColor
+  public var closeButtonTintColor: UIColor
+  public var surroundColor: UIColor
+  public var promptTextColor: UIColor
+  public var promptBackgroundColor: UIColor
+  public var genuinePresenceAssuranceReadyOvalStrokeColor: UIColor
+  public var genuinePresenceAssuranceNotReadyOvalStrokeColor: UIColor
+  public var livenessAssuranceOvalStrokeColor: UIColor
+  public var livenessAssuranceCompletedOvalStrokeColor: UIColor
+  public var promptRoundedCorners: Bool
+  public var stringsBundle: Bundle?
+  public var stringsTable: String
+  public var productTypeGPA: Bool
+}
+extension Jumio {
+  public struct FileRequirements {
+    public var mimeTypes: [String]
+    public var maxFileSize: Int
+    public var pdfMaxPages: Int
+  }
+}
+extension Jumio {
+  @_hasMissingDesignatedInitializers public class Controller {
+    weak public var delegate: Jumio.Controller.Delegate? {
+      get
+    }
+    public var isComplete: Bool {
+      get
+    }
+    public func cancel()
+    public func finish()
+    public func start(credentialInfo: Jumio.Credential.Info) -> Jumio.Credential?
+    public func retry(error: Jumio.Error)
+    public func userConsented(to consentItem: Jumio.ConsentItem, decision: Bool)
+    public func getUnconsentedItems() -> [Jumio.ConsentItem]?
+    @objc deinit
+  }
+}
+extension Jumio {
+  public struct Error {
+    public var message: String {
+      get
+    }
+    public var code: String {
+      get
+    }
+    public var domain: String {
+      get
+    }
+    public var isRetryable: Bool {
+      get
+    }
+  }
+  public enum SetupError : Swift.Error {
+    case requestedViewControllerForCustomUI
+    case standardViewControllerNotAvailable
+    public static func == (a: Jumio.SetupError, b: Jumio.SetupError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum LogicalError : Swift.Error {
+    case dependencyWrongVersion
+    case noDataCenterSet
+    case defaultUINotAvailable
+    case tokenValidationFailed
+    case dataCenterValidationFailed
+    case deadController
+    case errorNotRetryable
+    case needToConsentFirst
+    case controllerNotCompleted
+    case isBeingFinished
+    case multipleCredentials
+    case unknownCredential
+    case deadCredential
+    case credentialNotCompleted
+    case multipleScanParts
+    case unknownScanPart
+    case scanPartNotCompleted
+    case deadScanPart
+    case noFallbackAvailable
+    case takePictureNotAllowed
+    case flashDisablingNotAllowed
+    case docFinderModelCorrupted
+    case classifierModelCorrupted
+    case livenessAssetsCorrupted
+    public static func == (a: Jumio.LogicalError, b: Jumio.LogicalError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio {
+  public struct PhysicalDocument : CustomDebugStringConvertible, Equatable, Jumio.Document {
+    public enum DocumentType : String, CaseIterable {
+      case passport
+      case visa
+      case drivingLicense
+      case identityCard
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [Jumio.PhysicalDocument.DocumentType]
+      public typealias RawValue = Swift.String
+      public static var allCases: [Jumio.PhysicalDocument.DocumentType] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum DocumentVariant : String {
+      case plastic
+      case paper
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var debugDescription: String {
+      get
+    }
+    public var type: DocumentType {
+      get
+    }
+    public var variant: DocumentVariant {
+      get
+    }
+    public var parts: [Jumio.Credential.Part] {
+      get
+    }
+    public static func == (lhs: PhysicalDocument, rhs: PhysicalDocument) -> Bool
+  }
+}
+extension Jumio.Document {
+  public typealias Physical = Jumio.PhysicalDocument
+}
+extension Jumio.Credential {
+  public enum Category {
+    case id
+    case face
+    case document
+    public static func == (a: Jumio.Credential.Category, b: Jumio.Credential.Category) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Jumio {
+  public class FileAttacher {
+    public var fileRequirements: Jumio.FileRequirements? {
+      get
+    }
+    public var helpUrl: String? {
+      get
+    }
+    public init()
+    public func attach(scanPart: Jumio.Scan.Part)
+    public func set(url: URL)
+    @objc deinit
+  }
+}
+extension Jumio {
+  public struct Confirmation {
+  }
+}
+public protocol JumioDynamicDefaultUI : AnyObject {
+  static var version: String { get }
+  var activeViewController: UIViewController { get }
+  init()
+  func setup(sdk: Jumio.SDK, controller: Jumio.Controller, delegate: JumioDefaultUIDelegate?)
+  func set(localizationBundle: Bundle?)
+  func set(theme: Jumio.Theme?)
+  func start()
+}
+extension Jumio.Dynamic {
+  public typealias DefaultUI = JumioDynamicDefaultUI
+}
+@objc @_Concurrency.MainActor(unsafe) final public class JumioScanView : UIView {
+  @_Concurrency.MainActor(unsafe) final public var isShutterEnabled: Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var isSwitchEnabled: Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var hasFlash: Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var cameraFacing: Jumio.CameraFacing
+  @_Concurrency.MainActor(unsafe) final public var flash: Bool
+  @_Concurrency.MainActor(unsafe) final public var extraction: Bool {
+    get
+    @available(*, deprecated, message: "Use `startExtraction` and `stopExtraction` instead")
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: NSCoder)
+  @_Concurrency.MainActor(unsafe) final public func attach(scanPart: Jumio.Scan.Part)
+  @_Concurrency.MainActor(unsafe) final public func takePicture()
+  @_Concurrency.MainActor(unsafe) final public func switchCamera()
+  @_Concurrency.MainActor(unsafe) final public func resume()
+  @_Concurrency.MainActor(unsafe) final public func pause()
+  @_Concurrency.MainActor(unsafe) final public func startExtraction()
+  @_Concurrency.MainActor(unsafe) final public func stopExtraction(hidePreview: Bool)
+  @objc deinit
+}
+extension Jumio.Scan {
+  public typealias View = JumioScanView
+}
+@available(iOS 13.0.0, *)
+extension Jumio.Scan.View : UIViewRepresentable {
+  @_Concurrency.MainActor(unsafe) final public func makeUIView(context: Context) -> some UIView
+  
+  @_Concurrency.MainActor(unsafe) final public func updateUIView(_ uiView: UIViewType, context: Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = @_opaqueReturnTypeOf("$s5Jumio0A8ScanViewC10makeUIView7contextQr7SwiftUI0E20RepresentableContextVyACG_tF", 0) __
+}
+extension Jumio.Theme {
+  public struct Face {
+    public init()
+    public var primary: Jumio.Theme.Value
+    public var secondary: Jumio.Theme.Value
+    public var outline: Jumio.Theme.Value
+  }
+}
+extension Jumio {
+  public struct Scan {
+    public enum Mode {
+      case manual
+      case faceManual
+      case barcode
+      case nfc
+      case faceIProov
+      case docFinder
+      case file
+      case web
+      case liveness
+      case livenessPremium
+      public static func == (a: Jumio.Scan.Mode, b: Jumio.Scan.Mode) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public enum Update : Equatable {
+      case fallback(FallbackReason)
+      @available(*, deprecated, message: "This case is no longer used and will be removed in a future SDK update")
+      case legalHint
+      case nfcExtractionStarted
+      case nfcExtractionProgress
+      case nfcExtractionFinished
+      case extractionState(ExtractionState)
+      case flash(FlashState)
+      case nextPosition
+      public enum ExtractionState {
+        case centerId
+        case centerFace
+        case tooClose
+        case faceTooClose
+        case moveCloser
+        case moveFaceCloser
+        case moveFaceIntoFrame
+        case levelEyesAndDevice
+        case holdStraight
+        case holdStill
+        case tilt
+        case tiltFaceUp
+        case tiltFaceDown
+        case tiltFaceLeft
+        case tiltFaceRight
+        public static func == (a: Jumio.Scan.Update.ExtractionState, b: Jumio.Scan.Update.ExtractionState) -> Swift.Bool
+        public func hash(into hasher: inout Swift.Hasher)
+        public var hashValue: Swift.Int {
+          get
+        }
+      }
+      public enum FallbackReason {
+        case userAction
+        case lowPerformance
+        public static func == (a: Jumio.Scan.Update.FallbackReason, b: Jumio.Scan.Update.FallbackReason) -> Swift.Bool
+        public func hash(into hasher: inout Swift.Hasher)
+        public var hashValue: Swift.Int {
+          get
+        }
+      }
+      @frozen public enum FlashState {
+        case on
+        case off
+        public static func == (a: Jumio.Scan.Update.FlashState, b: Jumio.Scan.Update.FlashState) -> Swift.Bool
+        public func hash(into hasher: inout Swift.Hasher)
+        public var hashValue: Swift.Int {
+          get
+        }
+      }
+      public struct TiltState : Equatable {
+        public let current: Int
+        public let target: Int
+        public static func == (a: Jumio.Scan.Update.TiltState, b: Jumio.Scan.Update.TiltState) -> Swift.Bool
+      }
+      public static func == (a: Jumio.Scan.Update, b: Jumio.Scan.Update) -> Swift.Bool
+    }
+    public enum Step {
+      case prepare
+      case started
+      case scanView
+      case digitalIdentityView
+      case thirdPartyVerification
+      case attachFile
+      case imageTaken
+      case processing
+      case confirmationView
+      case rejectView
+      case retry
+      case canFinish
+      case addonScanPart
+      case nextPart
+      public static func == (a: Jumio.Scan.Step, b: Jumio.Scan.Step) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+  }
+}
+public protocol JumioDynamicIProov : AnyObject {
+  init()
+  func startIProov(token: String, url: URL, options: JumioIProovOptions, callback: ((JumioIProovStatus) -> Void)?)
+  func cancel()
+  static var version: String { get }
+  static var iProovVersion: String { get }
+}
+extension Jumio.Dynamic {
+  public typealias IProov = JumioDynamicIProov
+}
+extension Jumio.Theme {
+  public struct Confirmation {
+    public init()
+    public var imageBackground: Jumio.Theme.Value
+    public var imageBackgroundBorder: Jumio.Theme.Value
+    public var imageBorder: Jumio.Theme.Value
+    public var indicatorActive: Jumio.Theme.Value
+    public var indicatorDefault: Jumio.Theme.Value
+  }
+}
+extension Jumio.CameraFacing : Swift.Equatable {}
+extension Jumio.CameraFacing : Swift.Hashable {}
+extension Jumio.RejectReason : Swift.Equatable {}
+extension Jumio.RejectReason : Swift.Hashable {}
+extension Jumio.RejectReason : Swift.RawRepresentable {}
+extension Jumio.Credential.Part : Swift.Equatable {}
+extension Jumio.Credential.Part : Swift.Hashable {}
+extension Jumio.Acquire.Mode : Swift.Equatable {}
+extension Jumio.Acquire.Mode : Swift.Hashable {}
+extension Jumio.Acquire.Mode : Swift.RawRepresentable {}
+extension Jumio.ConsentType : Swift.Equatable {}
+extension Jumio.ConsentType : Swift.Hashable {}
+extension JumioDataCenter : Swift.Equatable {}
+extension JumioDataCenter : Swift.Hashable {}
+extension JumioDataCenter : Swift.RawRepresentable {}
+extension Jumio.DataCenter : Swift.Equatable {}
+extension Jumio.DataCenter : Swift.Hashable {}
+extension Jumio.DataCenter : Swift.RawRepresentable {}
+extension JumioCredentialCategory : Swift.Equatable {}
+extension JumioCredentialCategory : Swift.Hashable {}
+extension JumioCredentialCategory : Swift.RawRepresentable {}
+extension Jumio.Credential.Category : Swift.Equatable {}
+extension Jumio.Credential.Category : Swift.Hashable {}
+extension Jumio.Retry.Reason.Generic : Swift.Equatable {}
+extension Jumio.Retry.Reason.Generic : Swift.Hashable {}
+extension Jumio.Retry.Reason.Generic : Swift.RawRepresentable {}
+extension Jumio.Retry.Reason.iProov : Swift.Equatable {}
+extension Jumio.Retry.Reason.iProov : Swift.Hashable {}
+extension Jumio.Retry.Reason.iProov : Swift.RawRepresentable {}
+extension Jumio.Retry.Reason.NFC : Swift.Equatable {}
+extension Jumio.Retry.Reason.NFC : Swift.Hashable {}
+extension Jumio.Retry.Reason.NFC : Swift.RawRepresentable {}
+extension Jumio.Retry.Reason.DocumentVerification : Swift.Equatable {}
+extension Jumio.Retry.Reason.DocumentVerification : Swift.Hashable {}
+extension Jumio.Retry.Reason.DocumentVerification : Swift.RawRepresentable {}
+extension Jumio.Retry.Reason.DigitalIdentity : Swift.Equatable {}
+extension Jumio.Retry.Reason.DigitalIdentity : Swift.Hashable {}
+extension Jumio.Retry.Reason.DigitalIdentity : Swift.RawRepresentable {}
+extension Jumio.Retry.Reason.Face : Swift.Equatable {}
+extension Jumio.Retry.Reason.Face : Swift.Hashable {}
+extension Jumio.Retry.Reason.Face : Swift.RawRepresentable {}
+extension Jumio.SetupError : Swift.Equatable {}
+extension Jumio.SetupError : Swift.Hashable {}
+extension Jumio.LogicalError : Swift.Equatable {}
+extension Jumio.LogicalError : Swift.Hashable {}
+extension Jumio.PhysicalDocument.DocumentType : Swift.Equatable {}
+extension Jumio.PhysicalDocument.DocumentType : Swift.Hashable {}
+extension Jumio.PhysicalDocument.DocumentType : Swift.RawRepresentable {}
+extension Jumio.PhysicalDocument.DocumentVariant : Swift.Equatable {}
+extension Jumio.PhysicalDocument.DocumentVariant : Swift.Hashable {}
+extension Jumio.PhysicalDocument.DocumentVariant : Swift.RawRepresentable {}
+extension Jumio.Scan.Mode : Swift.Equatable {}
+extension Jumio.Scan.Mode : Swift.Hashable {}
+extension Jumio.Scan.Update.ExtractionState : Swift.Equatable {}
+extension Jumio.Scan.Update.ExtractionState : Swift.Hashable {}
+extension Jumio.Scan.Update.FallbackReason : Swift.Equatable {}
+extension Jumio.Scan.Update.FallbackReason : Swift.Hashable {}
+extension Jumio.Scan.Update.FlashState : Swift.Equatable {}
+extension Jumio.Scan.Update.FlashState : Swift.Hashable {}
+extension Jumio.Scan.Update.FlashState : Swift.Sendable {}
+extension Jumio.Scan.Step : Swift.Equatable {}
+extension Jumio.Scan.Step : Swift.Hashable {}

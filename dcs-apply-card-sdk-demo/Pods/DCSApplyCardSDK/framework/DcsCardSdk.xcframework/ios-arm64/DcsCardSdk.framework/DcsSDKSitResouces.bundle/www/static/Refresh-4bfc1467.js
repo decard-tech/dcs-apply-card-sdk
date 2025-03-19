@@ -1,0 +1,1 @@
+import{$ as t,O as r,b as o,r as c,e as n,k as u}from"./index-45243e94.js";const m=()=>{const a=t(),s=r(),e=o();return c.useEffect(()=>{e("/"+a["*"]+s.search,{replace:!0})},[]),n(u,{})};export{m as default};

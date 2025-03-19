@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-dcs-apply-card-sdk-demo/Pods-dcs-apply-card-sdk-demo-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DCSApplyCardSDK/DcsCardSdk.framework/DcsCardSdk
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/DefaultUI/JumioDefaultUI.framework/JumioDefaultUI
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/IProov/JumioIProov.framework/JumioIProov
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/Jumio/Jumio.framework/Jumio
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/Liveness/JumioLiveness.framework/JumioLiveness
+${PODS_XCFRAMEWORKS_BUILD_DIR}/iProov/iProov.framework/iProov

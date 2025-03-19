@@ -1,0 +1,4 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/DefaultUI/JumioDefaultUI.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/IProov/JumioIProov.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/Jumio/Jumio.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Jumio/Liveness/JumioLiveness.framework
