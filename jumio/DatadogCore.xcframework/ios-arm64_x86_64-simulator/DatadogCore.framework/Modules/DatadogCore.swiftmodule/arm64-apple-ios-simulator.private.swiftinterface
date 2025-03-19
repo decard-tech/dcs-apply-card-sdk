@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DatadogCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogCore
 import CommonCrypto
 import CoreTelephony
 @_exported import DatadogCore
@@ -11,10 +10,10 @@ import DatadogInternal
 import Foundation
 import Network
 import Swift
-import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension DatadogCore.Datadog : DatadogInternal.InternalExtended {
   public typealias ExtendedType = DatadogCore.Datadog
 }
@@ -91,7 +90,10 @@ public enum Datadog {
     public var backgroundTasksEnabled: Swift.Bool
     public init(clientToken: Swift.String, env: Swift.String, site: DatadogInternal.DatadogSite = .us1, service: Swift.String? = nil, bundle: Foundation.Bundle = .main, batchSize: DatadogCore.Datadog.Configuration.BatchSize = .medium, uploadFrequency: DatadogCore.Datadog.Configuration.UploadFrequency = .average, proxyConfiguration: [Swift.AnyHashable : Any]? = nil, encryption: (any DatadogCore.DataEncryption)? = nil, serverDateProvider: (any DatadogCore.ServerDateProvider)? = nil, batchProcessingLevel: DatadogCore.Datadog.Configuration.BatchProcessingLevel = .medium, backgroundTasksEnabled: Swift.Bool = false)
   }
-  public static var verbosityLevel: DatadogInternal.CoreLoggerLevel?
+  public static var verbosityLevel: DatadogInternal.CoreLoggerLevel? {
+    get
+    set
+  }
   public static func isInitialized(instanceName name: Swift.String = CoreRegistry.defaultInstanceName) -> Swift.Bool
   public static func sdkInstance(named name: Swift.String) -> any DatadogInternal.DatadogCoreProtocol
   public static func setUserInfo(id: Swift.String? = nil, name: Swift.String? = nil, email: Swift.String? = nil, extraInfo: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:], in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)

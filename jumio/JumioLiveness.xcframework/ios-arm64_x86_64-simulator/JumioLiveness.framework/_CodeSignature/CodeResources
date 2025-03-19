@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JumioLiveness-Swift.h</key>
 		<data>
-		2RmPXltsO6Pxl7SyQFV9Lyb5TLc=
+		DMWwL3/Dzxx9eRteLBs26gIqYMU=
 		</data>
 		<key>Headers/JumioLiveness.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ManmHFX8dNu7B3pOpHPdmn0YN7o=
+		ZDNG1MLf5iMzhBUkaIxyAsDLktw=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8Eek+ScGCq6ED1napnUjm6SL5U=
+		274PcU/TzxOpVkD5Je7d6YRt+Kc=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		F/WsTKrg/XNESsD6iF0QhACevnI=
+		B35SDQuWIjeq5F0/I8usuu35BLo=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		F/WsTKrg/XNESsD6iF0QhACevnI=
+		B35SDQuWIjeq5F0/I8usuu35BLo=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jIXrDQCcqVGlppghxmODaSDZ7Gg=
+		Z8Aj2zoJsDIXYWZ26DKbQ+QKLxA=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8Eek+ScGCq6ED1napnUjm6SL5U=
+		274PcU/TzxOpVkD5Je7d6YRt+Kc=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+		ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+		ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JInNk7oU/gQp5O9VnEvhiewssFY=
+		iY2Vn2q+Z9af4ocLGaGGVMUml70=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hNdGvgX0OrlAerh/OSXhTlFMQNdmFm19Ef7eH7HmnU8=
+			MQpd/nW29+ooNaTEEvv2bYKJCW069RQhuVMLxoeowkE=
 			</data>
 		</dict>
 		<key>Headers/JumioLiveness.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X9P8VVn8ZnB8TVdBs8dS+CvdNnNONSSYrtIAACukS2Y=
+			omJ3M51SGJ4hW++OdnH6b+VO6ykLz0be3xwluFx9EsA=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F6OpMCnWGV6WIt20TBnOCZgOIXeN47tOtbG2oJyWbTk=
+			sKdz0wBDINdcwtdgq6YBQFEUC3ysgjbXLGyYVcQq02s=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F6OpMCnWGV6WIt20TBnOCZgOIXeN47tOtbG2oJyWbTk=
+			sKdz0wBDINdcwtdgq6YBQFEUC3ysgjbXLGyYVcQq02s=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KafekoMJIXWyeLQOOjcZEBB1Kk2WtPUGGB8GWU34H0E=
+			p0WNGrPxJrnrUJZWX+J5J8QR2CLd4sR8U3F0CSes84g=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X9P8VVn8ZnB8TVdBs8dS+CvdNnNONSSYrtIAACukS2Y=
+			omJ3M51SGJ4hW++OdnH6b+VO6ykLz0be3xwluFx9EsA=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oaPF/Y29dCY+05DVB49ex+DZfbR9GmuuWLbWaw66caw=
+			zNym3xpXCvD3BCK6KcuNkgvtNLIFYlFUDUphlSsgZyM=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oaPF/Y29dCY+05DVB49ex+DZfbR9GmuuWLbWaw66caw=
+			zNym3xpXCvD3BCK6KcuNkgvtNLIFYlFUDUphlSsgZyM=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RsuHHoYp6+4mXdarNL3pfrZWoB4spzZZk9zsJWQ6IOE=
+			SfcH4mir4QdOrQSioMzfxrmqkd0w2W+0CFS/hB0tKbk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

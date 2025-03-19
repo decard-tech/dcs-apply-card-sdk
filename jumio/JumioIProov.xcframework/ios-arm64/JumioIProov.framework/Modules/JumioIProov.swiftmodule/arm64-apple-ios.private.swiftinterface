@@ -21,5 +21,6 @@ public class JumioIProov : JumioDynamicIProov {
   }
   required public init()
   public func startIProov(token: String, url: URL, options: JumioIProovOptions, callback: ((JumioIProovStatus) -> Void)?)
+  public func cancel()
   @objc deinit
 }

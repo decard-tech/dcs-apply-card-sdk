@@ -381,7 +381,6 @@ SWIFT_CLASS("_TtC5Jumio13JumioIDResult")
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine3;
-@property (nonatomic, readonly, copy) NSString * _Nullable rawBarcodeData SWIFT_DEPRECATED_MSG("This property is no longer used and will be removed in a future SDK update");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -873,7 +872,6 @@ SWIFT_CLASS("_TtC5Jumio13JumioIDResult")
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine1;
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine2;
 @property (nonatomic, readonly, copy) NSString * _Nullable mrzLine3;
-@property (nonatomic, readonly, copy) NSString * _Nullable rawBarcodeData SWIFT_DEPRECATED_MSG("This property is no longer used and will be removed in a future SDK update");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

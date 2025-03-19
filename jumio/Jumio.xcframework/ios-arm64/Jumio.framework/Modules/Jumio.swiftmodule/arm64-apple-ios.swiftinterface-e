@@ -74,6 +74,9 @@ extension Jumio {
     public var documentNumber: String? {
       get
     }
+    public var curp: String? {
+      get
+    }
     public var personalNumber: String? {
       get
     }
@@ -110,16 +113,13 @@ extension Jumio {
     public var mrzLine3: String? {
       get
     }
-    @available(*, deprecated, message: "This property is no longer used and will be removed in a future SDK update")
-    public var rawBarcodeData: String? {
-      get
-    }
     @objc deinit
   }
 }
 public protocol JumioDynamicIProov : AnyObject {
   init()
   func startIProov(token: String, url: URL, options: JumioIProovOptions, callback: ((JumioIProovStatus) -> Void)?)
+  func cancel()
   static var version: String { get }
   static var iProovVersion: String { get }
 }
@@ -200,6 +200,7 @@ extension Jumio {
     case hiddenPartDoc
     case colorPhotocopy
     case unsupportedDocument
+    case invalidCertificate
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -210,12 +211,22 @@ extension Jumio {
 public protocol JumioDynamicLiveness : AnyObject {
   init()
   static var version: String { get }
-  func setupLiveness(assets: Data, response: (([String : Any]) -> Void)?)
-  func processLiveness(data: Any, width: Int32, height: Int32, timestamp: Int64)
+  func setupLiveness(assets: Data, options: Data, premiumNonce: String?, poseResponse: (([String : Any]) -> Void)?, serverBlobResponse: (([String : Any]) -> Void)?, uxResponse: (([String : Any]) -> Void)?, cameraLivenessResponse: (([String : Any]) -> Void)?)
+  func processLiveness(image: Jumio.Dynamic.Liveness.Image, depthData: Jumio.Dynamic.Liveness.Image?)
+  func reset()
   func clean()
 }
 extension Jumio.Dynamic {
   public typealias Liveness = JumioDynamicLiveness
+}
+public protocol JumioDynamicLivenessImage {
+  var data: Any { get }
+  var width: Int32 { get }
+  var height: Int32 { get }
+  var exifAttachments: NSDictionary { get }
+}
+extension Jumio.Dynamic.Liveness {
+  public typealias Image = JumioDynamicLivenessImage
 }
 extension Jumio.Theme {
   public struct Bubble {
@@ -463,6 +474,7 @@ extension Jumio {
       case file
       case web
       case liveness
+      case livenessPremium
       public static func == (a: Jumio.Jumio.Scan.Mode, b: Jumio.Jumio.Scan.Mode) -> Swift.Bool
       public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
@@ -486,10 +498,15 @@ extension Jumio {
         case faceTooClose
         case moveCloser
         case moveFaceCloser
+        case moveFaceIntoFrame
         case levelEyesAndDevice
         case holdStraight
         case holdStill
         case tilt
+        case tiltFaceUp
+        case tiltFaceDown
+        case tiltFaceLeft
+        case tiltFaceRight
         public static func == (a: Jumio.Jumio.Scan.Update.ExtractionState, b: Jumio.Jumio.Scan.Update.ExtractionState) -> Swift.Bool
         public func hash(into hasher: inout Swift.Hasher)
         public var hashValue: Swift.Int {
@@ -499,7 +516,6 @@ extension Jumio {
       public enum FallbackReason {
         case userAction
         case lowPerformance
-        case noDetection
         public static func == (a: Jumio.Jumio.Scan.Update.FallbackReason, b: Jumio.Jumio.Scan.Update.FallbackReason) -> Swift.Bool
         public func hash(into hasher: inout Swift.Hasher)
         public var hashValue: Swift.Int {
@@ -558,7 +574,6 @@ public protocol JumioDynamicMonitoring : AnyObject {
   func reportResponse(id: String, size: Int?, statusCode: Int, error: Error?, response: URLResponse?)
   func reportViewStart(view: String)
   func reportViewStop(view: String)
-  func stopInstance()
 }
 extension Jumio.Dynamic {
   public typealias Monitoring = JumioDynamicMonitoring
@@ -855,6 +870,9 @@ extension Jumio {
     public var fileRequirements: Jumio.FileRequirements? {
       get
     }
+    public var helpUrl: String? {
+      get
+    }
     public init()
     public func attach(scanPart: Jumio.Scan.Part)
     public func set(url: URL)
@@ -1015,8 +1033,6 @@ extension Jumio {
   @objc final public let mrzLine1: String?
   @objc final public let mrzLine2: String?
   @objc final public let mrzLine3: String?
-  @available(*, deprecated, message: "This property is no longer used and will be removed in a future SDK update")
-  @objc final public let rawBarcodeData: String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class JumioFaceResult : NSObject {

@@ -16,6 +16,5 @@ public class JumioDatadog : JumioDynamicMonitoring {
   public func reportResponse(id: String, size: Int?, statusCode: Int, error: Error?, response: URLResponse?)
   public func reportViewStart(view: String)
   public func reportViewStop(view: String)
-  public func stopInstance()
   @objc deinit
 }

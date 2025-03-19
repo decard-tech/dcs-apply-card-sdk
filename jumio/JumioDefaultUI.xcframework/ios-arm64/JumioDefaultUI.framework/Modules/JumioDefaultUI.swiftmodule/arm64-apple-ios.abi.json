@@ -4378,8 +4378,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "JumioDefaultUI",
         "declAttributes": [
@@ -5686,6 +5686,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Jumio",
         "printedName": "Jumio",
         "declKind": "Import",
@@ -5937,6 +5947,33 @@
       },
       {
         "kind": "Import",
+        "name": "Design",
+        "printedName": "Design",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
         "name": "Jumio",
         "printedName": "Jumio",
         "declKind": "Import",
@@ -6002,6 +6039,30 @@
         "declAttributes": [
           "ImplementationOnly"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
       },
       {
         "kind": "Import",
@@ -10098,6 +10159,13 @@
       },
       {
         "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10332,6 +10400,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10526,6 +10611,23 @@
         "printedName": "PDFKit",
         "declKind": "Import",
         "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Jumio",
+        "printedName": "Jumio",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "JumioDefaultUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -11110,2431 +11212,2466 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
       "kind": "Array",
       "offset": 547,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
       "kind": "Array",
       "offset": 600,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+Presenter.swift",
       "kind": "Dictionary",
       "offset": 654,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/ScanHelp+IndicatorAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/ScanHelp+IndicatorAnimationView.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 22,
       "value": "\"JumioDefaultUI.IndicatorAnimationView\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+DigitalDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+DigitalDocumentView.swift",
       "kind": "BooleanLiteral",
       "offset": 740,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Registrations.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Registrations.swift",
       "kind": "BooleanLiteral",
       "offset": 1871,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Registrations.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Registrations.swift",
       "kind": "BooleanLiteral",
       "offset": 12260,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+TextView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+TextView.swift",
       "kind": "FloatLiteral",
       "offset": 262,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceMultiplePeopleRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceMultiplePeopleRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 326,
       "length": 29,
       "value": "\"JumioDefaultUI.FaceMultiplePeopleRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+TableCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+TableCell.swift",
       "kind": "Array",
       "offset": 377,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
       "kind": "IntegerLiteral",
       "offset": 342,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
       "kind": "IntegerLiteral",
       "offset": 355,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CaptureBackView.swift",
       "kind": "BooleanLiteral",
       "offset": 624,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CapturePhotoView.swift",
       "kind": "BooleanLiteral",
       "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
       "kind": "IntegerLiteral",
       "offset": 938,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1262,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1405,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
       "kind": "FloatLiteral",
       "offset": 529,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
       "kind": "FloatLiteral",
       "offset": 577,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Presenter.swift",
       "kind": "BooleanLiteral",
       "offset": 1605,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Localization\/Localization.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Localization\/Localization.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 19,
       "value": "\"Localizable-Jumio\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1194,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1428,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1475,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 2016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 2262,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 2309,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 2865,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 3110,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 3157,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 3688,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "StringLiteral",
       "offset": 3742,
       "length": 26,
       "value": "\"jumio_scan_fallback_icon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 4147,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 4654,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 4854,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 4893,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 5181,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "BooleanLiteral",
       "offset": 5376,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "IntegerLiteral",
       "offset": 5504,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "StringLiteral",
       "offset": 5648,
       "length": 21,
       "value": "\"jumio_id_scan_title\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "IntegerLiteral",
       "offset": 12197,
       "length": 2,
       "value": "72"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "IntegerLiteral",
       "offset": 12381,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+View.swift",
       "kind": "IntegerLiteral",
       "offset": 12480,
       "length": 3,
       "value": "-12"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "BooleanLiteral",
       "offset": 481,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "BooleanLiteral",
       "offset": 751,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "BooleanLiteral",
       "offset": 848,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "FloatLiteral",
       "offset": 910,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+ProgressCircleView.swift",
       "kind": "BooleanLiteral",
       "offset": 2321,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
       "kind": "BooleanLiteral",
       "offset": 8825,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
       "kind": "BooleanLiteral",
       "offset": 8922,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
       "kind": "IntegerLiteral",
       "offset": 9008,
       "length": 3,
       "value": "256"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Containers.swift",
       "kind": "Array",
       "offset": 9589,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/JumioDefaultUI.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/JumioDefaultUI.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 8,
-      "value": "\"4.11.0\""
+      "value": "\"4.12.0\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/JumioDefaultUI.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/JumioDefaultUI.swift",
       "kind": "Array",
-      "offset": 816,
+      "offset": 741,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 332,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 382,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 789,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 886,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 948,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 1143,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 1230,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 1287,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Coordinator.swift",
       "kind": "Dictionary",
-      "offset": 767,
+      "offset": 800,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Coordinator.swift",
       "kind": "Array",
-      "offset": 813,
+      "offset": 846,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceHelpImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceHelpImage.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 15,
       "value": "\"JumioDefaultUI.FaceRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 388,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 674,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 941,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1153,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1249,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1571,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1611,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1994,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "IntegerLiteral",
       "offset": 2061,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/Loading+View.swift",
       "kind": "BooleanLiteral",
       "offset": 2093,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Globals.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Globals.swift",
       "kind": "IntegerLiteral",
       "offset": 1368,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Globals.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Globals.swift",
       "kind": "StringLiteral",
       "offset": 1458,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Presenter.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 44,
       "value": "\"DocVerification.ScanConfirmation.ImageCell\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Presenter.swift",
       "kind": "Array",
       "offset": 763,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceFaceObscuredRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceFaceObscuredRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 27,
       "value": "\"JumioDefaultUI.FaceFaceObscuredRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentItem.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentItem.swift",
       "kind": "BooleanLiteral",
       "offset": 364,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/ScanIproov\/Scan+IProov+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/ScanIproov\/Scan+IProov+Coordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 2238,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Presenter.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Presenter.swift",
       "kind": "IntegerLiteral",
       "offset": 536,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/ScanNFC\/Scan+NFC+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/ScanNFC\/Scan+NFC+Coordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 2467,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
       "kind": "IntegerLiteral",
       "offset": 314,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
       "kind": "IntegerLiteral",
       "offset": 327,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+TiltView.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooBrightRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooBrightRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 24,
       "value": "\"JumioDefaultUI.FaceTooBrightRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/Scan+FaceAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/FaceHelpAnimationViews\/Scan+FaceAnimationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 571,
+      "offset": 495,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/Scan+FaceAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/FaceHelpAnimationViews\/Scan+FaceAnimationView.swift",
       "kind": "StringLiteral",
-      "offset": 291,
+      "offset": 211,
       "length": 17,
       "value": "\"JumioDefaultUI.FaceAnimationView\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+BottomSheet.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+BottomSheet.swift",
       "kind": "Array",
-      "offset": 950,
+      "offset": 1027,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1658,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1957,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2247,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2550,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2851,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 3151,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 3512,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 3790,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 4071,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 4693,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 4846,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5343,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5974,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 6107,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 6750,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 7414,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 7806,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 8114,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 8739,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 9473,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 9919,
       "length": 3,
       "value": "-30"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 10385,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 11273,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 11461,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 11748,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 11957,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "Dictionary",
       "offset": 2247,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "StringLiteral",
       "offset": 2381,
       "length": 28,
       "value": "\"XCODE_RUNNING_FOR_PREVIEWS\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "StringLiteral",
       "offset": 2414,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "StringLiteral",
       "offset": 2524,
       "length": 8,
       "value": "\"XCTest\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "StringLiteral",
       "offset": 2670,
       "length": 16,
       "value": "\"SIMULATOR_UDID\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Contexts.swift",
       "kind": "BooleanLiteral",
       "offset": 2905,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2103,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2692,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 2995,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 3296,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 3596,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 3957,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 4235,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 4516,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5138,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 5291,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5788,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 6419,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 6552,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 7195,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 7859,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 8251,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 8559,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 9184,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 9918,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 10364,
       "length": 3,
       "value": "-30"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 10830,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 11718,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 11906,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 12193,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 12402,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "BooleanLiteral",
       "offset": 569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "BooleanLiteral",
       "offset": 763,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "BooleanLiteral",
       "offset": 962,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1002,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1378,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1418,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 21,
       "value": "\"jumio_error_message\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Error+View.swift",
       "kind": "BooleanLiteral",
       "offset": 1785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 20,
       "value": "\"JumioDefaultUI.LoadingAnimationView\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15119,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15144,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15168,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15197,
       "length": 3,
       "value": "112"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15119,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15144,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15168,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15197,
       "length": 3,
       "value": "112"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15119,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15144,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15168,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15197,
       "length": 3,
       "value": "112"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15254,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15279,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15254,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15279,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15254,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "IntegerLiteral",
       "offset": 15279,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15376,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15402,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15426,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15376,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15402,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15426,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15376,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15402,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15426,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15496,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15522,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15496,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15522,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15496,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Loading\/LoadingAnimationView.swift",
       "kind": "FloatLiteral",
       "offset": 15522,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/CountrySelection\/CountrySelection+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/CountrySelection\/CountrySelection+Presenter.swift",
       "kind": "Array",
       "offset": 552,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/CountrySelection\/CountrySelection+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/CountrySelection\/CountrySelection+Presenter.swift",
       "kind": "Array",
       "offset": 605,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Extensions\/UILabel.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Extensions\/UILabel.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/IDSelection\/IDSelection+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/IDSelection\/IDSelection+Presenter.swift",
       "kind": "Array",
       "offset": 1046,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
       "kind": "IntegerLiteral",
       "offset": 301,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
       "kind": "BooleanLiteral",
       "offset": 568,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
       "kind": "BooleanLiteral",
       "offset": 684,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
       "kind": "FloatLiteral",
       "offset": 746,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+CheckmarkView.swift",
       "kind": "BooleanLiteral",
       "offset": 1135,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Coordinators\/IDCoordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Coordinators\/IDCoordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 1116,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Coordinators\/IDCoordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Coordinators\/IDCoordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 1164,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 703,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 981,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 1262,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 1884,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 2037,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 2534,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 3165,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 3298,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 3941,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 4605,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 4997,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5305,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 5930,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 6664,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 7110,
       "length": 3,
       "value": "-30"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 7576,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 8464,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "Array",
       "offset": 8652,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 8939,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 9148,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 9660,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 10918,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 11217,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 11507,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 11810,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 12111,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View+LayoutHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 12411,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/UnsupportedDocument\/UnsupportedDocument+View.swift",
       "kind": "IntegerLiteral",
       "offset": 433,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View.swift",
       "kind": "IntegerLiteral",
-      "offset": 1252,
+      "offset": 1255,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View.swift",
       "kind": "IntegerLiteral",
-      "offset": 1395,
+      "offset": 1428,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+View.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1792,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Start+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Start+Presenter.swift",
       "kind": "Array",
       "offset": 587,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Start+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Start+Presenter.swift",
       "kind": "Array",
       "offset": 646,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 602,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "Array",
       "offset": 890,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 956,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "Array",
       "offset": 1539,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1605,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+ImageCell.swift",
       "kind": "FloatLiteral",
       "offset": 1724,
       "length": 4,
       "value": "1.05"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Utils\/System\/JumioDispatchQueue.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Utils\/System\/JumioDispatchQueue.swift",
       "kind": "Array",
       "offset": 466,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+View.swift",
       "kind": "BooleanLiteral",
       "offset": 4712,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
       "kind": "BooleanLiteral",
       "offset": 525,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
       "kind": "BooleanLiteral",
       "offset": 611,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
       "kind": "BooleanLiteral",
       "offset": 701,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
       "kind": "BooleanLiteral",
       "offset": 790,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList+ItemView.swift",
       "kind": "BooleanLiteral",
       "offset": 1013,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooDarkRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooDarkRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 22,
       "value": "\"JumioDefaultUI.FaceTooDarkRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1268,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1329,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Monitoring.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+Monitoring.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 8,
-      "value": "\"4.11.0\""
+      "value": "\"4.12.0\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+ModuleViewController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+ModuleViewController.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 42,
       "value": "\"DefaultUIViewWillTransitionToOrientation\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+ModuleViewController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+ModuleViewController.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 20,
       "value": "\"JumioDefaultUI.ModuleViewController\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanRetry\/NFC\/ScanRetry+NFC+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanRetry\/NFC\/ScanRetry+NFC+View.swift",
       "kind": "BooleanLiteral",
       "offset": 947,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceGenericRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceGenericRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 208,
       "length": 22,
       "value": "\"JumioDefaultUI.FaceGenericRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanRetry\/Face\/ScanRetry+Face+View.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanRetry\/Face\/ScanRetry+Face+View.swift",
       "kind": "IntegerLiteral",
       "offset": 1238,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Injections.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Injections.swift",
       "kind": "BooleanLiteral",
       "offset": 4764,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Injections.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Injections.swift",
       "kind": "BooleanLiteral",
       "offset": 8140,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Presenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 6089,
+      "offset": 6209,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Scopes.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Factory\/Scopes.swift",
       "kind": "IntegerLiteral",
       "offset": 9042,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
       "kind": "StringLiteral",
       "offset": 1147,
       "length": 24,
       "value": "\"com.jumio.scanFeedback\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
       "kind": "Array",
       "offset": 1234,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/ScanFeedback+Coordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 1384,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "FloatLiteral",
       "offset": 493,
       "length": 3,
       "value": "1.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "FloatLiteral",
       "offset": 549,
       "length": 3,
       "value": "4.2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "FloatLiteral",
       "offset": 605,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "FloatLiteral",
       "offset": 661,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2635,
+      "offset": 2677,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2695,
+      "offset": 2737,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2754,
+      "offset": 2796,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2798,
+      "offset": 2845,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2846,
+      "offset": 2898,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2901,
+      "offset": 2953,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3943,
+      "offset": 3991,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Scan\/Scan+Coordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3974,
+      "offset": 4022,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationFileUpload\/DocVerification+FileUpload+Coordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 1018,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+ImageCell.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+ImageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 661,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
       "kind": "BooleanLiteral",
       "offset": 613,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
       "kind": "BooleanLiteral",
       "offset": 930,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
       "kind": "StringLiteral",
       "offset": 1048,
       "length": 31,
       "value": "\"jumio_consent_items_stackview\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Start\/Consent\/Start+ConsentList.swift",
       "kind": "BooleanLiteral",
       "offset": 1127,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 164,
       "length": 6,
       "value": "\"📷\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 6,
       "value": "\"🗒\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 6,
       "value": "\"💬\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 6,
       "value": "\"🔬\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 8,
       "value": "\"⚠️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 8,
       "value": "\"‼️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 6,
       "value": "\"🔥\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 164,
       "length": 6,
       "value": "\"📷\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 6,
       "value": "\"🗒\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 6,
       "value": "\"💬\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 6,
       "value": "\"🔬\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 8,
       "value": "\"⚠️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 8,
       "value": "\"‼️\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 6,
       "value": "\"🔥\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "StringLiteral",
       "offset": 652,
       "length": 13,
       "value": "\"hh:mm:ssSSS\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/Log.swift",
       "kind": "BooleanLiteral",
       "offset": 981,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/GradientView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/GradientView.swift",
       "kind": "Array",
       "offset": 334,
       "length": 10,
       "value": "[0.0, 1.0]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
       "kind": "BooleanLiteral",
       "offset": 1148,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
       "kind": "BooleanLiteral",
       "offset": 1383,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
       "kind": "BooleanLiteral",
       "offset": 1591,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DefaultUI+NavigationController.swift",
       "kind": "BooleanLiteral",
       "offset": 2137,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/FaceHelpAnimationViews\/Scan+JumioPremiumFaceAnimationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/FaceHelpAnimationViews\/Scan+JumioPremiumFaceAnimationView.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 29,
+      "value": "\"JumioDefaultUI.JumioPremiumFaceAnimationView\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
       "kind": "BooleanLiteral",
       "offset": 395,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
       "kind": "BooleanLiteral",
       "offset": 665,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FlipDocumentView.swift",
       "kind": "BooleanLiteral",
       "offset": 837,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "IntegerLiteral",
       "offset": 328,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "BooleanLiteral",
       "offset": 364,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "BooleanLiteral",
       "offset": 676,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "BooleanLiteral",
       "offset": 773,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "FloatLiteral",
       "offset": 835,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanFeedback\/Overlay\/ScanFeedback+FocusView.swift",
       "kind": "BooleanLiteral",
       "offset": 3711,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Coordinator.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DocVerification\/DocVerificationScanConfirmation\/DocVerification+ScanConfirmation+Coordinator.swift",
       "kind": "Array",
       "offset": 1055,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooMuchMovementRejectImage.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanHelp\/AnimationViews\/FaceHelpImage\/FaceTooMuchMovementRejectImage.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 30,
       "value": "\"JumioDefaultUI.FaceTooMuchMovementRejectImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+Presenter.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/ScanReject\/ScanReject+Presenter.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 22,
       "value": "\"ScanReject.ImageCell\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDefaultUI\/JumioDefaultUI\/Classes\/DigitalIdSelection\/IDSelection+DigitalIdSelection+Coordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1018,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 741,
       "length": 16,
       "value": "\"arrowRightIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 12,
       "value": "\"backButton\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1040,
+      "offset": 1035,
+      "length": 15,
+      "value": "\"braDidPreview\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1191,
       "length": 20,
       "value": "\"buttonCaptureImage\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1353,
       "length": 18,
       "value": "\"buttonUploadFile\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1360,
+      "offset": 1511,
       "length": 17,
       "value": "\"captureBackSide\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1670,
       "length": 18,
       "value": "\"capturePhotoSide\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1673,
+      "offset": 1824,
       "length": 15,
       "value": "\"captureSwitch\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1816,
+      "offset": 1967,
       "length": 11,
       "value": "\"checkMark\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1959,
+      "offset": 2110,
       "length": 13,
       "value": "\"closeButton\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2100,
+      "offset": 2251,
       "length": 11,
       "value": "\"crosshair\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2251,
+      "offset": 2402,
       "length": 17,
       "value": "\"digitalIdentity\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2414,
+      "offset": 2565,
       "length": 20,
       "value": "\"drivingLicenseIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2574,
+      "offset": 2725,
       "length": 17,
       "value": "\"exclamationMark\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2727,
+      "offset": 2878,
       "length": 15,
       "value": "\"feedbackCheck\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2876,
+      "offset": 3027,
       "length": 14,
       "value": "\"focusOverlay\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3016,
+      "offset": 3167,
       "length": 10,
       "value": "\"helpIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3148,
+      "offset": 3299,
       "length": 8,
       "value": "\"idIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3290,
+      "offset": 3441,
       "length": 14,
       "value": "\"passportIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3434,
+      "offset": 3585,
       "length": 12,
       "value": "\"searchIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3582,
+      "offset": 3733,
       "length": 15,
       "value": "\"shutterButton\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3733,
+      "offset": 3884,
       "length": 15,
       "value": "\"stepCheckmark\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3886,
+      "offset": 4037,
       "length": 16,
       "value": "\"uploadFileIcon\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-eovlavmupgpfekbuaprbbixtioue\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/Swift-fheesozddbdgtnbyjsnxobytzmij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/JumioDefaultUI\/IntermediateBuildFilesPath\/JumioDefaultUI.build\/Release-iphoneos\/JumioDefaultUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4179,
       "length": 10,
       "value": "\"visaIcon\""
     }

@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/Jumio.framework/Headers/Jumio-Swift.h</key>
 		<data>
-		/hA3Qrb6slQm3z0hiXoX37L5cHk=
+		9FI/ZLtlVFwlb9ySSDEqRvngAas=
 		</data>
 		<key>ios-arm64/Jumio.framework/Headers/Jumio.h</key>
 		<data>
@@ -18,35 +18,35 @@
 		</data>
 		<key>ios-arm64/Jumio.framework/Info.plist</key>
 		<data>
-		35qwTWcJ4YSutqmBcSfVABzlnlQ=
+		GY9WoxCDrpqzXEVPZ0D1jp5FGGM=
 		</data>
 		<key>ios-arm64/Jumio.framework/Jumio</key>
 		<data>
-		xsPYhFt1SFXra7EGPldsEcQRU6A=
+		wkLs+NzPLFVn3OwZhP3PEI9pizc=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		S5xScjO4ZlheU9cCEehp0hRfKNY=
+		c0Ub4aIz3+PXVVRKJLRI1Vvkw1o=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.private.swiftinterface-e</key>
 		<data>
-		cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+		KV5bTlmyfnmTfM8hXPGRfBgC//c=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		w++tWYpNg717QxGqehyj5xt5gxc=
+		JoeLDFft0ChuQ1r/aiUTznLxyJg=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		S5xScjO4ZlheU9cCEehp0hRfKNY=
+		c0Ub4aIz3+PXVVRKJLRI1Vvkw1o=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface-e</key>
 		<data>
-		cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+		KV5bTlmyfnmTfM8hXPGRfBgC//c=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		p2ZmihgyoPJcDtnC5CWkOUHDsVk=
+		gDgTKxSwhiUxl4mSQ8LpElnjAkk=
 		</data>
 		<key>ios-arm64/Jumio.framework/Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>ios-arm64/Jumio.framework/_CodeSignature/CodeResources</key>
 		<data>
-		TN/KN1lYlvMjIb2FVB23HKqmli0=
+		eH/LftDz2hGb+4Qe5UxuEBbI1pI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Headers/Jumio-Swift.h</key>
 		<data>
-		ERMKElmQ0LaJ5LMCngNoAfntbAo=
+		YbTmXvSobTikiRUNfB0f21QdFYI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Headers/Jumio.h</key>
 		<data>
@@ -70,51 +70,51 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Info.plist</key>
 		<data>
-		vzrkZ9iN6UxL1zlmJDDWuAqjN0I=
+		PgzCw0T3Nprqx0EnkZY8FIs+180=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Jumio</key>
 		<data>
-		yGnhxgrPjm/GDOfHUqkEd2++RCg=
+		SS27woPL3P68j8dAgExislzp9d0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Zq+VAksH4BohOWsYtgHwk2+xTI8=
+		emcsrX6BYeNOZK8UlHTqunBD8vI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface-e</key>
 		<data>
-		+ujPJaOIjPWaTAE9++rXSs41+cg=
+		CRCTwyF6YR8xkFbyzIFxWqm4Hy8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		86IypU9UQgl6yUS8N4Vt1IhuFZU=
+		uvJGsjsqCX6R1ky4TcwKSgpSJrg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Zq+VAksH4BohOWsYtgHwk2+xTI8=
+		emcsrX6BYeNOZK8UlHTqunBD8vI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftinterface-e</key>
 		<data>
-		+ujPJaOIjPWaTAE9++rXSs41+cg=
+		CRCTwyF6YR8xkFbyzIFxWqm4Hy8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Pu0ZGazUsjoIVnBqrCA7MJ6iT3Y=
+		0BG3FrMo0UwGsRmwcbSQq+bIKHQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface-e</key>
 		<data>
-		Cp/6xG7aKlXC+GQpEi2tl6UMnm8=
+		t9bntCZTWvfJnED6KqAgR44JpLk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yv6xU6XZLXLe1IWvN/cIyp5/LnU=
+		czLWTDKeb1Wk8/h27/35jOZeBeE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pu0ZGazUsjoIVnBqrCA7MJ6iT3Y=
+		0BG3FrMo0UwGsRmwcbSQq+bIKHQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface-e</key>
 		<data>
-		Cp/6xG7aKlXC+GQpEi2tl6UMnm8=
+		t9bntCZTWvfJnED6KqAgR44JpLk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/_CodeSignature/CodeResources</key>
 		<data>
-		9W5KY4M/5LSRvbMbYKcMWpnnjFk=
+		fmknHbpyM8qg8x88cFobZZQaNyA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -146,11 +146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/hA3Qrb6slQm3z0hiXoX37L5cHk=
+			9FI/ZLtlVFwlb9ySSDEqRvngAas=
 			</data>
 			<key>hash2</key>
 			<data>
-			3j4lcRzeAtIsrU/iSt9ASaLmPeeKVjSDFROUsFP8zoo=
+			vFXNVZ01n5+PBE6Np7um6+u7uJwnP2+Tv2ui/qlWhjc=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Headers/Jumio.h</key>
@@ -168,88 +168,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			35qwTWcJ4YSutqmBcSfVABzlnlQ=
+			GY9WoxCDrpqzXEVPZ0D1jp5FGGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			itNkaBqS5vBYqQWpFr7WpquXt47B+jU5j223Nzmcr5w=
+			3z3I4Jl6dpe51EH7+QEhUMfE+DV4QezxFkCguIExZ4Q=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Jumio</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xsPYhFt1SFXra7EGPldsEcQRU6A=
+			wkLs+NzPLFVn3OwZhP3PEI9pizc=
 			</data>
 			<key>hash2</key>
 			<data>
-			IuVwPf6EYCNy7rEW1HhTouvZED9FWsCX2quonF0HuFE=
+			WxF+efK11tvBEemeB1Mbr/hK6S3X5vHe/DtsYdjskb8=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S5xScjO4ZlheU9cCEehp0hRfKNY=
+			c0Ub4aIz3+PXVVRKJLRI1Vvkw1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			RU6Ek0a1RHnmCZGpnhNstSW55oD9l4x7fbSVqw0Dvp8=
+			phMBhSSAytJxfiQkREZFmkw3Im6fohcmDJtL1F8BPMA=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.private.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+			KV5bTlmyfnmTfM8hXPGRfBgC//c=
 			</data>
 			<key>hash2</key>
 			<data>
-			GRDIfZFOlZN8Yhk/VswvAyawXTryqLhu2vIm0rWmNeI=
+			Sl1AfkTyrAarXCriNDFuaifDspmo/upwe3C3GoxNtPQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w++tWYpNg717QxGqehyj5xt5gxc=
+			JoeLDFft0ChuQ1r/aiUTznLxyJg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cv63s0cbwaL41/yOxzXhc7HSJUW6A3NfI2rd8bljDRU=
+			aqL8YTOxxpCbu9QyrJPKIFm3exE45OJawY8tVtUVhqE=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S5xScjO4ZlheU9cCEehp0hRfKNY=
+			c0Ub4aIz3+PXVVRKJLRI1Vvkw1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			RU6Ek0a1RHnmCZGpnhNstSW55oD9l4x7fbSVqw0Dvp8=
+			phMBhSSAytJxfiQkREZFmkw3Im6fohcmDJtL1F8BPMA=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+			KV5bTlmyfnmTfM8hXPGRfBgC//c=
 			</data>
 			<key>hash2</key>
 			<data>
-			GRDIfZFOlZN8Yhk/VswvAyawXTryqLhu2vIm0rWmNeI=
+			Sl1AfkTyrAarXCriNDFuaifDspmo/upwe3C3GoxNtPQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p2ZmihgyoPJcDtnC5CWkOUHDsVk=
+			gDgTKxSwhiUxl4mSQ8LpElnjAkk=
 			</data>
 			<key>hash2</key>
 			<data>
-			SL9ehoXkC8T0NaD1a8CWcyPjNTzsHfFbCySOH8jHYdE=
+			QO+eLBAtlVawCDGZHz4rCh91DorpTgBHTc4XMd0MQ/8=
 			</data>
 		</dict>
 		<key>ios-arm64/Jumio.framework/Modules/module.modulemap</key>
@@ -278,22 +278,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TN/KN1lYlvMjIb2FVB23HKqmli0=
+			eH/LftDz2hGb+4Qe5UxuEBbI1pI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wUsHR7kTSj7/GmiJmXiEuudV2/Yq12fX98lSxsio/us=
+			sF/uIyYC5kootQrawMDnDDhk3Onisqdj1jTOk6elj64=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Headers/Jumio-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ERMKElmQ0LaJ5LMCngNoAfntbAo=
+			YbTmXvSobTikiRUNfB0f21QdFYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0GPyH3iC8TwyOnhA6CuKrxcDyr1tYViqjCgdZ6EGufE=
+			SMKgv56JWiJEtFkEW0i+VwskXUyh91q+LdPo9nYbuIY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Headers/Jumio.h</key>
@@ -311,132 +311,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vzrkZ9iN6UxL1zlmJDDWuAqjN0I=
+			PgzCw0T3Nprqx0EnkZY8FIs+180=
 			</data>
 			<key>hash2</key>
 			<data>
-			JrG7G3V3Z/VwDb6ncJQX0Um3MfmSqfD4G0vN/GnqICs=
+			Skzt/MLSSXWdVXdNVd22jmx7USq8TPVJzyrj3rBRjw4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Jumio</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yGnhxgrPjm/GDOfHUqkEd2++RCg=
+			SS27woPL3P68j8dAgExislzp9d0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gXAIR9NBHKDFRnKXabrwp7CCG9av4X4lDAk3bP0ZWbc=
+			Fd3rDT4qlZgoLaXwsprUCEhFqvDFSLi6EhGcemxamfQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zq+VAksH4BohOWsYtgHwk2+xTI8=
+			emcsrX6BYeNOZK8UlHTqunBD8vI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5od5VPt9k8pO5omp8ypFgDwBCvZXzoTSGE3cl6cxZCs=
+			8d7qA5MXBaJYGs456/21DEouoN3pyrKUO0u+CR/k9eU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ujPJaOIjPWaTAE9++rXSs41+cg=
+			CRCTwyF6YR8xkFbyzIFxWqm4Hy8=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3UTXEwJEeSzWJBGVp3Rf1oUZpY98ko63PDMKNr8t30=
+			yxKH4Ul46n6iH1MLUKhXRt8P5WWcabzufK4BMmqfT8E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			86IypU9UQgl6yUS8N4Vt1IhuFZU=
+			uvJGsjsqCX6R1ky4TcwKSgpSJrg=
 			</data>
 			<key>hash2</key>
 			<data>
-			OitC/IUBhHYuvyUJO7ChXKt47l3ApdXPaqj/+dyTpbw=
+			c34xYVXSZXW0MhueM69cvA/grHV1WK4oo8hfBv2QTCg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zq+VAksH4BohOWsYtgHwk2+xTI8=
+			emcsrX6BYeNOZK8UlHTqunBD8vI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5od5VPt9k8pO5omp8ypFgDwBCvZXzoTSGE3cl6cxZCs=
+			8d7qA5MXBaJYGs456/21DEouoN3pyrKUO0u+CR/k9eU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/arm64-apple-ios-simulator.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ujPJaOIjPWaTAE9++rXSs41+cg=
+			CRCTwyF6YR8xkFbyzIFxWqm4Hy8=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3UTXEwJEeSzWJBGVp3Rf1oUZpY98ko63PDMKNr8t30=
+			yxKH4Ul46n6iH1MLUKhXRt8P5WWcabzufK4BMmqfT8E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pu0ZGazUsjoIVnBqrCA7MJ6iT3Y=
+			0BG3FrMo0UwGsRmwcbSQq+bIKHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			EUZcA9myP4FzpebE+u+XfPaMzGp7WjBLXyw20WSZRyE=
+			J4v8sMCV0463F9nM9G3FGitymxl+QOR909fVSf5NWH0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cp/6xG7aKlXC+GQpEi2tl6UMnm8=
+			t9bntCZTWvfJnED6KqAgR44JpLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			w6Gn2yZAG1VvopiMOcY10+fP2JW5VLteFhxWerD4qC8=
+			b4rxKEMY9Qyxo1y3UgWLkm5PGwI5S3bwRns9qwaSxBI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yv6xU6XZLXLe1IWvN/cIyp5/LnU=
+			czLWTDKeb1Wk8/h27/35jOZeBeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			23tyGxJ7Y9ZD6cpXHA5nnjBKXL6bLEhr6iXV8v8xNcM=
+			y5/1E/hBAtmrZJXsy4ELuWrLxtMFYh8VSsZUN6x7kzE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pu0ZGazUsjoIVnBqrCA7MJ6iT3Y=
+			0BG3FrMo0UwGsRmwcbSQq+bIKHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			EUZcA9myP4FzpebE+u+XfPaMzGp7WjBLXyw20WSZRyE=
+			J4v8sMCV0463F9nM9G3FGitymxl+QOR909fVSf5NWH0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/Jumio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cp/6xG7aKlXC+GQpEi2tl6UMnm8=
+			t9bntCZTWvfJnED6KqAgR44JpLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			w6Gn2yZAG1VvopiMOcY10+fP2JW5VLteFhxWerD4qC8=
+			b4rxKEMY9Qyxo1y3UgWLkm5PGwI5S3bwRns9qwaSxBI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Jumio.framework/Modules/module.modulemap</key>
@@ -465,11 +465,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9W5KY4M/5LSRvbMbYKcMWpnnjFk=
+			fmknHbpyM8qg8x88cFobZZQaNyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			NVrGehg6vDmGMMwo4PTN+VGX4rl54zcKM9Hsl7jTPPM=
+			Upvy/Npf21P05sdp4kX9Xs6U+DfHiJpi/YLUmF8NOSc=
 			</data>
 		</dict>
 	</dict>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/JumioLiveness.framework/Headers/JumioLiveness-Swift.h</key>
 		<data>
-		qriPj5HJE3t/PkeQRgJfBA/Lcos=
+		fGUsxo1mMLuy3W6BQV6+mE7szY0=
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Headers/JumioLiveness.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Info.plist</key>
 		<data>
-		EsWyktqmCfm/K3IOWd7d/dns8wQ=
+		zb+qTXodHqBJdBQ2cxi0CPzo+/0=
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/JumioLiveness</key>
 		<data>
-		mhkBbHvGjVLMKY/xB8IjbqWv86I=
+		Dtf/ImpLdp2bFajkSuu4whjAuIQ=
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RdHpOhRDIO66npaM/FvqCzvoV8U=
+		UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RdHpOhRDIO66npaM/FvqCzvoV8U=
+		UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/Modules/module.modulemap</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64/JumioLiveness.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Zqrho0BeJ2JExlEgLooaeFu/qvY=
+		8R1UvjUJN4iqWOIM6JkXaDEx6SM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Headers/JumioLiveness-Swift.h</key>
 		<data>
-		2RmPXltsO6Pxl7SyQFV9Lyb5TLc=
+		DMWwL3/Dzxx9eRteLBs26gIqYMU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Headers/JumioLiveness.h</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Info.plist</key>
 		<data>
-		ManmHFX8dNu7B3pOpHPdmn0YN7o=
+		ZDNG1MLf5iMzhBUkaIxyAsDLktw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/JumioLiveness</key>
 		<data>
-		WU7+tctsRI3CzPw26u2wooUAHH8=
+		J0pLTVUf784scq6yEsLLrzAfe+I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8Eek+ScGCq6ED1napnUjm6SL5U=
+		274PcU/TzxOpVkD5Je7d6YRt+Kc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		F/WsTKrg/XNESsD6iF0QhACevnI=
+		B35SDQuWIjeq5F0/I8usuu35BLo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,15 +74,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		F/WsTKrg/XNESsD6iF0QhACevnI=
+		B35SDQuWIjeq5F0/I8usuu35BLo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8Eek+ScGCq6ED1napnUjm6SL5U=
+		274PcU/TzxOpVkD5Je7d6YRt+Kc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+		ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+		ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CF6HNurilg5EFJg3zewtfEPojBI=
+		tT85D2Oh8zoX/+SmGcmPUcaDC+s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qriPj5HJE3t/PkeQRgJfBA/Lcos=
+			fGUsxo1mMLuy3W6BQV6+mE7szY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WU7678XvMpm8+Trp55duwAyJ7AbsFz1KpK/1EM8GKiQ=
+			/q82V/3ljv4A1qZnmj1v+cs1ha2LiUenTgDcstmD91Y=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioLiveness.framework/Headers/JumioLiveness.h</key>
@@ -133,33 +133,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EsWyktqmCfm/K3IOWd7d/dns8wQ=
+			zb+qTXodHqBJdBQ2cxi0CPzo+/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3kTJDFL0IiXm4GC6FNhqw5bSke/mSRINAVcwPLVVgTA=
+			o/8TvbFNDTsfS3kwijhWnaDJdjLHR9lRn13ZK09WRD4=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioLiveness.framework/JumioLiveness</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mhkBbHvGjVLMKY/xB8IjbqWv86I=
+			Dtf/ImpLdp2bFajkSuu4whjAuIQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			XkY+cLgKd1laeYIMbnzGREJfUHIzmbUCkMWDA2n0Zos=
+			YiDjm3UyK+Ek4TLmu9DN65RyDeKusQx+b/7l0IyCOkU=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RdHpOhRDIO66npaM/FvqCzvoV8U=
+			UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			AUthYkrWD34HLk/A7pxJGKEF+u/EBnn+YWchFabEYjI=
+			nLKc09J1qyznO4/Q9sv4ibIExdXBUqajOxWt9VluTsg=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RdHpOhRDIO66npaM/FvqCzvoV8U=
+			UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			AUthYkrWD34HLk/A7pxJGKEF+u/EBnn+YWchFabEYjI=
+			nLKc09J1qyznO4/Q9sv4ibIExdXBUqajOxWt9VluTsg=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioLiveness.framework/Modules/module.modulemap</key>
@@ -210,22 +210,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zqrho0BeJ2JExlEgLooaeFu/qvY=
+			8R1UvjUJN4iqWOIM6JkXaDEx6SM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ewC2IUyAOJ9GX0yX/mlgpuUdNkSSpuuj2966+21WpaQ=
+			xms3DBeYSYOpLGCoaXbLjg9A06q4RJM/ExZAPvhl0Rg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Headers/JumioLiveness-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2RmPXltsO6Pxl7SyQFV9Lyb5TLc=
+			DMWwL3/Dzxx9eRteLBs26gIqYMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hNdGvgX0OrlAerh/OSXhTlFMQNdmFm19Ef7eH7HmnU8=
+			MQpd/nW29+ooNaTEEvv2bYKJCW069RQhuVMLxoeowkE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Headers/JumioLiveness.h</key>
@@ -243,44 +243,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ManmHFX8dNu7B3pOpHPdmn0YN7o=
+			ZDNG1MLf5iMzhBUkaIxyAsDLktw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OBCHbN64WtRE8SIBQNxYokQ/ueDEee+9/IoniizOTxo=
+			jPZGkxo69wINt52H3lBqMDde5bfL5dvJeq/RBBoS+is=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/JumioLiveness</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WU7+tctsRI3CzPw26u2wooUAHH8=
+			J0pLTVUf784scq6yEsLLrzAfe+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			/HWBt1zs0ATAKNXRASAyp2VJBu7YU7aqGnoTgV4a+Ew=
+			UMJ/ZBv6ZZhWBWXgP2Hh01Km8y1duplEbO4Aj91FvY0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i8Eek+ScGCq6ED1napnUjm6SL5U=
+			274PcU/TzxOpVkD5Je7d6YRt+Kc=
 			</data>
 			<key>hash2</key>
 			<data>
-			X9P8VVn8ZnB8TVdBs8dS+CvdNnNONSSYrtIAACukS2Y=
+			omJ3M51SGJ4hW++OdnH6b+VO6ykLz0be3xwluFx9EsA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F/WsTKrg/XNESsD6iF0QhACevnI=
+			B35SDQuWIjeq5F0/I8usuu35BLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			F6OpMCnWGV6WIt20TBnOCZgOIXeN47tOtbG2oJyWbTk=
+			sKdz0wBDINdcwtdgq6YBQFEUC3ysgjbXLGyYVcQq02s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -298,33 +298,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F/WsTKrg/XNESsD6iF0QhACevnI=
+			B35SDQuWIjeq5F0/I8usuu35BLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			F6OpMCnWGV6WIt20TBnOCZgOIXeN47tOtbG2oJyWbTk=
+			sKdz0wBDINdcwtdgq6YBQFEUC3ysgjbXLGyYVcQq02s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i8Eek+ScGCq6ED1napnUjm6SL5U=
+			274PcU/TzxOpVkD5Je7d6YRt+Kc=
 			</data>
 			<key>hash2</key>
 			<data>
-			X9P8VVn8ZnB8TVdBs8dS+CvdNnNONSSYrtIAACukS2Y=
+			omJ3M51SGJ4hW++OdnH6b+VO6ykLz0be3xwluFx9EsA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+			ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 			</data>
 			<key>hash2</key>
 			<data>
-			oaPF/Y29dCY+05DVB49ex+DZfbR9GmuuWLbWaw66caw=
+			zNym3xpXCvD3BCK6KcuNkgvtNLIFYlFUDUphlSsgZyM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/JumioLiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -342,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LtN8B7HO4LQHyaYwVGt4xd5O/bk=
+			ENXCJ2XxTv/7KSOpWqWIV8fy68g=
 			</data>
 			<key>hash2</key>
 			<data>
-			oaPF/Y29dCY+05DVB49ex+DZfbR9GmuuWLbWaw66caw=
+			zNym3xpXCvD3BCK6KcuNkgvtNLIFYlFUDUphlSsgZyM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioLiveness.framework/Modules/module.modulemap</key>
@@ -375,11 +375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CF6HNurilg5EFJg3zewtfEPojBI=
+			tT85D2Oh8zoX/+SmGcmPUcaDC+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			1hHnBmGBMWtnHrmn+G4i1ob6pgbNJ+ZGyswzFgh0CV4=
+			d0WpICZJG89gdfsFIbJsPdI46/MxaxB+pT4C60RPi1A=
 			</data>
 		</dict>
 	</dict>

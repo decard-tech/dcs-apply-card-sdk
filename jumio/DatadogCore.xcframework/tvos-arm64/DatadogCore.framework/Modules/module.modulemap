@@ -1,7 +1,7 @@
 framework module DatadogCore {
   umbrella header "DatadogCore.h"
-
   export *
+
   module * { export * }
 }
 

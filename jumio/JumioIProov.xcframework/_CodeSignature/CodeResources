@@ -14,19 +14,19 @@
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Info.plist</key>
 		<data>
-		SC7HwhgfripAUipoLpsbsaF+yKI=
+		4/vuIwlD4sEocTscEuIxQFuW69Q=
 		</data>
 		<key>ios-arm64/JumioIProov.framework/JumioIProov</key>
 		<data>
-		lGesmqDU242RGRx5I/MkN5Cq1XE=
+		xOl9D3XvyzlMHA+A7jfyW7nHE1c=
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+		4Zo+E95eJEcEgptuYWnkIv/iWQY=
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XyUGugbvzGAYwPxAMff+10kWdyM=
+		Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XyUGugbvzGAYwPxAMff+10kWdyM=
+		Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 		</data>
 		<key>ios-arm64/JumioIProov.framework/Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64/JumioIProov.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ptUVmImETp9GWaM2JuED7cTeYnU=
+		g2yicVWJLS1AkV4v9VpI42h0KNI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Headers/JumioIProov-Swift.h</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Info.plist</key>
 		<data>
-		IF3mv5kRkLudPLK8i2cjEkYg0fE=
+		O8QPnvpspS5T74UIYh6ZqkyvG8E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/JumioIProov</key>
 		<data>
-		R7B13FvUb8M1oDlF4HuevSOc0Bc=
+		5kxyij8DWMrinhXw8jSgjjanwTc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+		4Zo+E95eJEcEgptuYWnkIv/iWQY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		n3zrEVEnQxTbf1cx9V/CeNHn+x0=
+		WUk8NIF7Be5fikDYp/KomzZrhj4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,15 +74,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n3zrEVEnQxTbf1cx9V/CeNHn+x0=
+		WUk8NIF7Be5fikDYp/KomzZrhj4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+		4Zo+E95eJEcEgptuYWnkIv/iWQY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yX9CupJq35yIa0k9ss3eQQlnST0=
+		I1QmD1nUrjaKY4IRciHCdv2axZ4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yX9CupJq35yIa0k9ss3eQQlnST0=
+		I1QmD1nUrjaKY4IRciHCdv2axZ4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/_CodeSignature/CodeResources</key>
 		<data>
-		+wZj+c5Nvfkg6bmx/UrvyGhJoeg=
+		9VQLRjz4lhY4atnspQBj7HShs1M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -129,44 +129,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SC7HwhgfripAUipoLpsbsaF+yKI=
+			4/vuIwlD4sEocTscEuIxQFuW69Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			o4YJY1OW8VdpT2M4/MvWn0XOeV9BNR+u9RbtQNnA4qE=
+			gg75ZkfFNC64wonE4Sv2ydMoCtJmd2XBQhM78xggji0=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioIProov.framework/JumioIProov</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lGesmqDU242RGRx5I/MkN5Cq1XE=
+			xOl9D3XvyzlMHA+A7jfyW7nHE1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			icGJF/tsRt6SkeytEK5zW+bYdHCpFNpnWOqRBK2EdMU=
+			ZQYn7xY71rVwlHwv8s7DFn/kwsUjxXGwEa+LQwsCMhU=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+			4Zo+E95eJEcEgptuYWnkIv/iWQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vZQkIT0cBsnI4lX0R1IUvGKS4NSEhs/JCqqfn3nE0jY=
+			SBZ5UnYWMtlzXAZm2Wil82A6d984r1hlEc5A9huS+ew=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XyUGugbvzGAYwPxAMff+10kWdyM=
+			Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLZhLwI8XF8GTS5GH5u8cJs0NGdUFoJZKtqsz+A0yFA=
+			KgcOUDbRFySB0ihtRZ+JIGLRgs3EI70eXE/MZ/tEzl8=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XyUGugbvzGAYwPxAMff+10kWdyM=
+			Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLZhLwI8XF8GTS5GH5u8cJs0NGdUFoJZKtqsz+A0yFA=
+			KgcOUDbRFySB0ihtRZ+JIGLRgs3EI70eXE/MZ/tEzl8=
 			</data>
 		</dict>
 		<key>ios-arm64/JumioIProov.framework/Modules/module.modulemap</key>
@@ -206,11 +206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ptUVmImETp9GWaM2JuED7cTeYnU=
+			g2yicVWJLS1AkV4v9VpI42h0KNI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OAknSo5U8xa9rneJmxuJ7vT8cNJm0GGtJg8yTWpqk9I=
+			LQ4NUzLDFo57psAVclZzEpp2svIoGvyyJFDfK/HUqEs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Headers/JumioIProov-Swift.h</key>
@@ -239,44 +239,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IF3mv5kRkLudPLK8i2cjEkYg0fE=
+			O8QPnvpspS5T74UIYh6ZqkyvG8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			NS2mqVlVNAFc37oq7bw7QtPl7PTLSmlvWhfxl5SAF/A=
+			1XjoqbnnEOZFCp1W0JVl8Cc2sIR7jGJcDCfwZmjVmKs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/JumioIProov</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R7B13FvUb8M1oDlF4HuevSOc0Bc=
+			5kxyij8DWMrinhXw8jSgjjanwTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			KVHYL04BPA8zyMfJ02kr83RJNfGdYllrRbmSmVYTRcw=
+			sPVVzT2yrcio46aIZjYOxOuNKgHgt80HrL77wzFglSc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+			4Zo+E95eJEcEgptuYWnkIv/iWQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vZQkIT0cBsnI4lX0R1IUvGKS4NSEhs/JCqqfn3nE0jY=
+			SBZ5UnYWMtlzXAZm2Wil82A6d984r1hlEc5A9huS+ew=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n3zrEVEnQxTbf1cx9V/CeNHn+x0=
+			WUk8NIF7Be5fikDYp/KomzZrhj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			w5YRE/IUXzEjCe0iZaEZ2kHk0d4wtnLt5b1WN6+Zbg0=
+			qIhb5zoWplkIY0Sox3HE8HCvBqZDLnZ5GgliojC74f8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -294,33 +294,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n3zrEVEnQxTbf1cx9V/CeNHn+x0=
+			WUk8NIF7Be5fikDYp/KomzZrhj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			w5YRE/IUXzEjCe0iZaEZ2kHk0d4wtnLt5b1WN6+Zbg0=
+			qIhb5zoWplkIY0Sox3HE8HCvBqZDLnZ5GgliojC74f8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+			4Zo+E95eJEcEgptuYWnkIv/iWQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vZQkIT0cBsnI4lX0R1IUvGKS4NSEhs/JCqqfn3nE0jY=
+			SBZ5UnYWMtlzXAZm2Wil82A6d984r1hlEc5A9huS+ew=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yX9CupJq35yIa0k9ss3eQQlnST0=
+			I1QmD1nUrjaKY4IRciHCdv2axZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			AM+y11Hez6uTGzjRnP/ewy4k1LA5hSA4CZOB3uTdYnc=
+			DTyWIqon9UyT6rc1+so8eGtqVUVH28Mbu2Cqmz34zaY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/JumioIProov.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -338,11 +338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yX9CupJq35yIa0k9ss3eQQlnST0=
+			I1QmD1nUrjaKY4IRciHCdv2axZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			AM+y11Hez6uTGzjRnP/ewy4k1LA5hSA4CZOB3uTdYnc=
+			DTyWIqon9UyT6rc1+so8eGtqVUVH28Mbu2Cqmz34zaY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/JumioIProov.framework/Modules/module.modulemap</key>
@@ -360,11 +360,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+wZj+c5Nvfkg6bmx/UrvyGhJoeg=
+			9VQLRjz4lhY4atnspQBj7HShs1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			E7RZibloc2Oi9xFedHPO+BWazeqluzj1hgMarAIPh/w=
+			mv70BxF6y0P/8LSkjskrL1LiYmzNpRyl3lGXGWiR87Y=
 			</data>
 		</dict>
 	</dict>

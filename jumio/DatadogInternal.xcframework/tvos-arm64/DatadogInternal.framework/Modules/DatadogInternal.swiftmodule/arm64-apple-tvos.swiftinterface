@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-tvos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DatadogInternal
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-tvos12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogInternal
+import CommonCrypto
 import Compression
 import Foundation
 import MachO
@@ -10,6 +10,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import zlib
 public enum CoreLoggerLevel : Swift.Int, Swift.Comparable, Swift.CaseIterable {
   case debug
@@ -39,7 +40,24 @@ extension DatadogInternal.CoreLogger {
 public class HTTPHeadersReader : DatadogInternal.TracePropagationHeadersReader {
   public init(httpHeaderFields: [Swift.String : Swift.String])
   public func read() -> (traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)?
+  public var sampled: Swift.Bool? {
+    get
+  }
   @objc deinit
+}
+public enum ApplicationNotifications {
+  public static var didBecomeActive: Foundation.Notification.Name {
+    get
+  }
+  public static var willResignActive: Foundation.Notification.Name {
+    get
+  }
+  public static var didEnterBackground: Foundation.Notification.Name {
+    get
+  }
+  public static var willEnterForeground: Foundation.Notification.Name {
+    get
+  }
 }
 public struct PerformancePresetOverride {
   public let maxFileSize: Swift.UInt64?
@@ -143,6 +161,12 @@ extension DatadogInternal.InternalExtended {
   }
   public mutating func _internal_mutation(_ mutation: (inout DatadogInternal.InternalExtension<Self>) -> Swift.Void)
 }
+public struct GlobalRUMAttributes : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
+  public let attributes: [DatadogInternal.AttributeKey : any Swift.Encodable]
+  public init(attributes: [DatadogInternal.AttributeKey : any Swift.Encodable])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct DynamicCodingKey : Swift.CodingKey, Swift.Hashable {
   public var stringValue: Swift.String
   public init?(stringValue: Swift.String)
@@ -162,7 +186,12 @@ extension DatadogInternal.DynamicCodingKey : Swift.ExpressibleByStringLiteral {
   public typealias UnicodeScalarLiteralType = Swift.String
 }
 public protocol FeatureRequestBuilder {
-  func request(for events: [DatadogInternal.Event], with context: DatadogInternal.DatadogContext) throws -> Foundation.URLRequest
+  func request(for events: [DatadogInternal.Event], with context: DatadogInternal.DatadogContext, execution: DatadogInternal.ExecutionContext) throws -> Foundation.URLRequest
+}
+public struct ExecutionContext {
+  public let previousResponseCode: Swift.Int?
+  public let attempt: Swift.UInt
+  public init(previousResponseCode: Swift.Int?, attempt: Swift.UInt)
 }
 open class MethodSwizzler<Signature, Override> {
   public init()
@@ -203,11 +232,12 @@ public class HTTPHeadersWriter : DatadogInternal.TracePropagationHeadersWriter {
   public var traceHeaderFields: [Swift.String : Swift.String] {
     get
   }
-  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(sampleRate:)` instead.")
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(samplingRate: Swift.Float)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(sampleRate: Swift.Float = 20)
-  public init(sampler: DatadogInternal.Sampler)
-  public func write(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)
+  public init(samplingStrategy: DatadogInternal.TraceSamplingStrategy, traceContextInjection: DatadogInternal.TraceContextInjection)
+  public func write(traceContext: DatadogInternal.TraceContext)
   @objc deinit
 }
 public protocol Flushable {
@@ -308,6 +338,14 @@ public struct InternalError : Swift.Error, Swift.CustomStringConvertible {
   public let description: Swift.String
   public init(description: Swift.String)
 }
+public struct ObjcException : Swift.Error {
+  public static var rethrow: ((() -> Swift.Void) throws -> Swift.Void)
+  public let error: any Swift.Error
+  public let file: Swift.String
+  public let line: Swift.Int
+}
+@discardableResult
+public func objc_rethrow<T>(_ block: () throws -> T, file: Swift.String = #fileID, line: Swift.Int = #line) throws -> T
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
   public init<T>(_ value: T?)
@@ -325,14 +363,15 @@ extension DatadogInternal.DatadogExtension where ExtendedType == UIKit.UIApplica
 extension UIKit.UIApplication : DatadogInternal.DatadogExtended {
   public typealias ExtendedType = UIKit.UIApplication
 }
-public struct BacktraceReport {
+public struct BacktraceReport : Swift.Codable {
   public let stack: Swift.String
   public let threads: [DatadogInternal.DDThread]
   public let binaryImages: [DatadogInternal.BinaryImage]
   public let wasTruncated: Swift.Bool
   public init(stack: Swift.String, threads: [DatadogInternal.DDThread], binaryImages: [DatadogInternal.BinaryImage], wasTruncated: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public typealias SpanID = DatadogInternal.TraceID
 public struct TraceID : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
   public enum Representation {
     case decimal
@@ -345,9 +384,38 @@ public struct TraceID : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable 
       get
     }
   }
-  public let rawValue: Swift.UInt64
-  public init(rawValue: Swift.UInt64)
-  public typealias RawValue = Swift.UInt64
+  public var rawValue: (Swift.UInt64, Swift.UInt64) {
+    get
+  }
+  public static let invalidId: Swift.UInt64
+  public static let invalid: DatadogInternal.TraceID
+  public var idHi: Swift.UInt64 {
+    get
+  }
+  public var idLo: Swift.UInt64 {
+    get
+  }
+  public var idHiHex: Swift.String {
+    get
+  }
+  public var idLoHex: Swift.String {
+    get
+  }
+  public init(rawValue: (Swift.UInt64, Swift.UInt64))
+  public init(idLo: Swift.UInt64)
+  public init(idHi: Swift.UInt64, idLo: Swift.UInt64)
+  public init()
+  public func toString(representation: DatadogInternal.TraceID.Representation) -> Swift.String
+  public static func == (a: DatadogInternal.TraceID, b: DatadogInternal.TraceID) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias RawValue = (Swift.UInt64, Swift.UInt64)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DatadogInternal.TraceID : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension DatadogInternal.TraceID {
   public init?(_ string: Swift.String, representation: DatadogInternal.TraceID.Representation = .decimal)
@@ -357,7 +425,7 @@ extension DatadogInternal.TraceID : Swift.ExpressibleByIntegerLiteral {
   public typealias IntegerLiteralType = Swift.UInt64
 }
 extension Swift.String {
-  public init(_ traceID: DatadogInternal.TraceID, representation: DatadogInternal.TraceID.Representation = .decimal)
+  public init(_ traceID: DatadogInternal.TraceID, representation: DatadogInternal.TraceID.Representation)
 }
 public protocol TraceIDGenerator {
   func generate() -> DatadogInternal.TraceID
@@ -384,7 +452,7 @@ public enum W3CHTTPHeaders {
     public static let tracestatePairSeparator: Swift.String
   }
 }
-public struct DDThread : Swift.Codable {
+public struct DDThread : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
   public let name: Swift.String
   public let stack: Swift.String
   public var crashed: Swift.Bool
@@ -419,6 +487,10 @@ public enum TracingHTTPHeaders {
   public static let parentSpanIDField: Swift.String
   public static let samplingPriorityField: Swift.String
   public static let originField: Swift.String
+  public static let tagsField: Swift.String
+  public enum TagKeys {
+    public static let traceIDHi: Swift.String
+  }
 }
 public enum WebViewMessage {
   public enum EventType : Swift.String, Swift.Decodable {
@@ -430,6 +502,7 @@ public enum WebViewMessage {
     case error
     case longTask
     case record
+    case telemetry
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -443,6 +516,7 @@ public enum WebViewMessage {
   }
   case log(DatadogInternal.WebViewMessage.Event)
   case rum(DatadogInternal.WebViewMessage.Event)
+  case telemetry(DatadogInternal.WebViewMessage.Event)
   case record(DatadogInternal.WebViewMessage.Event, DatadogInternal.WebViewMessage.View)
 }
 extension DatadogInternal.WebViewMessage : Swift.Decodable {
@@ -456,6 +530,25 @@ public struct LaunchTime : Swift.Codable, Swift.Equatable, DatadogInternal.Passt
   public static func == (a: DatadogInternal.LaunchTime, b: DatadogInternal.LaunchTime) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct TraceContext : Swift.Equatable {
+  public let traceID: DatadogInternal.TraceID
+  public let spanID: DatadogInternal.SpanID
+  public let parentSpanID: DatadogInternal.SpanID?
+  public let sampleRate: Swift.Float
+  public let isKept: Swift.Bool
+  public init(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?, sampleRate: Swift.Float, isKept: Swift.Bool)
+  public static func == (a: DatadogInternal.TraceContext, b: DatadogInternal.TraceContext) -> Swift.Bool
+}
+public let profiler: any DatadogInternal.BenchmarkProfiler
+public protocol BenchmarkProfiler {
+  func tracer(operation: @autoclosure () -> Swift.String) -> any DatadogInternal.BenchmarkTracer
+}
+public protocol BenchmarkTracer {
+  func startSpan(named: @autoclosure () -> Swift.String) -> any DatadogInternal.BenchmarkSpan
+}
+public protocol BenchmarkSpan {
+  func stop()
 }
 public protocol FeatureMessageReceiver {
   @discardableResult
@@ -490,23 +583,23 @@ public struct ConfigurationTelemetry : Swift.Equatable {
   public let forwardErrorsToLogs: Swift.Bool?
   public let initializationType: Swift.String?
   public let mobileVitalsUpdatePeriod: Swift.Int64?
-  public let premiumSampleRate: Swift.Int64?
   public let reactNativeVersion: Swift.String?
   public let reactVersion: Swift.String?
-  public let replaySampleRate: Swift.Int64?
   public let sessionReplaySampleRate: Swift.Int64?
   public let sessionSampleRate: Swift.Int64?
   public let silentMultipleInit: Swift.Bool?
+  public let startRecordingImmediately: Swift.Bool?
   public let startSessionReplayRecordingManually: Swift.Bool?
   public let telemetryConfigurationSampleRate: Swift.Int64?
   public let telemetrySampleRate: Swift.Int64?
+  public let tracerAPI: Swift.String?
+  public let tracerAPIVersion: Swift.String?
   public let traceSampleRate: Swift.Int64?
   public let trackBackgroundEvents: Swift.Bool?
   public let trackCrossPlatformLongTasks: Swift.Bool?
   public let trackErrors: Swift.Bool?
   public let trackFlutterPerformance: Swift.Bool?
   public let trackFrustrations: Swift.Bool?
-  public let trackInteractions: Swift.Bool?
   public let trackLongTask: Swift.Bool?
   public let trackNativeErrors: Swift.Bool?
   public let trackNativeLongTasks: Swift.Bool?
@@ -517,10 +610,8 @@ public struct ConfigurationTelemetry : Swift.Equatable {
   public let trackUserInteractions: Swift.Bool?
   public let trackViewsManually: Swift.Bool?
   public let unityVersion: Swift.String?
-  public let useAllowedTracingOrigins: Swift.Bool?
   public let useAllowedTracingUrls: Swift.Bool?
   public let useBeforeSend: Swift.Bool?
-  public let useCrossSiteSessionCookie: Swift.Bool?
   public let useExcludedActivityUrls: Swift.Bool?
   public let useFirstPartyHosts: Swift.Bool?
   public let useLocalEncryption: Swift.Bool?
@@ -530,33 +621,56 @@ public struct ConfigurationTelemetry : Swift.Equatable {
   public let useWorkerUrl: Swift.Bool?
   public static func == (a: DatadogInternal.ConfigurationTelemetry, b: DatadogInternal.ConfigurationTelemetry) -> Swift.Bool
 }
+public struct MetricTelemetry {
+  public static let defaultSampleRate: Swift.Float
+  public let name: Swift.String
+  public let attributes: [Swift.String : any Swift.Encodable]
+  public let sampleRate: Swift.Float
+}
+public enum UsageTelemetry {
+  case setTrackingConsent(DatadogInternal.TrackingConsent)
+  case stopSession
+  case startView
+  case addAction
+  case addError
+  case setGlobalContext
+  case setUser
+  case addFeatureFlagEvaluation
+  case addViewLoadingTime(DatadogInternal.UsageTelemetry.ViewLoadingTime)
+  public struct ViewLoadingTime {
+    public let noActiveView: Swift.Bool
+    public let noView: Swift.Bool
+    public let overwritten: Swift.Bool
+  }
+}
 public enum TelemetryMessage {
   case debug(id: Swift.String, message: Swift.String, attributes: [Swift.String : any Swift.Encodable]?)
-  case error(id: Swift.String, message: Swift.String, kind: Swift.String?, stack: Swift.String?)
+  case error(id: Swift.String, message: Swift.String, kind: Swift.String, stack: Swift.String)
   case configuration(DatadogInternal.ConfigurationTelemetry)
-  case metric(name: Swift.String, attributes: [Swift.String : any Swift.Encodable])
+  case metric(DatadogInternal.MetricTelemetry)
+  case usage(DatadogInternal.UsageTelemetry)
 }
 public protocol Telemetry {
   func send(telemetry: DatadogInternal.TelemetryMessage)
 }
 extension DatadogInternal.Telemetry {
-  public func startMethodCalled(operationName: Swift.String, callerClass: Swift.String, samplingRate: Swift.Float = 100.0) -> DatadogInternal.MethodCalledTrace?
-  public func stopMethodCalled(_ metric: DatadogInternal.MethodCalledTrace?, isSuccessful: Swift.Bool = true)
+  public func startMethodCalled(operationName: Swift.String, callerClass: Swift.String, headSampleRate: Swift.Float) -> DatadogInternal.MethodCalledTrace?
+  public func stopMethodCalled(_ metric: DatadogInternal.MethodCalledTrace?, isSuccessful: Swift.Bool = true, tailSampleRate: Swift.Float = MetricTelemetry.defaultSampleRate)
 }
 public struct MethodCalledTrace {
 }
 extension DatadogInternal.Telemetry {
   public func debug(id: Swift.String, message: Swift.String, attributes: [Swift.String : any Swift.Encodable]? = nil)
-  public func error(id: Swift.String, message: Swift.String, kind: Swift.String?, stack: Swift.String?)
+  public func error(id: Swift.String, message: Swift.String, kind: Swift.String, stack: Swift.String)
   public func report(configuration: DatadogInternal.ConfigurationTelemetry)
-  public func debug(_ message: Swift.String, attributes: [Swift.String : any Swift.Encodable]? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public func error(_ message: Swift.String, kind: Swift.String? = nil, stack: Swift.String? = nil, file: Swift.String = #file, line: Swift.Int = #line)
-  public func error(_ error: DatadogInternal.DDError, file: Swift.String = #file, line: Swift.Int = #line)
-  public func error(_ message: Swift.String, error: DatadogInternal.DDError, file: Swift.String = #file, line: Swift.Int = #line)
-  public func error(_ error: any Swift.Error, file: Swift.String = #file, line: Swift.Int = #line)
-  public func error(_ message: Swift.String, error: any Swift.Error, file: Swift.String = #file, line: Swift.Int = #line)
-  public func configuration(actionNameAttribute: Swift.String? = nil, allowFallbackToLocalStorage: Swift.Bool? = nil, allowUntrustedEvents: Swift.Bool? = nil, appHangThreshold: Swift.Int64? = nil, backgroundTasksEnabled: Swift.Bool? = nil, batchProcessingLevel: Swift.Int64? = nil, batchSize: Swift.Int64? = nil, batchUploadFrequency: Swift.Int64? = nil, dartVersion: Swift.String? = nil, defaultPrivacyLevel: Swift.String? = nil, forwardErrorsToLogs: Swift.Bool? = nil, initializationType: Swift.String? = nil, mobileVitalsUpdatePeriod: Swift.Int64? = nil, premiumSampleRate: Swift.Int64? = nil, reactNativeVersion: Swift.String? = nil, reactVersion: Swift.String? = nil, replaySampleRate: Swift.Int64? = nil, sessionReplaySampleRate: Swift.Int64? = nil, sessionSampleRate: Swift.Int64? = nil, silentMultipleInit: Swift.Bool? = nil, startSessionReplayRecordingManually: Swift.Bool? = nil, telemetryConfigurationSampleRate: Swift.Int64? = nil, telemetrySampleRate: Swift.Int64? = nil, traceSampleRate: Swift.Int64? = nil, trackBackgroundEvents: Swift.Bool? = nil, trackCrossPlatformLongTasks: Swift.Bool? = nil, trackErrors: Swift.Bool? = nil, trackFlutterPerformance: Swift.Bool? = nil, trackFrustrations: Swift.Bool? = nil, trackInteractions: Swift.Bool? = nil, trackLongTask: Swift.Bool? = nil, trackNativeErrors: Swift.Bool? = nil, trackNativeLongTasks: Swift.Bool? = nil, trackNativeViews: Swift.Bool? = nil, trackNetworkRequests: Swift.Bool? = nil, trackResources: Swift.Bool? = nil, trackSessionAcrossSubdomains: Swift.Bool? = nil, trackUserInteractions: Swift.Bool? = nil, trackViewsManually: Swift.Bool? = nil, unityVersion: Swift.String? = nil, useAllowedTracingOrigins: Swift.Bool? = nil, useAllowedTracingUrls: Swift.Bool? = nil, useBeforeSend: Swift.Bool? = nil, useCrossSiteSessionCookie: Swift.Bool? = nil, useExcludedActivityUrls: Swift.Bool? = nil, useFirstPartyHosts: Swift.Bool? = nil, useLocalEncryption: Swift.Bool? = nil, useProxy: Swift.Bool? = nil, useSecureSessionCookie: Swift.Bool? = nil, useTracing: Swift.Bool? = nil, useWorkerUrl: Swift.Bool? = nil)
-  public func metric(name: Swift.String, attributes: [Swift.String : any Swift.Encodable])
+  public func debug(_ message: Swift.String, attributes: [Swift.String : any Swift.Encodable]? = nil, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func error(_ message: Swift.String, kind: Swift.String? = nil, stack: Swift.String? = nil, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func error(_ error: DatadogInternal.DDError, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func error(_ message: Swift.String, error: DatadogInternal.DDError, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func error(_ error: any Swift.Error, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func error(_ message: Swift.String, error: any Swift.Error, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public func configuration(actionNameAttribute: Swift.String? = nil, allowFallbackToLocalStorage: Swift.Bool? = nil, allowUntrustedEvents: Swift.Bool? = nil, appHangThreshold: Swift.Int64? = nil, backgroundTasksEnabled: Swift.Bool? = nil, batchProcessingLevel: Swift.Int64? = nil, batchSize: Swift.Int64? = nil, batchUploadFrequency: Swift.Int64? = nil, dartVersion: Swift.String? = nil, defaultPrivacyLevel: Swift.String? = nil, forwardErrorsToLogs: Swift.Bool? = nil, initializationType: Swift.String? = nil, mobileVitalsUpdatePeriod: Swift.Int64? = nil, reactNativeVersion: Swift.String? = nil, reactVersion: Swift.String? = nil, sessionReplaySampleRate: Swift.Int64? = nil, sessionSampleRate: Swift.Int64? = nil, silentMultipleInit: Swift.Bool? = nil, startRecordingImmediately: Swift.Bool? = nil, startSessionReplayRecordingManually: Swift.Bool? = nil, telemetryConfigurationSampleRate: Swift.Int64? = nil, telemetrySampleRate: Swift.Int64? = nil, tracerAPI: Swift.String? = nil, tracerAPIVersion: Swift.String? = nil, traceSampleRate: Swift.Int64? = nil, trackBackgroundEvents: Swift.Bool? = nil, trackCrossPlatformLongTasks: Swift.Bool? = nil, trackErrors: Swift.Bool? = nil, trackFlutterPerformance: Swift.Bool? = nil, trackFrustrations: Swift.Bool? = nil, trackLongTask: Swift.Bool? = nil, trackNativeErrors: Swift.Bool? = nil, trackNativeLongTasks: Swift.Bool? = nil, trackNativeViews: Swift.Bool? = nil, trackNetworkRequests: Swift.Bool? = nil, trackResources: Swift.Bool? = nil, trackSessionAcrossSubdomains: Swift.Bool? = nil, trackUserInteractions: Swift.Bool? = nil, trackViewsManually: Swift.Bool? = nil, unityVersion: Swift.String? = nil, useAllowedTracingUrls: Swift.Bool? = nil, useBeforeSend: Swift.Bool? = nil, useExcludedActivityUrls: Swift.Bool? = nil, useFirstPartyHosts: Swift.Bool? = nil, useLocalEncryption: Swift.Bool? = nil, useProxy: Swift.Bool? = nil, useSecureSessionCookie: Swift.Bool? = nil, useTracing: Swift.Bool? = nil, useWorkerUrl: Swift.Bool? = nil)
+  public func metric(name: Swift.String, attributes: [Swift.String : any Swift.Encodable], sampleRate: Swift.Float = MetricTelemetry.defaultSampleRate)
 }
 public struct NOPTelemetry : DatadogInternal.Telemetry {
   public init()
@@ -569,6 +683,11 @@ extension DatadogInternal.DatadogCoreProtocol {
     get
   }
 }
+extension DatadogInternal.DatadogCoreProtocol {
+  public var storage: any DatadogInternal.Storage {
+    get
+  }
+}
 extension DatadogInternal.ConfigurationTelemetry {
   public func merged(with other: DatadogInternal.ConfigurationTelemetry) -> DatadogInternal.ConfigurationTelemetry
 }
@@ -578,8 +697,7 @@ public struct DataFormat {
 }
 public protocol DatadogURLSessionHandler {
   var firstPartyHosts: DatadogInternal.FirstPartyHosts { get }
-  func modify(request: Foundation.URLRequest, headerTypes: Swift.Set<DatadogInternal.TracingHeaderType>) -> Foundation.URLRequest
-  func traceContext() -> DatadogInternal.TraceContext?
+  func modify(request: Foundation.URLRequest, headerTypes: Swift.Set<DatadogInternal.TracingHeaderType>) -> (Foundation.URLRequest, DatadogInternal.TraceContext?)
   func interceptionDidStart(interception: DatadogInternal.URLSessionTaskInterception)
   func interceptionDidComplete(interception: DatadogInternal.URLSessionTaskInterception)
 }
@@ -635,6 +753,32 @@ extension DatadogInternal.DatadogExtended {
     set
   }
 }
+extension Swift.Array : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = Swift.Array<Element>
+}
+extension Swift.Dictionary : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = Swift.Dictionary<Key, Value>
+}
+public protocol SysctlProviding {
+  func model() throws -> Swift.String
+  func osBuild() throws -> Swift.String
+  func systemBootTime() throws -> Foundation.TimeInterval
+  func isDebugging() throws -> Swift.Bool
+}
+public struct Sysctl : DatadogInternal.SysctlProviding {
+  public init()
+  public func model() throws -> Swift.String
+  public func osBuild() throws -> Swift.String
+  public func systemBootTime() throws -> Foundation.TimeInterval
+  public func isDebugging() throws -> Swift.Bool
+}
+public struct ImmutableRequest {
+  public let url: Foundation.URL?
+  public let httpMethod: Swift.String?
+  public let ddOriginHeaderValue: Swift.String?
+  public let unsafeOriginal: Foundation.URLRequest
+  public init(request: Foundation.URLRequest)
+}
 public protocol UploadPerformancePreset {
   var initialUploadDelay: Foundation.TimeInterval { get }
   var minUploadDelay: Foundation.TimeInterval { get }
@@ -645,6 +789,7 @@ public enum AppState : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
   case active
   case inactive
   case background
+  case terminated
   public var isRunningInForeground: Swift.Bool {
     get
   }
@@ -691,8 +836,9 @@ public struct AppStateHistory : Swift.Codable, Swift.Equatable, DatadogInternal.
 extension DatadogInternal.AppStateHistory {
   public static func active(since date: Foundation.Date) -> DatadogInternal.AppStateHistory
 }
+public typealias ApplicationState = UIKit.UIApplication.State
 extension DatadogInternal.AppState {
-  public init(_ state: UIKit.UIApplication.State)
+  public init(_ state: DatadogInternal.ApplicationState)
 }
 @_hasMissingDesignatedInitializers final public class CoreRegistry {
   public static var `default`: any DatadogInternal.DatadogCoreProtocol {
@@ -713,11 +859,12 @@ public class W3CHTTPHeadersWriter : DatadogInternal.TracePropagationHeadersWrite
   public var traceHeaderFields: [Swift.String : Swift.String] {
     get
   }
-  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(sampleRate:)` instead.")
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(samplingRate: Swift.Float)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(sampleRate: Swift.Float = 20, tracestate: [Swift.String : Swift.String] = [:])
-  public init(sampler: DatadogInternal.Sampler, tracestate: [Swift.String : Swift.String])
-  public func write(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)
+  public init(samplingStrategy: DatadogInternal.TraceSamplingStrategy, tracestate: [Swift.String : Swift.String] = [:], traceContextInjection: DatadogInternal.TraceContextInjection = .all)
+  public func write(traceContext: DatadogInternal.TraceContext)
   @objc deinit
 }
 public struct DeviceInfo : Swift.Codable, Swift.Equatable, DatadogInternal.PassthroughAnyCodable {
@@ -728,34 +875,103 @@ public struct DeviceInfo : Swift.Codable, Swift.Equatable, DatadogInternal.Passt
   public let osVersion: Swift.String
   public let osBuildNumber: Swift.String?
   public let architecture: Swift.String
-  public init(name: Swift.String, model: Swift.String, osName: Swift.String, osVersion: Swift.String, osBuildNumber: Swift.String?, architecture: Swift.String)
+  public let isSimulator: Swift.Bool
+  public let vendorId: Swift.String?
+  public let isDebugging: Swift.Bool
+  public let systemBootTime: Foundation.TimeInterval
+  public init(name: Swift.String, model: Swift.String, osName: Swift.String, osVersion: Swift.String, osBuildNumber: Swift.String?, architecture: Swift.String, isSimulator: Swift.Bool, vendorId: Swift.String?, isDebugging: Swift.Bool, systemBootTime: Foundation.TimeInterval)
   public static func == (a: DatadogInternal.DeviceInfo, b: DatadogInternal.DeviceInfo) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 extension DatadogInternal.DeviceInfo {
-  public init(processInfo: Foundation.ProcessInfo = .processInfo, device: UIKit.UIDevice = .current)
+  public init(processInfo: Foundation.ProcessInfo = .processInfo, device: DatadogInternal._UIDevice = .dd.current, sysctl: any DatadogInternal.SysctlProviding = Sysctl())
+}
+public typealias _UIDevice = UIKit.UIDevice
+extension UIKit.UIDevice : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = UIKit.UIDevice
+}
+extension DatadogInternal.DatadogExtension where ExtendedType == UIKit.UIDevice {
+  public static var current: UIKit.UIDevice {
+    get
+  }
 }
 @available(*, deprecated, renamed: "B3HTTPHeadersReader")
 public typealias OTelHTTPHeadersReader = DatadogInternal.B3HTTPHeadersReader
 public class B3HTTPHeadersReader : DatadogInternal.TracePropagationHeadersReader {
   public init(httpHeaderFields: [Swift.String : Swift.String])
   public func read() -> (traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)?
+  public var sampled: Swift.Bool? {
+    get
+  }
   @objc deinit
 }
 public struct InternalLogger : DatadogInternal.CoreLogger {
   public init(dateProvider: any DatadogInternal.DateProvider, timeZone: Foundation.TimeZone, printFunction: @escaping (Swift.String, DatadogInternal.CoreLoggerLevel) -> Swift.Void, verbosityLevel: @escaping () -> DatadogInternal.CoreLoggerLevel?)
   public func log(_ level: DatadogInternal.CoreLoggerLevel, message: @autoclosure () -> Swift.String, error: (any Swift.Error)?)
 }
-public protocol DateFormatterType {
+public enum BundleType : Swift.String {
+  case iOSApp
+  case iOSAppExtension
+  public init(bundle: Foundation.Bundle)
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol DateFormatterType : Swift.Sendable {
   func string(from date: Foundation.Date) -> Swift.String
+  func date(from string: Swift.String) -> Foundation.Date?
 }
-extension Foundation.ISO8601DateFormatter : DatadogInternal.DateFormatterType {
+extension Foundation.ISO8601DateFormatter : DatadogInternal.DateFormatterType, @unchecked Swift.Sendable {
 }
-extension Foundation.DateFormatter : DatadogInternal.DateFormatterType {
+extension Foundation.DateFormatter : DatadogInternal.DateFormatterType, @unchecked Swift.Sendable {
 }
 public let iso8601DateFormatter: any DatadogInternal.DateFormatterType
 public func presentationDateFormatter(withTimeZone timeZone: Foundation.TimeZone = .current) -> any DatadogInternal.DateFormatterType
+public struct SpanID : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
+  public static let invalidId: Swift.UInt64
+  public static let invalid: DatadogInternal.SpanID
+  public enum Representation {
+    case decimal
+    case hexadecimal
+    case hexadecimal16Chars
+    case hexadecimal32Chars
+    public static func == (a: DatadogInternal.SpanID.Representation, b: DatadogInternal.SpanID.Representation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let rawValue: Swift.UInt64
+  public init(rawValue: Swift.UInt64)
+  public init()
+  public func toString(representation: DatadogInternal.SpanID.Representation) -> Swift.String
+  public typealias RawValue = Swift.UInt64
+}
+extension DatadogInternal.SpanID {
+  public init?(_ string: Swift.String, representation: DatadogInternal.SpanID.Representation = .decimal)
+}
+extension DatadogInternal.SpanID : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.UInt64)
+  public typealias IntegerLiteralType = Swift.UInt64
+}
+extension Swift.String {
+  public init(_ spanID: DatadogInternal.SpanID, representation: DatadogInternal.SpanID.Representation = .decimal)
+}
+public protocol SpanIDGenerator {
+  func generate() -> DatadogInternal.SpanID
+}
+public struct DefaultSpanIDGenerator : DatadogInternal.SpanIDGenerator {
+  public static let defaultGenerationRange: (Swift.ClosedRange<Swift.UInt64>)
+  public init(range: Swift.ClosedRange<Swift.UInt64> = Self.defaultGenerationRange)
+  public func generate() -> DatadogInternal.SpanID
+}
+extension DatadogInternal.SpanID : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 final public class FeatureBaggage {
   public init<Value>(_ value: Value) where Value : Swift.Encodable
   final public func encode() throws -> Any?
@@ -779,8 +995,8 @@ extension DatadogInternal._AnyDecodable {
 extension DatadogInternal.AnyDecodable : Swift.Equatable {
   public static func == (lhs: DatadogInternal.AnyDecodable, rhs: DatadogInternal.AnyDecodable) -> Swift.Bool
 }
-public struct DDCrashReport : Swift.Codable {
-  public struct Meta : Swift.Codable {
+public struct DDCrashReport : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
+  public struct Meta : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
     public let incidentIdentifier: Swift.String?
     public let process: Swift.String?
     public let parentProcess: Swift.String?
@@ -807,7 +1023,7 @@ public struct DDCrashReport : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class URLSessionTaskInterception {
   final public let identifier: Foundation.UUID
-  public var request: Foundation.URLRequest {
+  public var request: DatadogInternal.ImmutableRequest {
     get
   }
   final public let isFirstPartyRequest: Swift.Bool
@@ -832,12 +1048,6 @@ public struct DDCrashReport : Swift.Codable {
     get
   }
   @objc deinit
-}
-public struct TraceContext {
-  public let traceID: DatadogInternal.TraceID
-  public let spanID: DatadogInternal.SpanID
-  public let parentSpanID: DatadogInternal.SpanID?
-  public init(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID? = nil)
 }
 public struct ResourceCompletion {
   public let httpResponse: Foundation.HTTPURLResponse?
@@ -872,7 +1082,7 @@ extension Foundation.Thread {
     get
   }
 }
-public protocol BacktraceReporting {
+public protocol BacktraceReporting : Swift.Sendable {
   func generateBacktrace(threadID: DatadogInternal.ThreadID) throws -> DatadogInternal.BacktraceReport?
 }
 extension DatadogInternal.BacktraceReporting {
@@ -887,7 +1097,7 @@ extension DatadogInternal.DatadogCoreProtocol {
 public struct DD {
   public static var logger: any DatadogInternal.CoreLogger
 }
-public var consolePrint: (_ message: Swift.String, _ level: DatadogInternal.CoreLoggerLevel) -> Swift.Void
+public var consolePrint: @Sendable (_ message: Swift.String, _ level: DatadogInternal.CoreLoggerLevel) -> Swift.Void
 public struct FirstPartyHosts : Swift.Equatable {
   public var hosts: Swift.Set<Swift.String> {
     get
@@ -904,8 +1114,9 @@ public func += (left: inout DatadogInternal.FirstPartyHosts?, right: DatadogInte
 public func + (left: DatadogInternal.FirstPartyHosts, right: DatadogInternal.FirstPartyHosts?) -> DatadogInternal.FirstPartyHosts
 public protocol TracePropagationHeadersReader {
   func read() -> (traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)?
+  var sampled: Swift.Bool? { get }
 }
-@propertyWrapper final public class ReadWriteLock<Value> {
+@propertyWrapper final public class ReadWriteLock<Value> : @unchecked Swift.Sendable {
   public init(wrappedValue value: Value)
   @objc deinit
   final public var wrappedValue: Value {
@@ -917,10 +1128,10 @@ public protocol TracePropagationHeadersReader {
 public class W3CHTTPHeadersReader : DatadogInternal.TracePropagationHeadersReader {
   public init(httpHeaderFields: [Swift.String : Swift.String])
   public func read() -> (traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)?
+  public var sampled: Swift.Bool? {
+    get
+  }
   @objc deinit
-}
-public enum BasicMetric {
-  public static let typeKey: Swift.String
 }
 public enum MethodCalledMetric {
   public static let name: Swift.String
@@ -929,23 +1140,6 @@ public enum MethodCalledMetric {
   public static let callerClass: Swift.String
   public static let isSuccessful: Swift.String
   public static let executionTime: Swift.String
-  public enum Device {
-    public static let key: Swift.String
-    public static let model: Swift.String
-    public static let brand: Swift.String
-    public static let architecture: Swift.String
-  }
-  public enum OS {
-    public static let key: Swift.String
-    public static let name: Swift.String
-    public static let version: Swift.String
-    public static let build: Swift.String
-  }
-}
-extension Swift.Dictionary where Key == Swift.String, Value == any Swift.Encodable {
-  public var isMethodCallAttributes: Swift.Bool {
-    get
-  }
 }
 public struct DatadogContext {
   public let site: DatadogInternal.DatadogSite
@@ -963,8 +1157,9 @@ public struct DatadogContext {
   public var serverTimeOffset: Foundation.TimeInterval
   public let applicationName: Swift.String
   public let applicationBundleIdentifier: Swift.String
+  public let applicationBundleType: DatadogInternal.BundleType
   public let sdkInitDate: Foundation.Date
-  public let device: DatadogInternal.DeviceInfo
+  public var device: DatadogInternal.DeviceInfo
   public var userInfo: DatadogInternal.UserInfo?
   public var trackingConsent: DatadogInternal.TrackingConsent
   public var launchTime: DatadogInternal.LaunchTime?
@@ -974,7 +1169,7 @@ public struct DatadogContext {
   public var batteryStatus: DatadogInternal.BatteryStatus?
   public var isLowPowerModeEnabled: Swift.Bool
   public var baggages: [Swift.String : DatadogInternal.FeatureBaggage]
-  public init(site: DatadogInternal.DatadogSite, clientToken: Swift.String, service: Swift.String, env: Swift.String, version: Swift.String, buildNumber: Swift.String, buildId: Swift.String?, variant: Swift.String?, source: Swift.String, sdkVersion: Swift.String, ciAppOrigin: Swift.String?, serverTimeOffset: Foundation.TimeInterval = .zero, applicationName: Swift.String, applicationBundleIdentifier: Swift.String, sdkInitDate: Foundation.Date, device: DatadogInternal.DeviceInfo, nativeSourceOverride: Swift.String? = nil, userInfo: DatadogInternal.UserInfo? = nil, trackingConsent: DatadogInternal.TrackingConsent = .pending, launchTime: DatadogInternal.LaunchTime? = nil, applicationStateHistory: DatadogInternal.AppStateHistory, networkConnectionInfo: DatadogInternal.NetworkConnectionInfo? = nil, carrierInfo: DatadogInternal.CarrierInfo? = nil, batteryStatus: DatadogInternal.BatteryStatus? = nil, isLowPowerModeEnabled: Swift.Bool = false, baggages: [Swift.String : DatadogInternal.FeatureBaggage] = [:])
+  public init(site: DatadogInternal.DatadogSite, clientToken: Swift.String, service: Swift.String, env: Swift.String, version: Swift.String, buildNumber: Swift.String, buildId: Swift.String?, variant: Swift.String?, source: Swift.String, sdkVersion: Swift.String, ciAppOrigin: Swift.String?, serverTimeOffset: Foundation.TimeInterval = .zero, applicationName: Swift.String, applicationBundleIdentifier: Swift.String, applicationBundleType: DatadogInternal.BundleType, sdkInitDate: Foundation.Date, device: DatadogInternal.DeviceInfo, nativeSourceOverride: Swift.String? = nil, userInfo: DatadogInternal.UserInfo? = nil, trackingConsent: DatadogInternal.TrackingConsent = .pending, launchTime: DatadogInternal.LaunchTime? = nil, applicationStateHistory: DatadogInternal.AppStateHistory, networkConnectionInfo: DatadogInternal.NetworkConnectionInfo? = nil, carrierInfo: DatadogInternal.CarrierInfo? = nil, batteryStatus: DatadogInternal.BatteryStatus? = nil, isLowPowerModeEnabled: Swift.Bool = false, baggages: [Swift.String : DatadogInternal.FeatureBaggage] = [:])
 }
 extension Foundation.Thread : DatadogInternal.DatadogExtended {
   public typealias ExtendedType = Foundation.Thread
@@ -1008,11 +1203,50 @@ extension DatadogInternal.DatadogSite {
     get
   }
 }
+extension Foundation.Data {
+  public func sha1() -> Swift.String
+}
 extension Foundation.JSONEncoder : DatadogInternal.DatadogExtended {
   public typealias ExtendedType = Foundation.JSONEncoder
 }
 extension DatadogInternal.DatadogExtension where ExtendedType == Foundation.JSONEncoder {
   public static func `default`() -> Foundation.JSONEncoder
+}
+public typealias DataStoreKeyVersion = Swift.UInt16
+public let dataStoreDefaultKeyVersion: DatadogInternal.DataStoreKeyVersion
+public enum DataStoreValueResult {
+  case value(Foundation.Data, DatadogInternal.DataStoreKeyVersion)
+  case noValue
+  case error(any Swift.Error)
+  public func data(expectedVersion: DatadogInternal.DataStoreKeyVersion = dataStoreDefaultKeyVersion) -> Foundation.Data?
+}
+public protocol DataStore {
+  func setValue(_ value: Foundation.Data, forKey key: Swift.String, version: DatadogInternal.DataStoreKeyVersion)
+  func value(forKey key: Swift.String, callback: @escaping (DatadogInternal.DataStoreValueResult) -> Swift.Void)
+  func removeValue(forKey key: Swift.String)
+  func clearAllData()
+}
+extension DatadogInternal.DataStore {
+  public func setValue(_ value: Foundation.Data, forKey key: Swift.String)
+}
+public struct NOPDataStore : DatadogInternal.DataStore {
+  public init()
+  public func setValue(_ value: Foundation.Data, forKey key: Swift.String, version: DatadogInternal.DataStoreKeyVersion)
+  public func value(forKey key: Swift.String, callback: @escaping (DatadogInternal.DataStoreValueResult) -> Swift.Void)
+  public func removeValue(forKey key: Swift.String)
+  public func clearAllData()
+}
+public struct LaunchReport : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
+  public static let baggageKey: Swift.String
+  public let didCrash: Swift.Bool
+  public init(didCrash: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogInternal.LaunchReport : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 @available(*, deprecated, renamed: "B3HTTPHeadersWriter")
 public typealias OTelHTTPHeadersWriter = DatadogInternal.B3HTTPHeadersWriter
@@ -1029,11 +1263,12 @@ public class B3HTTPHeadersWriter : DatadogInternal.TracePropagationHeadersWriter
   public var traceHeaderFields: [Swift.String : Swift.String] {
     get
   }
-  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(sampleRate:injectEncoding:)` instead.")
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(samplingRate: Swift.Float, injectEncoding: DatadogInternal.B3HTTPHeadersWriter.InjectEncoding = .single)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
   convenience public init(sampleRate: Swift.Float = 20, injectEncoding: DatadogInternal.B3HTTPHeadersWriter.InjectEncoding = .single)
-  public init(sampler: DatadogInternal.Sampler, injectEncoding: DatadogInternal.B3HTTPHeadersWriter.InjectEncoding = .single)
-  public func write(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)
+  public init(samplingStrategy: DatadogInternal.TraceSamplingStrategy, injectEncoding: DatadogInternal.B3HTTPHeadersWriter.InjectEncoding = .single, traceContextInjection: DatadogInternal.TraceContextInjection = .all)
+  public func write(traceContext: DatadogInternal.TraceContext)
   @objc deinit
 }
 public struct UserInfo : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
@@ -1063,6 +1298,7 @@ public struct URLRequestBuilder {
     public static let ddEVPOriginHeaderField: Swift.String
     public static let ddEVPOriginVersionHeaderField: Swift.String
     public static let ddRequestIDHeaderField: Swift.String
+    public static let ddIdempotencyKeyHeaderField: Swift.String
     public enum ContentType {
       case applicationJSON
       case textPlainUTF8
@@ -1078,9 +1314,23 @@ public struct URLRequestBuilder {
     public static func ddEVPOriginHeader(source: Swift.String) -> DatadogInternal.URLRequestBuilder.HTTPHeader
     public static func ddEVPOriginVersionHeader(sdkVersion: Swift.String) -> DatadogInternal.URLRequestBuilder.HTTPHeader
     public static func ddRequestIDHeader() -> DatadogInternal.URLRequestBuilder.HTTPHeader
+    public static func ddIdempotencyKeyHeader(key: Swift.String) -> DatadogInternal.URLRequestBuilder.HTTPHeader
   }
   public init(url: Foundation.URL, queryItems: [DatadogInternal.URLRequestBuilder.QueryItem], headers: [DatadogInternal.URLRequestBuilder.HTTPHeader], telemetry: any DatadogInternal.Telemetry = NOPTelemetry())
   public func uploadRequest(with body: Foundation.Data, compress: Swift.Bool = true) -> Foundation.URLRequest
+}
+public enum TraceContextInjection : Swift.CaseIterable {
+  case all
+  case sampled
+  public static func == (a: DatadogInternal.TraceContextInjection, b: DatadogInternal.TraceContextInjection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [DatadogInternal.TraceContextInjection]
+  public static var allCases: [DatadogInternal.TraceContextInjection] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias AttributeKey = Swift.String
 public typealias AttributeValue = Swift.Encodable
@@ -1102,21 +1352,44 @@ public struct CrossPlatformAttributes {
   public static let graphqlPayload: Swift.String
   public static let graphqlVariables: Swift.String
   public static let nativeSourceType: Swift.String
+  public static let includeBinaryImages: Swift.String
 }
 public struct LaunchArguments {
   public static let Debug: Swift.String
 }
-public struct Sampler {
+extension DatadogInternal.DatadogExtension where ExtendedType == [Swift.String : Any] {
+  public var swiftAttributes: [Swift.String : any Swift.Encodable] {
+    get
+  }
+}
+extension DatadogInternal.DatadogExtension where ExtendedType == [Swift.String : any Swift.Encodable] {
+  public var objCAttributes: [Swift.String : Any] {
+    get
+  }
+}
+extension Swift.Encodable {
+  public var dd: DatadogInternal.DatadogExtension<any Swift.Encodable> {
+    get
+  }
+}
+extension DatadogInternal.DatadogExtension where ExtendedType == any Swift.Encodable {
+  public func decode<T>(_: T.Type = T.self) -> T?
+}
+public protocol Sampling {
+  func sample() -> Swift.Bool
+}
+public struct Sampler : DatadogInternal.Sampling {
   public let samplingRate: Swift.Float
   public init(samplingRate: Swift.Float)
   public func sample() -> Swift.Bool
 }
+public enum TraceSamplingStrategy {
+  case headBased
+  case custom(sampleRate: Swift.Float)
+}
 public protocol TracePropagationHeadersWriter {
   var traceHeaderFields: [Swift.String : Swift.String] { get }
-  func write(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID, parentSpanID: DatadogInternal.SpanID?)
-}
-extension DatadogInternal.TracePropagationHeadersWriter {
-  public func write(traceID: DatadogInternal.TraceID, spanID: DatadogInternal.SpanID)
+  func write(traceContext: DatadogInternal.TraceContext)
 }
 open class AnyDecoder {
   public init()
@@ -1165,7 +1438,10 @@ public struct URLSessionInterceptor {
   public func task(_ task: Foundation.URLSessionTask, didReceive data: Foundation.Data)
   public func task(_ task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
 }
-public protocol DateProvider {
+public protocol Storage {
+  func mostRecentModifiedFileAt(before: Foundation.Date) throws -> Foundation.Date?
+}
+public protocol DateProvider : Swift.Sendable {
   var now: Foundation.Date { get }
 }
 public struct SystemDateProvider : DatadogInternal.DateProvider {
@@ -1174,36 +1450,81 @@ public struct SystemDateProvider : DatadogInternal.DateProvider {
     get
   }
 }
-public protocol DatadogCoreProtocol : AnyObject {
+public protocol DatadogCoreProtocol : AnyObject, DatadogInternal.BaggageSharing, DatadogInternal.MessageSending, DatadogInternal.Storage {
   func register<T>(feature: T) throws where T : DatadogInternal.DatadogFeature
-  func get<T>(feature type: T.Type) -> T? where T : DatadogInternal.DatadogFeature
-  func scope(for feature: Swift.String) -> (any DatadogInternal.FeatureScope)?
-  func set(baggage: @escaping () -> DatadogInternal.FeatureBaggage?, forKey key: Swift.String)
+  func feature<T>(named name: Swift.String, type: T.Type) -> T?
+  func scope<T>(for featureType: T.Type) -> any DatadogInternal.FeatureScope where T : DatadogInternal.DatadogFeature
+}
+public protocol MessageSending {
   func send(message: DatadogInternal.FeatureMessage, else fallback: @escaping () -> Swift.Void)
 }
+public protocol BaggageSharing {
+  func set(baggage: @escaping () -> DatadogInternal.FeatureBaggage?, forKey key: Swift.String)
+}
 extension DatadogInternal.DatadogCoreProtocol {
+  public func get<T>(feature type: T.Type = T.self) -> T? where T : DatadogInternal.DatadogFeature
+}
+extension DatadogInternal.MessageSending {
   public func send(message: DatadogInternal.FeatureMessage)
+}
+extension DatadogInternal.BaggageSharing {
   public func set(baggage: DatadogInternal.FeatureBaggage?, forKey key: Swift.String)
   public func set<Baggage>(baggage: Baggage?, forKey key: Swift.String) where Baggage : Swift.Encodable
   public func set<Baggage>(baggage: @escaping () -> Baggage?, forKey key: Swift.String) where Baggage : Swift.Encodable
 }
-public protocol FeatureScope {
+public protocol FeatureScope : DatadogInternal.BaggageSharing, DatadogInternal.MessageSending, Swift.Sendable {
   func eventWriteContext(bypassConsent: Swift.Bool, _ block: @escaping (DatadogInternal.DatadogContext, any DatadogInternal.Writer) -> Swift.Void)
   func context(_ block: @escaping (DatadogInternal.DatadogContext) -> Swift.Void)
+  var dataStore: any DatadogInternal.DataStore { get }
+  var telemetry: any DatadogInternal.Telemetry { get }
 }
 extension DatadogInternal.FeatureScope {
   public func eventWriteContext(_ block: @escaping (DatadogInternal.DatadogContext, any DatadogInternal.Writer) -> Swift.Void)
+  public func dataStoreContext(_ block: @escaping (DatadogInternal.DatadogContext, any DatadogInternal.DataStore) -> Swift.Void)
 }
 public class NOPDatadogCore : DatadogInternal.DatadogCoreProtocol {
   public init()
   public func register<T>(feature: T) throws where T : DatadogInternal.DatadogFeature
-  public func get<T>(feature type: T.Type) -> T? where T : DatadogInternal.DatadogFeature
-  public func scope(for feature: Swift.String) -> (any DatadogInternal.FeatureScope)?
+  public func feature<T>(named name: Swift.String, type: T.Type) -> T?
+  public func scope<T>(for featureType: T.Type) -> any DatadogInternal.FeatureScope
   public func set(baggage: @escaping () -> DatadogInternal.FeatureBaggage?, forKey key: Swift.String)
   public func send(message: DatadogInternal.FeatureMessage, else fallback: @escaping () -> Swift.Void)
+  public func mostRecentModifiedFileAt(before: Foundation.Date) throws -> Foundation.Date?
   @objc deinit
 }
-public struct BinaryImage : Swift.Codable {
+public struct NOPFeatureScope : DatadogInternal.FeatureScope {
+  public init()
+  public func eventWriteContext(bypassConsent: Swift.Bool, _ block: @escaping (DatadogInternal.DatadogContext, any DatadogInternal.Writer) -> Swift.Void)
+  public func context(_ block: @escaping (DatadogInternal.DatadogContext) -> Swift.Void)
+  public var dataStore: any DatadogInternal.DataStore {
+    get
+  }
+  public var telemetry: any DatadogInternal.Telemetry {
+    get
+  }
+  public func send(message: DatadogInternal.FeatureMessage, else fallback: @escaping () -> Swift.Void)
+  public func set(baggage: @escaping () -> DatadogInternal.FeatureBaggage?, forKey key: Swift.String)
+}
+public let SessionReplayFeaturneName: Swift.String
+public enum SessionReplayPrivacyLevel : Swift.String {
+  case allow
+  case mask
+  case maskUserInput
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol SessionReplayConfiguration {
+  var privacyLevel: DatadogInternal.SessionReplayPrivacyLevel { get }
+}
+extension DatadogInternal.DatadogFeature where Self : DatadogInternal.SessionReplayConfiguration {
+  public static var name: Swift.String {
+    get
+  }
+}
+public struct BinaryImage : Swift.Codable, DatadogInternal.PassthroughAnyCodable {
   public let libraryName: Swift.String
   public let uuid: Swift.String
   public let architecture: Swift.String
@@ -1213,6 +1534,13 @@ public struct BinaryImage : Swift.Codable {
   public init(libraryName: Swift.String, uuid: Swift.String, architecture: Swift.String, isSystemLibrary: Swift.Bool, loadAddress: Swift.String, maxAddress: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogInternal.BinaryImage : Swift.Equatable {
+  public static func == (a: DatadogInternal.BinaryImage, b: DatadogInternal.BinaryImage) -> Swift.Bool
+}
+public enum SDKMetricFields {
+  public static let typeKey: Swift.String
+  public static let sessionIDOverrideKey: Swift.String
 }
 open class AnyEncoder {
   public init()
@@ -1274,6 +1602,11 @@ public struct Event : Swift.Equatable {
   public init(data: Foundation.Data, metadata: Foundation.Data? = nil)
   public static func == (a: DatadogInternal.Event, b: DatadogInternal.Event) -> Swift.Bool
 }
+extension DatadogInternal.Event : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 extension Foundation.URLSessionTask : DatadogInternal.DatadogExtended {
   public typealias ExtendedType = Foundation.URLSessionTask
 }
@@ -1327,8 +1660,18 @@ extension DatadogInternal.WebViewMessage.EventType : Swift.Hashable {}
 extension DatadogInternal.WebViewMessage.EventType : Swift.RawRepresentable {}
 extension DatadogInternal.AppState : Swift.Equatable {}
 extension DatadogInternal.AppState : Swift.Hashable {}
+extension DatadogInternal.BundleType : Swift.Equatable {}
+extension DatadogInternal.BundleType : Swift.Hashable {}
+extension DatadogInternal.BundleType : Swift.RawRepresentable {}
+extension DatadogInternal.SpanID.Representation : Swift.Equatable {}
+extension DatadogInternal.SpanID.Representation : Swift.Hashable {}
 extension DatadogInternal.DatadogSite : Swift.Equatable {}
 extension DatadogInternal.DatadogSite : Swift.Hashable {}
 extension DatadogInternal.DatadogSite : Swift.RawRepresentable {}
 extension DatadogInternal.B3HTTPHeadersWriter.InjectEncoding : Swift.Equatable {}
 extension DatadogInternal.B3HTTPHeadersWriter.InjectEncoding : Swift.Hashable {}
+extension DatadogInternal.TraceContextInjection : Swift.Equatable {}
+extension DatadogInternal.TraceContextInjection : Swift.Hashable {}
+extension DatadogInternal.SessionReplayPrivacyLevel : Swift.Equatable {}
+extension DatadogInternal.SessionReplayPrivacyLevel : Swift.Hashable {}
+extension DatadogInternal.SessionReplayPrivacyLevel : Swift.RawRepresentable {}

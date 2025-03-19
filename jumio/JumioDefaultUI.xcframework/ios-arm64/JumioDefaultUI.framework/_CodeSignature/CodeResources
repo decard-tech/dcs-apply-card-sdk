@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		+DFJv5tHK7AU/Kst/p56zmIH84s=
+		WsUO3LPkC8+5x7Q31tsufCfSKZw=
 		</data>
 		<key>Headers/JumioDefaultUI-Swift.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lNTrhuY7NLohNw8zucvKZR3f3II=
+		Lp3ojKTPV1VP6kscwEYqVIk08lo=
 		</data>
 		<key>Modules/JumioDefaultUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/iD95o7HjLbChdZdOBnrdPsCOFw=
+		Kg6p1gBlQFwWgcgou6mvCPTVtaM=
 		</data>
 		<key>Modules/JumioDefaultUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/JumioDefaultUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ybiY1gC95D/4Gb9ZB5l4gntF7B0=
+		BngfgqroGPXbMk6Tw0F1vgbEqGY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mpqFLoB8tPe/LGhGDGif/82bpCdbLrWpsy2drBbOnvA=
+			qjo+Ps9DQYrvZs8NgmUswGhsFTZEvbvjce9Ubo2c33g=
 			</data>
 		</dict>
 		<key>Headers/JumioDefaultUI-Swift.h</key>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4r9PlR+7dOUKpv/A3hEhdB9a9UNqWLljIhNjZnijoVY=
+			09X1ZG4rlRKdYMUYjidwnbl1fXZG8TMTSNtKSNg8B7E=
 			</data>
 		</dict>
 		<key>Modules/JumioDefaultUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZfkVPceP1al2YluzEdjGyut99ivs64rlThDHXTcX+/I=
+			vWrinu78qDnfLA5axz0ySyXhBe4vf/1ns8PyB+0J3vo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

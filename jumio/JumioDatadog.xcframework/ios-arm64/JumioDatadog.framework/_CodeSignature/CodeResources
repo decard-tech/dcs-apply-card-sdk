@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hFFKtWWF+9Eg8UPGWXXrwaMDJiA=
+		LFNIwswVyimpe44JZ8rTEC9+Upc=
 		</data>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		eeU0pYIMpxHLdLYxwzTOBjfN75g=
+		JEiuQZIVTXFe0D7yGeK2B9SzYsc=
 		</data>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		JFU0JihplUPUtWt/foKvuppBXHA=
+		URZOyl75fAMg9+GKr8/zNE5fF4E=
 		</data>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		JFU0JihplUPUtWt/foKvuppBXHA=
+		URZOyl75fAMg9+GKr8/zNE5fF4E=
 		</data>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		otPtahaCCEv0BrY+oipnMBv4vWU=
+		aC+ahUnkYozgutK9DL9xNKbG1Ag=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jYV6RjfD3xieKynzeupp6iOI3soOPizwPVaLEhNyvmQ=
+			SHYrwVdMwbhMmPY911RYxIDZ5yhzNJcBKeEpsmhkNqk=
 			</data>
 		</dict>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3Lq4gL6IBduXLgdABQox+6Bl5+PXg4jfyqjNnsQ5bw=
+			LMZhDri+lq04YtHY0EAMVd56+nFvKomCoq5yLAc1MeM=
 			</data>
 		</dict>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3Lq4gL6IBduXLgdABQox+6Bl5+PXg4jfyqjNnsQ5bw=
+			LMZhDri+lq04YtHY0EAMVd56+nFvKomCoq5yLAc1MeM=
 			</data>
 		</dict>
 		<key>Modules/JumioDatadog.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyWNwT9uLDIhgh3HKtozsaAqBnCunLsDFZdNyhpLI/4=
+			n0Q4Dl33vK1C3MBQK6EkYNVPRPzQGnGZn5vPnb9dIzI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

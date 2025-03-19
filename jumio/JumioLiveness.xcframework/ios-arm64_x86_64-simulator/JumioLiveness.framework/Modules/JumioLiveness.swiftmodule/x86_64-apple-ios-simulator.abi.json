@@ -95,7 +95,7 @@
           {
             "kind": "Function",
             "name": "setupLiveness",
-            "printedName": "setupLiveness(assets:response:)",
+            "printedName": "setupLiveness(assets:options:premiumNonce:poseResponse:serverBlobResponse:uxResponse:cameraLivenessResponse:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -107,6 +107,143 @@
                 "name": "Data",
                 "printedName": "Foundation.Data",
                 "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -149,8 +286,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13JumioLivenessAAC05setupB06assets8responsey10Foundation4DataV_ySDySSypGcSgtF",
-            "mangledName": "$s13JumioLivenessAAC05setupB06assets8responsey10Foundation4DataV_ySDySSypGcSgtF",
+            "usr": "s:13JumioLivenessAAC05setupB06assets7options12premiumNonce12poseResponse010serverBlobI002uxI006camerabI0y10Foundation4DataV_AMSSSgySDySSypGcSgA3PtF",
+            "mangledName": "$s13JumioLivenessAAC05setupB06assets7options12premiumNonce12poseResponse010serverBlobI002uxI006camerabI0y10Foundation4DataV_AMSSSgySDySSypGcSgA3PtF",
             "moduleName": "JumioLiveness",
             "declAttributes": [
               "AccessControl"
@@ -160,7 +297,7 @@
           {
             "kind": "Function",
             "name": "processLiveness",
-            "printedName": "processLiveness(data:width:height:timestamp:)",
+            "printedName": "processLiveness(image:depthData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -169,31 +306,48 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "JumioDynamicLivenessImage",
+                "printedName": "any Jumio.JumioDynamicLivenessImage",
+                "usr": "s:5Jumio0A20DynamicLivenessImageP"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
+                "name": "Optional",
+                "printedName": "(any Jumio.JumioDynamicLivenessImage)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JumioDynamicLivenessImage",
+                    "printedName": "any Jumio.JumioDynamicLivenessImage",
+                    "usr": "s:5Jumio0A20DynamicLivenessImageP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13JumioLivenessAAC07processB04data5width6height9timestampyyp_s5Int32VAIs5Int64VtF",
-            "mangledName": "$s13JumioLivenessAAC07processB04data5width6height9timestampyyp_s5Int32VAIs5Int64VtF",
+            "usr": "s:13JumioLivenessAAC07processB05image9depthDatay0A00a7DynamicB5Image_p_AfG_pSgtF",
+            "mangledName": "$s13JumioLivenessAAC07processB05image9depthDatay0A00a7DynamicB5Image_p_AfG_pSgtF",
+            "moduleName": "JumioLiveness",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13JumioLivenessAAC5resetyyF",
+            "mangledName": "$s13JumioLivenessAAC5resetyyF",
             "moduleName": "JumioLiveness",
             "declAttributes": [
               "AccessControl"
@@ -243,7 +397,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioLiveness\/JumioLiveness\/EmptyClasses\/JumioLiveness.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioLiveness\/JumioLiveness\/EmptyClasses\/JumioLiveness.swift",
       "kind": "StringLiteral",
       "offset": 208,
       "length": 2,

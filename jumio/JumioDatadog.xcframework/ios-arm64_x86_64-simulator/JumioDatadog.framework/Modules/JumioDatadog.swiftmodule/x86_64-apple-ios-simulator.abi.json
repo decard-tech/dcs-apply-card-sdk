@@ -354,26 +354,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopInstance",
-            "printedName": "stopInstance()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12JumioDatadogAAC12stopInstanceyyF",
-            "mangledName": "$s12JumioDatadogAAC12stopInstanceyyF",
-            "moduleName": "JumioDatadog",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -398,28 +378,28 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 8,
-      "value": "\"4.11.0\""
+      "value": "\"4.12.0\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 4,
       "value": "1500"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 22,
       "value": "\"JumioDatadogInstance\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.11.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/_mobile-sdk-swift_release_4.12.0@2\/JumioDatadog\/JumioDatadog\/Classes\/JumioDatadog.swift",
       "kind": "StringLiteral",
       "offset": 567,
       "length": 11,

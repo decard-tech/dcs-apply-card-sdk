@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JumioLiveness-Swift.h</key>
 		<data>
-		qriPj5HJE3t/PkeQRgJfBA/Lcos=
+		fGUsxo1mMLuy3W6BQV6+mE7szY0=
 		</data>
 		<key>Headers/JumioLiveness.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KYcW9mHi/5cbhN6MRPkIzySVSp0=
+		SEagHghV9TGFtpWEdg8ciLkUBgQ=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RdHpOhRDIO66npaM/FvqCzvoV8U=
+		UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RdHpOhRDIO66npaM/FvqCzvoV8U=
+		UUXg4bfTBK2yFYTx/uA/O5Ai/+0=
 		</data>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		D2u1iQefyiF6YBdAjmy9uDmjOP0=
+		wSsC8E9y1DfkQ7pmGclhOZ2qHZE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WU7678XvMpm8+Trp55duwAyJ7AbsFz1KpK/1EM8GKiQ=
+			/q82V/3ljv4A1qZnmj1v+cs1ha2LiUenTgDcstmD91Y=
 			</data>
 		</dict>
 		<key>Headers/JumioLiveness.h</key>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AUthYkrWD34HLk/A7pxJGKEF+u/EBnn+YWchFabEYjI=
+			nLKc09J1qyznO4/Q9sv4ibIExdXBUqajOxWt9VluTsg=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -75,14 +75,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AUthYkrWD34HLk/A7pxJGKEF+u/EBnn+YWchFabEYjI=
+			nLKc09J1qyznO4/Q9sv4ibIExdXBUqajOxWt9VluTsg=
 			</data>
 		</dict>
 		<key>Modules/JumioLiveness.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0O5IHyBGadfHIqsXvb7cVSbhTUUuW044tU6kxBHr31s=
+			8QGJeK4BPw3s6DNu19GHZCtmi98y5dVORii8ZRZkGSY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,10 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DatadogRUM
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-tvos12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogRUM
 import DatadogInternal
 @_exported import DatadogInternal/*.DDURLSessionDelegate*/
 @_exported import DatadogInternal/*.DatadogURLSessionDelegate*/
+@_exported import DatadogInternal/*.TraceContextInjection*/
 @_exported import DatadogInternal/*.URLSessionInstrumentation*/
 @_exported import DatadogInternal/*.__URLSessionDelegateProviding*/
 import Foundation
@@ -15,6 +15,7 @@ import UIKit
 import UIKit/*.UIScreen*/
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @available(iOS 13, tvOS 13, *)
 extension SwiftUI.View {
   public func trackRUMView(name: Swift.String, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:], in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default) -> some SwiftUI.View
@@ -46,6 +47,7 @@ extension DatadogRUM.RUM {
     public var urlSessionTracking: DatadogRUM.RUM.Configuration.URLSessionTracking?
     public var trackFrustrations: Swift.Bool
     public var trackBackgroundEvents: Swift.Bool
+    public var trackWatchdogTerminations: Swift.Bool
     public var longTaskThreshold: Foundation.TimeInterval?
     public var appHangThreshold: Foundation.TimeInterval?
     public var vitalsUpdateFrequency: DatadogRUM.RUM.Configuration.VitalsFrequency?
@@ -75,13 +77,13 @@ extension DatadogRUM.RUM {
 }
 extension DatadogRUM.RUM.Configuration.URLSessionTracking {
   public enum FirstPartyHostsTracing {
-    case trace(hosts: Swift.Set<Swift.String>, sampleRate: Swift.Float = 20)
-    case traceWithHeaders(hostsWithHeaders: [Swift.String : Swift.Set<DatadogInternal.TracingHeaderType>], sampleRate: Swift.Float = 20)
+    case trace(hosts: Swift.Set<Swift.String>, sampleRate: Swift.Float = 20, traceControlInjection: DatadogInternal.TraceContextInjection = .all)
+    case traceWithHeaders(hostsWithHeaders: [Swift.String : Swift.Set<DatadogInternal.TracingHeaderType>], sampleRate: Swift.Float = 20, traceControlInjection: DatadogInternal.TraceContextInjection = .all)
   }
   public init(firstPartyHostsTracing: DatadogRUM.RUM.Configuration.URLSessionTracking.FirstPartyHostsTracing? = nil, resourceAttributesProvider: DatadogRUM.RUM.ResourceAttributesProvider? = nil)
 }
 extension DatadogRUM.RUM.Configuration {
-  public init(applicationID: Swift.String, sessionSampleRate: Swift.Float = 100, uiKitViewsPredicate: (any DatadogRUM.UIKitRUMViewsPredicate)? = nil, uiKitActionsPredicate: (any DatadogRUM.UIPressRUMActionsPredicate)? = nil, urlSessionTracking: DatadogRUM.RUM.Configuration.URLSessionTracking? = nil, trackFrustrations: Swift.Bool = true, trackBackgroundEvents: Swift.Bool = false, longTaskThreshold: Foundation.TimeInterval? = 0.1, appHangThreshold: Foundation.TimeInterval? = nil, vitalsUpdateFrequency: DatadogRUM.RUM.Configuration.VitalsFrequency? = .average, viewEventMapper: DatadogRUM.RUM.ViewEventMapper? = nil, resourceEventMapper: DatadogRUM.RUM.ResourceEventMapper? = nil, actionEventMapper: DatadogRUM.RUM.ActionEventMapper? = nil, errorEventMapper: DatadogRUM.RUM.ErrorEventMapper? = nil, longTaskEventMapper: DatadogRUM.RUM.LongTaskEventMapper? = nil, onSessionStart: DatadogRUM.RUM.SessionListener? = nil, customEndpoint: Foundation.URL? = nil, telemetrySampleRate: Swift.Float = 20)
+  public init(applicationID: Swift.String, sessionSampleRate: Swift.Float = 100, uiKitViewsPredicate: (any DatadogRUM.UIKitRUMViewsPredicate)? = nil, uiKitActionsPredicate: (any DatadogRUM.UIPressRUMActionsPredicate)? = nil, urlSessionTracking: DatadogRUM.RUM.Configuration.URLSessionTracking? = nil, trackFrustrations: Swift.Bool = true, trackBackgroundEvents: Swift.Bool = false, longTaskThreshold: Foundation.TimeInterval? = 0.1, appHangThreshold: Foundation.TimeInterval? = nil, trackWatchdogTerminations: Swift.Bool = false, vitalsUpdateFrequency: DatadogRUM.RUM.Configuration.VitalsFrequency? = .average, viewEventMapper: DatadogRUM.RUM.ViewEventMapper? = nil, resourceEventMapper: DatadogRUM.RUM.ResourceEventMapper? = nil, actionEventMapper: DatadogRUM.RUM.ActionEventMapper? = nil, errorEventMapper: DatadogRUM.RUM.ErrorEventMapper? = nil, longTaskEventMapper: DatadogRUM.RUM.LongTaskEventMapper? = nil, onSessionStart: DatadogRUM.RUM.SessionListener? = nil, customEndpoint: Foundation.URL? = nil, telemetrySampleRate: Swift.Float = 20)
 }
 extension DatadogRUM.RUM.Configuration : DatadogInternal.InternalExtended {
   public typealias ExtendedType = DatadogRUM.RUM.Configuration
@@ -252,6 +254,7 @@ public struct RUMActionEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -292,6 +295,7 @@ public struct RUMActionEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -391,6 +395,7 @@ public struct RUMErrorEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -420,6 +425,7 @@ public struct RUMErrorEvent {
     public let binaryImages: [DatadogRUM.RUMErrorEvent.Error.BinaryImages]?
     public let category: DatadogRUM.RUMErrorEvent.Error.Category?
     public var causes: [DatadogRUM.RUMErrorEvent.Error.Causes]?
+    public let csp: DatadogRUM.RUMErrorEvent.Error.CSP?
     public var fingerprint: Swift.String?
     public let handling: DatadogRUM.RUMErrorEvent.Error.Handling?
     public let handlingStack: Swift.String?
@@ -432,6 +438,7 @@ public struct RUMErrorEvent {
     public let sourceType: DatadogRUM.RUMErrorEvent.Error.SourceType?
     public var stack: Swift.String?
     public let threads: [DatadogRUM.RUMErrorEvent.Error.Threads]?
+    public let timeSinceAppStart: Swift.Int64?
     public let type: Swift.String?
     public let wasTruncated: Swift.Bool?
     public struct BinaryImages : Swift.Codable {
@@ -448,6 +455,8 @@ public struct RUMErrorEvent {
       case aNR
       case appHang
       case exception
+      case watchdogTermination
+      case memoryWarning
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -467,6 +476,20 @@ public struct RUMErrorEvent {
         case agent
         case webview
         case custom
+        case report
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct CSP : Swift.Codable {
+      public let disposition: DatadogRUM.RUMErrorEvent.Error.CSP.Disposition?
+      public enum Disposition : Swift.String, Swift.Codable {
+        case enforce
         case report
         public init?(rawValue: Swift.String)
         public typealias RawValue = Swift.String
@@ -600,6 +623,7 @@ public struct RUMErrorEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -700,6 +724,7 @@ public struct RUMLongTaskEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -726,9 +751,52 @@ public struct RUMLongTaskEvent {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct LongTask : Swift.Codable {
+    public let blockingDuration: Swift.Int64?
     public let duration: Swift.Int64
+    public let entryType: DatadogRUM.RUMLongTaskEvent.LongTask.EntryType?
+    public let firstUiEventTimestamp: Swift.Double?
     public let id: Swift.String?
     public let isFrozenFrame: Swift.Bool?
+    public let renderStart: Swift.Double?
+    public let scripts: [DatadogRUM.RUMLongTaskEvent.LongTask.Scripts]?
+    public let styleAndLayoutStart: Swift.Double?
+    public enum EntryType : Swift.String, Swift.Codable {
+      case longTask
+      case longAnimationFrame
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public struct Scripts : Swift.Codable {
+      public let duration: Swift.Int64?
+      public let executionStart: Swift.Double?
+      public let forcedStyleAndLayoutDuration: Swift.Int64?
+      public let invoker: Swift.String?
+      public let invokerType: DatadogRUM.RUMLongTaskEvent.LongTask.Scripts.InvokerType?
+      public let pauseDuration: Swift.Int64?
+      public let sourceCharPosition: Swift.Int64?
+      public let sourceFunctionName: Swift.String?
+      public let sourceUrl: Swift.String?
+      public let startTime: Swift.Double?
+      public let windowAttribution: Swift.String?
+      public enum InvokerType : Swift.String, Swift.Codable {
+        case userCallback
+        case eventListener
+        case resolvePromise
+        case rejectPromise
+        case classicScript
+        case moduleScript
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -747,6 +815,7 @@ public struct RUMLongTaskEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -845,6 +914,7 @@ public struct RUMResourceEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -872,18 +942,22 @@ public struct RUMResourceEvent {
   }
   public struct Resource : Swift.Codable {
     public let connect: DatadogRUM.RUMResourceEvent.Resource.Connect?
+    public let decodedBodySize: Swift.Int64?
     public let dns: DatadogRUM.RUMResourceEvent.Resource.DNS?
     public let download: DatadogRUM.RUMResourceEvent.Resource.Download?
     public let duration: Swift.Int64?
+    public let encodedBodySize: Swift.Int64?
     public let firstByte: DatadogRUM.RUMResourceEvent.Resource.FirstByte?
     public var graphql: DatadogRUM.RUMResourceEvent.Resource.Graphql?
     public let id: Swift.String?
     public let method: DatadogRUM.RUMMethod?
     public let provider: DatadogRUM.RUMResourceEvent.Resource.Provider?
     public let redirect: DatadogRUM.RUMResourceEvent.Resource.Redirect?
+    public let renderBlockingStatus: DatadogRUM.RUMResourceEvent.Resource.RenderBlockingStatus?
     public let size: Swift.Int64?
     public let ssl: DatadogRUM.RUMResourceEvent.Resource.SSL?
     public let statusCode: Swift.Int64?
+    public let transferSize: Swift.Int64?
     public let type: DatadogRUM.RUMResourceEvent.Resource.ResourceType
     public var url: Swift.String
     public struct Connect : Swift.Codable {
@@ -962,6 +1036,15 @@ public struct RUMResourceEvent {
       public func encode(to encoder: any Swift.Encoder) throws
       public init(from decoder: any Swift.Decoder) throws
     }
+    public enum RenderBlockingStatus : Swift.String, Swift.Codable {
+      case blocking
+      case nonBlocking
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
     public struct SSL : Swift.Codable {
       public let duration: Swift.Int64
       public let start: Swift.Int64
@@ -1004,6 +1087,7 @@ public struct RUMResourceEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1124,6 +1208,7 @@ public struct RUMViewEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -1195,6 +1280,7 @@ public struct RUMViewEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1208,6 +1294,7 @@ public struct RUMViewEvent {
     public let crash: DatadogRUM.RUMViewEvent.View.Crash?
     public let cumulativeLayoutShift: Swift.Double?
     public let cumulativeLayoutShiftTargetSelector: Swift.String?
+    public let cumulativeLayoutShiftTime: Swift.Int64?
     public let customTimings: [Swift.String : Swift.Int64]?
     public let domComplete: Swift.Int64?
     public let domContentLoaded: Swift.Int64?
@@ -1226,6 +1313,7 @@ public struct RUMViewEvent {
     public let inForegroundPeriods: [DatadogRUM.RUMViewEvent.View.InForegroundPeriods]?
     public let interactionToNextPaint: Swift.Int64?
     public let interactionToNextPaintTargetSelector: Swift.String?
+    public let interactionToNextPaintTime: Swift.Int64?
     public let isActive: Swift.Bool?
     public let isSlowRendered: Swift.Bool?
     public let jsRefreshRate: DatadogRUM.RUMViewEvent.View.JsRefreshRate?
@@ -1365,6 +1453,7 @@ public struct RUMVitalEvent {
     public let configuration: DatadogRUM.RUMVitalEvent.DD.Configuration?
     public let formatVersion: Swift.Int64
     public let session: DatadogRUM.RUMVitalEvent.DD.Session?
+    public let vital: DatadogRUM.RUMVitalEvent.DD.Vital?
     public struct Configuration : Swift.Codable {
       public let sessionReplaySampleRate: Swift.Double?
       public let sessionSampleRate: Swift.Double
@@ -1383,6 +1472,11 @@ public struct RUMVitalEvent {
           get
         }
       }
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Vital : Swift.Codable {
+      public let computedValue: Swift.Bool?
       public func encode(to encoder: any Swift.Encoder) throws
       public init(from decoder: any Swift.Decoder) throws
     }
@@ -1405,6 +1499,7 @@ public struct RUMVitalEvent {
       case reactNative
       case roku
       case unity
+      case kotlinMultiplatform
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -1445,6 +1540,7 @@ public struct RUMVitalEvent {
     case reactNative
     case roku
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1461,6 +1557,8 @@ public struct RUMVitalEvent {
   }
   public struct Vital : Swift.Codable {
     public let custom: [Swift.String : Swift.Double]?
+    public let details: Swift.String?
+    public let duration: Swift.Double?
     public let id: Swift.String
     public let name: Swift.String?
     public let type: DatadogRUM.RUMVitalEvent.Vital.VitalType
@@ -1487,7 +1585,9 @@ public struct TelemetryErrorEvent {
   public let service: Swift.String
   public let session: DatadogRUM.TelemetryErrorEvent.Session?
   public let source: DatadogRUM.TelemetryErrorEvent.Source
-  public let telemetry: DatadogRUM.TelemetryErrorEvent.Telemetry
+  public var telemetry: DatadogRUM.TelemetryErrorEvent.Telemetry {
+    get
+  }
   public let type: Swift.String
   public let version: Swift.String
   public let view: DatadogRUM.TelemetryErrorEvent.View?
@@ -1518,6 +1618,7 @@ public struct TelemetryErrorEvent {
     case flutter
     case reactNative
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1525,24 +1626,31 @@ public struct TelemetryErrorEvent {
     }
   }
   public struct Telemetry : Swift.Codable {
+    public let device: DatadogRUM.RUMTelemetryDevice?
     public let error: DatadogRUM.TelemetryErrorEvent.Telemetry.Error?
     public let message: Swift.String
+    public let os: DatadogRUM.RUMTelemetryOperatingSystem?
     public let status: Swift.String
     public let type: Swift.String?
+    public var telemetryInfo: [Swift.String : any Swift.Encodable] {
+      get
+    }
     public struct Error : Swift.Codable {
       public let kind: Swift.String?
       public let stack: Swift.String?
       public func encode(to encoder: any Swift.Encoder) throws
       public init(from decoder: any Swift.Decoder) throws
     }
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
   }
   public struct View : Swift.Codable {
     public let id: Swift.String
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogRUM.TelemetryErrorEvent.Telemetry {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1588,6 +1696,7 @@ public struct TelemetryDebugEvent {
     case flutter
     case reactNative
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1595,7 +1704,9 @@ public struct TelemetryDebugEvent {
     }
   }
   public struct Telemetry : Swift.Codable {
+    public let device: DatadogRUM.RUMTelemetryDevice?
     public let message: Swift.String
+    public let os: DatadogRUM.RUMTelemetryOperatingSystem?
     public let status: Swift.String
     public let type: Swift.String?
     public var telemetryInfo: [Swift.String : any Swift.Encodable] {
@@ -1654,6 +1765,7 @@ public struct TelemetryConfigurationEvent {
     case flutter
     case reactNative
     case unity
+    case kotlinMultiplatform
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1662,7 +1774,12 @@ public struct TelemetryConfigurationEvent {
   }
   public struct Telemetry : Swift.Codable {
     public var configuration: DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration
+    public let device: DatadogRUM.RUMTelemetryDevice?
+    public let os: DatadogRUM.RUMTelemetryOperatingSystem?
     public let type: Swift.String
+    public var telemetryInfo: [Swift.String : any Swift.Encodable] {
+      get
+    }
     public struct Configuration : Swift.Codable {
       public let actionNameAttribute: Swift.String?
       public let allowFallbackToLocalStorage: Swift.Bool?
@@ -1672,26 +1789,40 @@ public struct TelemetryConfigurationEvent {
       public let batchProcessingLevel: Swift.Int64?
       public let batchSize: Swift.Int64?
       public let batchUploadFrequency: Swift.Int64?
+      public let compressIntakeRequests: Swift.Bool?
       public var dartVersion: Swift.String?
       public var defaultPrivacyLevel: Swift.String?
+      public var enablePrivacyForActionName: Swift.Bool?
       public let forwardConsoleLogs: DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.ForwardConsoleLogs?
       public let forwardErrorsToLogs: Swift.Bool?
       public let forwardReports: DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.ForwardReports?
+      public var imagePrivacyLevel: Swift.String?
       public var initializationType: Swift.String?
       public var mobileVitalsUpdatePeriod: Swift.Int64?
+      public var plugins: [DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.Plugins]? {
+        get
+      }
       public let premiumSampleRate: Swift.Int64?
       public var reactNativeVersion: Swift.String?
       public var reactVersion: Swift.String?
       public let replaySampleRate: Swift.Int64?
       public let selectedTracingPropagators: [DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.SelectedTracingPropagators]?
+      public var sendLogsAfterSessionExpiration: Swift.Bool?
       public var sessionReplaySampleRate: Swift.Int64?
       public let sessionSampleRate: Swift.Int64?
       public let silentMultipleInit: Swift.Bool?
+      public var startRecordingImmediately: Swift.Bool?
       public var startSessionReplayRecordingManually: Swift.Bool?
       public let storeContextsAcrossPages: Swift.Bool?
       public let telemetryConfigurationSampleRate: Swift.Int64?
       public let telemetrySampleRate: Swift.Int64?
+      public let telemetryUsageSampleRate: Swift.Int64?
+      public var textAndInputPrivacyLevel: Swift.String?
+      public var touchPrivacyLevel: Swift.String?
+      public var traceContextInjection: DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TraceContextInjection?
       public let traceSampleRate: Swift.Int64?
+      public var tracerApi: Swift.String?
+      public var tracerApiVersion: Swift.String?
       public var trackBackgroundEvents: Swift.Bool?
       public var trackCrossPlatformLongTasks: Swift.Bool?
       public var trackErrors: Swift.Bool?
@@ -1707,6 +1838,7 @@ public struct TelemetryConfigurationEvent {
       public let trackSessionAcrossSubdomains: Swift.Bool?
       public var trackUserInteractions: Swift.Bool?
       public var trackViewsManually: Swift.Bool?
+      public let trackingConsent: DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TrackingConsent?
       public var unityVersion: Swift.String?
       public let useAllowedTracingOrigins: Swift.Bool?
       public let useAllowedTracingUrls: Swift.Bool?
@@ -1716,6 +1848,7 @@ public struct TelemetryConfigurationEvent {
       public var useFirstPartyHosts: Swift.Bool?
       public let useLocalEncryption: Swift.Bool?
       public let usePartitionedCrossSiteSessionCookie: Swift.Bool?
+      public var usePciIntake: Swift.Bool?
       public var useProxy: Swift.Bool?
       public let useSecureSessionCookie: Swift.Bool?
       public let useTracing: Swift.Bool?
@@ -1733,11 +1866,36 @@ public struct TelemetryConfigurationEvent {
         public func encode(to encoder: any Swift.Encoder) throws
         public init(from decoder: any Swift.Decoder) throws
       }
+      public struct Plugins : Swift.Codable {
+        public let name: Swift.String
+        public var pluginsInfo: [Swift.String : any Swift.Encodable] {
+          get
+        }
+      }
       public enum SelectedTracingPropagators : Swift.String, Swift.Codable {
         case datadog
         case b3
         case b3multi
         case tracecontext
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public enum TraceContextInjection : Swift.String, Swift.Codable {
+        case all
+        case sampled
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public enum TrackingConsent : Swift.String, Swift.Codable {
+        case granted
+        case notGranted
+        case pending
         public init?(rawValue: Swift.String)
         public typealias RawValue = Swift.String
         public var rawValue: Swift.String {
@@ -1758,14 +1916,172 @@ public struct TelemetryConfigurationEvent {
       public func encode(to encoder: any Swift.Encoder) throws
       public init(from decoder: any Swift.Decoder) throws
     }
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
   }
   public struct View : Swift.Codable {
     public let id: Swift.String
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.Plugins {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TelemetryUsageEvent {
+  public let dd: DatadogRUM.TelemetryUsageEvent.DD
+  public let action: DatadogRUM.TelemetryUsageEvent.Action?
+  public let application: DatadogRUM.TelemetryUsageEvent.Application?
+  public let date: Swift.Int64
+  public let experimentalFeatures: [Swift.String]?
+  public let service: Swift.String
+  public let session: DatadogRUM.TelemetryUsageEvent.Session?
+  public let source: DatadogRUM.TelemetryUsageEvent.Source
+  public var telemetry: DatadogRUM.TelemetryUsageEvent.Telemetry {
+    get
+  }
+  public let type: Swift.String
+  public let version: Swift.String
+  public let view: DatadogRUM.TelemetryUsageEvent.View?
+  public struct DD : Swift.Codable {
+    public let formatVersion: Swift.Int64
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Action : Swift.Codable {
+    public let id: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Application : Swift.Codable {
+    public let id: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Session : Swift.Codable {
+    public let id: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum Source : Swift.String, Swift.Codable {
+    case android
+    case ios
+    case browser
+    case flutter
+    case reactNative
+    case unity
+    case kotlinMultiplatform
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Telemetry : Swift.Codable {
+    public let device: DatadogRUM.RUMTelemetryDevice?
+    public let os: DatadogRUM.RUMTelemetryOperatingSystem?
+    public let type: Swift.String
+    public let usage: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage
+    public var telemetryInfo: [Swift.String : any Swift.Encodable] {
+      get
+    }
+    public enum Usage : Swift.Codable {
+      case telemetryCommonFeaturesUsage(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage)
+      case telemetryMobileFeaturesUsage(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryMobileFeaturesUsage)
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+      public enum TelemetryCommonFeaturesUsage : Swift.Codable {
+        case setTrackingConsent(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetTrackingConsent)
+        case stopSession(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.StopSession)
+        case startView(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.StartView)
+        case addAction(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.AddAction)
+        case addError(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.AddError)
+        case setGlobalContext(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetGlobalContext)
+        case setUser(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetUser)
+        case addFeatureFlagEvaluation(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.AddFeatureFlagEvaluation)
+        public func encode(to encoder: any Swift.Encoder) throws
+        public init(from decoder: any Swift.Decoder) throws
+        public struct SetTrackingConsent : Swift.Codable {
+          public let feature: Swift.String
+          public let trackingConsent: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetTrackingConsent.TrackingConsent
+          public enum TrackingConsent : Swift.String, Swift.Codable {
+            case granted
+            case notGranted
+            case pending
+            public init?(rawValue: Swift.String)
+            public typealias RawValue = Swift.String
+            public var rawValue: Swift.String {
+              get
+            }
+          }
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct StopSession : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct StartView : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct AddAction : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct AddError : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct SetGlobalContext : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct SetUser : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct AddFeatureFlagEvaluation : Swift.Codable {
+          public let feature: Swift.String
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+      }
+      public enum TelemetryMobileFeaturesUsage : Swift.Codable {
+        case addViewLoadingTime(value: DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryMobileFeaturesUsage.AddViewLoadingTime)
+        public func encode(to encoder: any Swift.Encoder) throws
+        public init(from decoder: any Swift.Decoder) throws
+        public struct AddViewLoadingTime : Swift.Codable {
+          public let feature: Swift.String
+          public let noActiveView: Swift.Bool
+          public let noView: Swift.Bool
+          public let overwritten: Swift.Bool
+          public func encode(to encoder: any Swift.Encoder) throws
+          public init(from decoder: any Swift.Decoder) throws
+        }
+      }
+    }
+  }
+  public struct View : Swift.Codable {
+    public let id: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension DatadogRUM.TelemetryUsageEvent.Telemetry {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1930,12 +2246,26 @@ public enum RUMMethod : Swift.String, Swift.Codable {
     get
   }
 }
+public struct RUMTelemetryDevice : Swift.Codable {
+  public let architecture: Swift.String?
+  public let brand: Swift.String?
+  public let model: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RUMTelemetryOperatingSystem : Swift.Codable {
+  public let build: Swift.String?
+  public let name: Swift.String?
+  public let version: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 extension DatadogRUM.RUMMonitorProtocol {
   public func startView(viewController: UIKit.UIViewController, name: Swift.String? = nil, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
   public func stopView(viewController: UIKit.UIViewController, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
   public func startView(key: Swift.String, name: Swift.String? = nil, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
   public func stopView(key: Swift.String, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
-  public func addError(message: Swift.String, type: Swift.String? = nil, stack: Swift.String? = nil, source: DatadogRUM.RUMErrorSource = .custom, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:], file: Swift.StaticString? = #filePath, line: Swift.UInt? = #line)
+  public func addError(message: Swift.String, type: Swift.String? = nil, stack: Swift.String? = nil, source: DatadogRUM.RUMErrorSource = .custom, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:], file: Swift.StaticString? = #fileID, line: Swift.UInt? = #line)
   public func addError(error: any Swift.Error, source: DatadogRUM.RUMErrorSource = .custom, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
   public func startResource(resourceKey: Swift.String, request: Foundation.URLRequest, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
   public func startResource(resourceKey: Swift.String, url: Foundation.URL, attributes: [DatadogInternal.AttributeKey : any Swift.Encodable] = [:])
@@ -2108,6 +2438,9 @@ extension DatadogRUM.RUMErrorEvent.Error.Category : Swift.RawRepresentable {}
 extension DatadogRUM.RUMErrorEvent.Error.Causes.Source : Swift.Equatable {}
 extension DatadogRUM.RUMErrorEvent.Error.Causes.Source : Swift.Hashable {}
 extension DatadogRUM.RUMErrorEvent.Error.Causes.Source : Swift.RawRepresentable {}
+extension DatadogRUM.RUMErrorEvent.Error.CSP.Disposition : Swift.Equatable {}
+extension DatadogRUM.RUMErrorEvent.Error.CSP.Disposition : Swift.Hashable {}
+extension DatadogRUM.RUMErrorEvent.Error.CSP.Disposition : Swift.RawRepresentable {}
 extension DatadogRUM.RUMErrorEvent.Error.Handling : Swift.Equatable {}
 extension DatadogRUM.RUMErrorEvent.Error.Handling : Swift.Hashable {}
 extension DatadogRUM.RUMErrorEvent.Error.Handling : Swift.RawRepresentable {}
@@ -2129,6 +2462,12 @@ extension DatadogRUM.RUMLongTaskEvent.DD.Session.Plan : Swift.RawRepresentable {
 extension DatadogRUM.RUMLongTaskEvent.Container.Source : Swift.Equatable {}
 extension DatadogRUM.RUMLongTaskEvent.Container.Source : Swift.Hashable {}
 extension DatadogRUM.RUMLongTaskEvent.Container.Source : Swift.RawRepresentable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.EntryType : Swift.Equatable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.EntryType : Swift.Hashable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.EntryType : Swift.RawRepresentable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.Scripts.InvokerType : Swift.Equatable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.Scripts.InvokerType : Swift.Hashable {}
+extension DatadogRUM.RUMLongTaskEvent.LongTask.Scripts.InvokerType : Swift.RawRepresentable {}
 extension DatadogRUM.RUMLongTaskEvent.Source : Swift.Equatable {}
 extension DatadogRUM.RUMLongTaskEvent.Source : Swift.Hashable {}
 extension DatadogRUM.RUMLongTaskEvent.Source : Swift.RawRepresentable {}
@@ -2144,6 +2483,9 @@ extension DatadogRUM.RUMResourceEvent.Resource.Graphql.OperationType : Swift.Raw
 extension DatadogRUM.RUMResourceEvent.Resource.Provider.ProviderType : Swift.Equatable {}
 extension DatadogRUM.RUMResourceEvent.Resource.Provider.ProviderType : Swift.Hashable {}
 extension DatadogRUM.RUMResourceEvent.Resource.Provider.ProviderType : Swift.RawRepresentable {}
+extension DatadogRUM.RUMResourceEvent.Resource.RenderBlockingStatus : Swift.Equatable {}
+extension DatadogRUM.RUMResourceEvent.Resource.RenderBlockingStatus : Swift.Hashable {}
+extension DatadogRUM.RUMResourceEvent.Resource.RenderBlockingStatus : Swift.RawRepresentable {}
 extension DatadogRUM.RUMResourceEvent.Resource.ResourceType : Swift.Equatable {}
 extension DatadogRUM.RUMResourceEvent.Resource.ResourceType : Swift.Hashable {}
 extension DatadogRUM.RUMResourceEvent.Resource.ResourceType : Swift.RawRepresentable {}
@@ -2200,9 +2542,23 @@ extension DatadogRUM.TelemetryConfigurationEvent.Source : Swift.RawRepresentable
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.SelectedTracingPropagators : Swift.Equatable {}
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.SelectedTracingPropagators : Swift.Hashable {}
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.SelectedTracingPropagators : Swift.RawRepresentable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TraceContextInjection : Swift.Equatable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TraceContextInjection : Swift.Hashable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TraceContextInjection : Swift.RawRepresentable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TrackingConsent : Swift.Equatable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TrackingConsent : Swift.Hashable {}
+extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.TrackingConsent : Swift.RawRepresentable {}
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.ViewTrackingStrategy : Swift.Equatable {}
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.ViewTrackingStrategy : Swift.Hashable {}
 extension DatadogRUM.TelemetryConfigurationEvent.Telemetry.Configuration.ViewTrackingStrategy : Swift.RawRepresentable {}
+extension DatadogRUM.TelemetryUsageEvent : Swift.Encodable {}
+extension DatadogRUM.TelemetryUsageEvent : Swift.Decodable {}
+extension DatadogRUM.TelemetryUsageEvent.Source : Swift.Equatable {}
+extension DatadogRUM.TelemetryUsageEvent.Source : Swift.Hashable {}
+extension DatadogRUM.TelemetryUsageEvent.Source : Swift.RawRepresentable {}
+extension DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetTrackingConsent.TrackingConsent : Swift.Equatable {}
+extension DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetTrackingConsent.TrackingConsent : Swift.Hashable {}
+extension DatadogRUM.TelemetryUsageEvent.Telemetry.Usage.TelemetryCommonFeaturesUsage.SetTrackingConsent.TrackingConsent : Swift.RawRepresentable {}
 extension DatadogRUM.RUMSessionPrecondition : Swift.Equatable {}
 extension DatadogRUM.RUMSessionPrecondition : Swift.Hashable {}
 extension DatadogRUM.RUMSessionPrecondition : Swift.RawRepresentable {}

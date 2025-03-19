@@ -1102,7 +1102,7 @@
 		</data>
 		<key>Modules/DcsCardSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n4EsHDzc8dO+Uwq+1QCyEYdc+0I=
+		FSEp+nvPIto831TBg4yeOc5h8sQ=
 		</data>
 		<key>Modules/DcsCardSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -1122,7 +1122,7 @@
 		</data>
 		<key>Modules/DcsCardSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wCU6hGjWWoHVPdXrUgQmDYTmNSU=
+		w6BUB5gAwXTo9dKR5RiXgHZl9/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3046,7 +3046,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G6fiLGZKXfvOjtUy6N/8zlVsmmNC3qMBbtedNW4Ckd8=
+			LF07ZQAtXQ+gzGKIYw0d1Gjvj3iyaKN0Iv0LhyiPu5I=
 			</data>
 		</dict>
 		<key>Modules/DcsCardSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -3081,7 +3081,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MvJacFv/k2FHqmjiSFYoZCNEZwYKarsMDZ0+6h2fy1c=
+			OboCdCvLjOW37ueHbaf6HZKxDxss+PYqdCmEoOvknm4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

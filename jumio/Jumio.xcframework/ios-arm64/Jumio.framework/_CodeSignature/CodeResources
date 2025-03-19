@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Jumio-Swift.h</key>
 		<data>
-		/hA3Qrb6slQm3z0hiXoX37L5cHk=
+		9FI/ZLtlVFwlb9ySSDEqRvngAas=
 		</data>
 		<key>Headers/Jumio.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		73uopuA+VjOsFpOLiYV4Las2nYY=
+		8TYeImmbrPoazp4ZKf95eBYVuXk=
 		</data>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+		KV5bTlmyfnmTfM8hXPGRfBgC//c=
 		</data>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		w++tWYpNg717QxGqehyj5xt5gxc=
+		JoeLDFft0ChuQ1r/aiUTznLxyJg=
 		</data>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		cKpAu+JD8eF3mlGh+6fMl7WGlaM=
+		KV5bTlmyfnmTfM8hXPGRfBgC//c=
 		</data>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		p2ZmihgyoPJcDtnC5CWkOUHDsVk=
+		gDgTKxSwhiUxl4mSQ8LpElnjAkk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3j4lcRzeAtIsrU/iSt9ASaLmPeeKVjSDFROUsFP8zoo=
+			vFXNVZ01n5+PBE6Np7um6+u7uJwnP2+Tv2ui/qlWhjc=
 			</data>
 		</dict>
 		<key>Headers/Jumio.h</key>
@@ -72,28 +72,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GRDIfZFOlZN8Yhk/VswvAyawXTryqLhu2vIm0rWmNeI=
+			Sl1AfkTyrAarXCriNDFuaifDspmo/upwe3C3GoxNtPQ=
 			</data>
 		</dict>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cv63s0cbwaL41/yOxzXhc7HSJUW6A3NfI2rd8bljDRU=
+			aqL8YTOxxpCbu9QyrJPKIFm3exE45OJawY8tVtUVhqE=
 			</data>
 		</dict>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GRDIfZFOlZN8Yhk/VswvAyawXTryqLhu2vIm0rWmNeI=
+			Sl1AfkTyrAarXCriNDFuaifDspmo/upwe3C3GoxNtPQ=
 			</data>
 		</dict>
 		<key>Modules/Jumio.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SL9ehoXkC8T0NaD1a8CWcyPjNTzsHfFbCySOH8jHYdE=
+			QO+eLBAtlVawCDGZHz4rCh91DorpTgBHTc4XMd0MQ/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

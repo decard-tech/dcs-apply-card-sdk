@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SC7HwhgfripAUipoLpsbsaF+yKI=
+		4/vuIwlD4sEocTscEuIxQFuW69Q=
 		</data>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JpaYuMrQ6AFYXCZTdVhTyLMWxoU=
+		4Zo+E95eJEcEgptuYWnkIv/iWQY=
 		</data>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XyUGugbvzGAYwPxAMff+10kWdyM=
+		Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 		</data>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XyUGugbvzGAYwPxAMff+10kWdyM=
+		Juc7a+iNaF7ytTcVS7Gn3CVgpAM=
 		</data>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FVWq958W8DwdXZ25o3T06lx7YMc=
+		aNEk8r6RPgVzCqcJHLH6FKu1UHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vZQkIT0cBsnI4lX0R1IUvGKS4NSEhs/JCqqfn3nE0jY=
+			SBZ5UnYWMtlzXAZm2Wil82A6d984r1hlEc5A9huS+ew=
 			</data>
 		</dict>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YLZhLwI8XF8GTS5GH5u8cJs0NGdUFoJZKtqsz+A0yFA=
+			KgcOUDbRFySB0ihtRZ+JIGLRgs3EI70eXE/MZ/tEzl8=
 			</data>
 		</dict>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YLZhLwI8XF8GTS5GH5u8cJs0NGdUFoJZKtqsz+A0yFA=
+			KgcOUDbRFySB0ihtRZ+JIGLRgs3EI70eXE/MZ/tEzl8=
 			</data>
 		</dict>
 		<key>Modules/JumioIProov.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TW3ch0rIL2gyjJ1HL4qHnu58oueH2JMw0CuPE9AtThg=
+			P+0U2VdFwSSL3vEv0wcn7/Jr5KijJcNxsRy6c91sAdg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
