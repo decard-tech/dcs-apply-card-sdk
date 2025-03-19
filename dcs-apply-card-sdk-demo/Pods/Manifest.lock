@@ -1,5 +1,5 @@
 PODS:
-  - DCSApplyCardSDK (1.4.1):
+  - DCSApplyCardSDK (1.4.4):
     - Jumio/All (= 4.12.0)
   - iProov (11.1.1)
   - Jumio/All (4.12.0):
@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
     :path: "/Users/ran/Desktop/company/public/dcs-apply-card-sdk/DCSApplyCardSDK.podspec"
 
 SPEC CHECKSUMS:
-  DCSApplyCardSDK: d3951bd13ad62dc66f28333b05832368bbcbb4b5
+  DCSApplyCardSDK: b256f50c220cf3b27bb6b4e1c07d4eb473f98ae3
   iProov: 14fa45ff813bccd32274ecce2694445aba4956e4
   Jumio: 866a7e419fbd98afef0df0d1ae5ba7ff5a7e4af2
 
