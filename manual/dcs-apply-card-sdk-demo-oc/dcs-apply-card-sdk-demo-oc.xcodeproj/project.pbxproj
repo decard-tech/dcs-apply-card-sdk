@@ -927,6 +927,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98393WUZ6P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dcs-apply-card-sdk-demo-oc/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -940,7 +941,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decard.dcs-apply-card-sdk-demo-swift.dcs-apply-card-sdk-demo-oc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.decard.dcs-apply-card-sdk-demo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -954,6 +955,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98393WUZ6P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dcs-apply-card-sdk-demo-oc/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -967,7 +969,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decard.dcs-apply-card-sdk-demo-swift.dcs-apply-card-sdk-demo-oc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.decard.dcs-apply-card-sdk-demo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
