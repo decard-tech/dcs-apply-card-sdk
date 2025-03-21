@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name                = "DCSApplyCardSDK"
-  spec.version             = "1.4.4"
+  spec.version             = "1.4.5"
   spec.summary             = "DCSApplyCardSDK is a powerful SDK for digital card applications, authentication, and management."
   spec.description         = <<-DESC
   DCSApplyCardSDK provides a comprehensive solution for digital card applications, user authentication,  
