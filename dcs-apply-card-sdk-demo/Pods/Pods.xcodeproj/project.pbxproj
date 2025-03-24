@@ -9,12 +9,12 @@
 /* Begin PBXAggregateTarget section */
 		2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 8EF30808211605CE3FE5A5552D1DB85E /* Build configuration list for PBXAggregateTarget "Jumio" */;
+			buildConfigurationList = 901F8C4F68C367CB1DF8DAF1D58EBE8A /* Build configuration list for PBXAggregateTarget "Jumio" */;
 			buildPhases = (
-				24B13CA247E57C980F6514BB5AE49FF2 /* [CP] Copy XCFrameworks */,
+				4B43E59C5AA8EE3AEF5E2F0A8A513275 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				BDF397813CC8B75384BF4C0535C74ECA /* PBXTargetDependency */,
+				A4AC6F7CC653F3427B7493AFC11B8C09 /* PBXTargetDependency */,
 			);
 			name = Jumio;
 		};
@@ -25,15 +25,15 @@
 				D3E50CF1A3F1E5F9D6C923889F30759E /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				5E1D824D55CF28DCE71D44A4510DC64D /* PBXTargetDependency */,
+				AC25B5BD20E8AE4A73D40C75725C7EA3 /* PBXTargetDependency */,
 			);
 			name = DCSApplyCardSDK;
 		};
 		F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 344CF0228B15FD37D8DAF0C98E0A2722 /* Build configuration list for PBXAggregateTarget "iProov" */;
+			buildConfigurationList = C9C602E7F168C51B747A62D0A026A03A /* Build configuration list for PBXAggregateTarget "iProov" */;
 			buildPhases = (
-				67E0F19EA78628B04A1F08FBAF93365B /* [CP] Copy XCFrameworks */,
+				595D0EE0CB55B6F2AC323BB0D16BD407 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -48,35 +48,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0274422CA778A4511702753356215C6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F89EB14AF5857747BDD74A05B1DAE59;
-			remoteInfo = Jumio;
-		};
-		359A6F1DE7EEE4B474AD3A049ECC4221 /* PBXContainerItemProxy */ = {
+		805F2A986A904A49C8A5E2B49A232FC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
 			remoteInfo = iProov;
 		};
-		80C334C6D5036F9AB47C41F7B8FA849C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
-			remoteInfo = iProov;
-		};
-		A975D47DACD0A48529A6510F54E272C5 /* PBXContainerItemProxy */ = {
+		81F7DC5C99BC27CAFB92AC1EF3D4FB49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2F89EB14AF5857747BDD74A05B1DAE59;
 			remoteInfo = Jumio;
 		};
-		F194370D75FE2283C249831E72505E72 /* PBXContainerItemProxy */ = {
+		BF212D7429E318949CC318CB89B9ADF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F89EB14AF5857747BDD74A05B1DAE59;
+			remoteInfo = Jumio;
+		};
+		DF2C40483EF45BCDA58A3BF32436B1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
+			remoteInfo = iProov;
+		};
+		FA52DDA58C71F51D386F6AD4991FCB8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -88,34 +88,31 @@
 /* Begin PBXFileReference section */
 		0081BDB12B8BCAC362D4FF1DB8DCBB38 /* Pods-dcs-apply-card-sdk-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dcs-apply-card-sdk-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		08C2471A916BBAA523410B4641919B46 /* Pods-dcs-apply-card-sdk-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dcs-apply-card-sdk-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.debug.xcconfig; sourceTree = "<group>"; };
+		0C5B778DF95A388149B1B154EFC71D14 /* JumioLiveness.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioLiveness.xcframework; sourceTree = "<group>"; };
+		23C303C178F38467371D2D80906626D3 /* Jumio.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Jumio.xcframework; path = Jumio/Jumio.xcframework; sourceTree = "<group>"; };
 		29A26C31D152B6FBFCD62360B272695E /* Pods-dcs-apply-card-sdk-demo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dcs-apply-card-sdk-demo"; path = Pods_dcs_apply_card_sdk_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C018CFDB915F1DCE9F10A77F34EA04B /* iProov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.release.xcconfig; sourceTree = "<group>"; };
+		330B21C4CBD9F73F17784C236C9A3451 /* Jumio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.debug.xcconfig; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		411E26F611ED90EB46D14F4EA4083D73 /* Pods-dcs-apply-card-sdk-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dcs-apply-card-sdk-demo-dummy.m"; sourceTree = "<group>"; };
-		4DB689BC6DFFF10C4AFBE7597FF17A33 /* DcsCardSdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = DcsCardSdk.xcframework; path = framework/DcsCardSdk.xcframework; sourceTree = "<group>"; };
-		56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.release.xcconfig; sourceTree = "<group>"; };
-		5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.release.xcconfig; sourceTree = "<group>"; };
-		5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.debug.xcconfig; sourceTree = "<group>"; };
-		60B930D749C787DC92992F59AF09249E /* JumioDefaultUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioDefaultUI.xcframework; sourceTree = "<group>"; };
-		6E61951FA9AF85D31B0E45895E6DB190 /* JumioLiveness.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioLiveness.xcframework; sourceTree = "<group>"; };
-		6F92C8676CBF9F3440C5F21032E82AA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		719F878ECEC9E7318179175869DD492B /* Pods-dcs-apply-card-sdk-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dcs-apply-card-sdk-demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		76C3D193BA1F8FE407F8F47A7A666F4C /* Jumio-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Jumio-xcframeworks.sh"; sourceTree = "<group>"; };
-		78B60E6AD950C89DD8B09CC5574689A6 /* DCSApplyCardSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DCSApplyCardSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		73F137D8B1EFB57AC522AD33AA674E80 /* JumioIProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioIProov.xcframework; sourceTree = "<group>"; };
+		7D3C357014AB9794281318E78793C58F /* iProov-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "iProov-xcframeworks.sh"; sourceTree = "<group>"; };
 		82F3B9828DFAB2FE21717BE3020CCD4A /* Pods-dcs-apply-card-sdk-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dcs-apply-card-sdk-demo-umbrella.h"; sourceTree = "<group>"; };
-		96062D52EDE505835B513009C522D967 /* Jumio.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Jumio.xcframework; path = Jumio/Jumio.xcframework; sourceTree = "<group>"; };
+		960C69644F00D8FBDF7804C1531ABCA7 /* Jumio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.release.xcconfig; sourceTree = "<group>"; };
 		9A6A0BD82B50B13790B7175DAAC3EBDF /* Pods-dcs-apply-card-sdk-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dcs-apply-card-sdk-demo-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2A5CC9F404AEDD41BB8783663CB2B3D /* JumioIProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioIProov.xcframework; sourceTree = "<group>"; };
-		A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.release.xcconfig; sourceTree = "<group>"; };
-		AD185C82C8496E55D7D9C41D3910E4B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9EEE9E08B48185DBC00832308DB72082 /* JumioDefaultUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JumioDefaultUI.xcframework; sourceTree = "<group>"; };
+		A1805BC668A3666EEBC3634693515B6A /* DcsCardSdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = DcsCardSdk.xcframework; path = framework/DcsCardSdk.xcframework; sourceTree = "<group>"; };
 		B1413061186E784895E87C011DF08D91 /* Pods-dcs-apply-card-sdk-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dcs-apply-card-sdk-demo.release.xcconfig"; sourceTree = "<group>"; };
-		B9A9E4164E0855ABE4EF1E9770FA6A4A /* DCSApplyCardSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DCSApplyCardSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC5DA8E88E9829B5C71F6635A65C7C3C /* Pods-dcs-apply-card-sdk-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dcs-apply-card-sdk-demo.modulemap"; sourceTree = "<group>"; };
-		DD8E7607A2DB8ADFFFC992E25446806E /* iProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = iProov.xcframework; sourceTree = "<group>"; };
+		C8F9EE1D9B2D32AEB664E0F570616684 /* DCSApplyCardSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.debug.xcconfig; sourceTree = "<group>"; };
+		CC56117F12432C86A1CE90848823D57C /* iProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = iProov.xcframework; sourceTree = "<group>"; };
+		D114DA8E498B2CD040C6422AAC16B676 /* DCSApplyCardSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DCSApplyCardSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		D70BA45CC6C4D5EDF1FD7563E314E8BA /* Jumio-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Jumio-xcframeworks.sh"; sourceTree = "<group>"; };
+		E423DD986EE495981691974E6B126FB8 /* DCSApplyCardSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCSApplyCardSDK.release.xcconfig; sourceTree = "<group>"; };
+		E43AABB9FDA4079552E8456ECBAC3351 /* iProov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.debug.xcconfig; sourceTree = "<group>"; };
 		E5BA3754F6F40F6A6F0000AA53CD4562 /* Pods-dcs-apply-card-sdk-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dcs-apply-card-sdk-demo-frameworks.sh"; sourceTree = "<group>"; };
-		EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jumio.debug.xcconfig; sourceTree = "<group>"; };
-		F59B67E4B793D1A3C51FEAA11E3921B9 /* iProov-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "iProov-xcframeworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,70 +127,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		039BAEC1201BFE901344D07F95966CBE /* Pod */ = {
+		062B89D47071279106CDD1D4D4BE3082 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9A9E4164E0855ABE4EF1E9770FA6A4A /* DCSApplyCardSDK.podspec */,
-				6F92C8676CBF9F3440C5F21032E82AA3 /* LICENSE */,
-				AD185C82C8496E55D7D9C41D3910E4B7 /* README.md */,
+				26A2D02404224FC3BC453686DD283DA8 /* DCSApplyCardSDK */,
+				9EB41931F8EB2D794442F0A80990DE06 /* iProov */,
+				852F2034F2CD9831ADE6A748313D399E /* Jumio */,
 			);
-			name = Pod;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		062265620F43C8E668F81971C9FE49DB /* Frameworks */ = {
+		26A2D02404224FC3BC453686DD283DA8 /* DCSApplyCardSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A2A5CC9F404AEDD41BB8783663CB2B3D /* JumioIProov.xcframework */,
+				D42663024E53CDBD64EE0DF79803260B /* Frameworks */,
+				9E8974E9F2ECCF4828E7F3EBCD99229C /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2681704FC8BD012B346BB127F304F6B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78B60E6AD950C89DD8B09CC5574689A6 /* DCSApplyCardSDK-xcframeworks.sh */,
-				5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */,
-				A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "dcs-apply-card-sdk-demo/Pods/Target Support Files/DCSApplyCardSDK";
-			sourceTree = "<group>";
-		};
-		2C205F5A51A06C803D6EF4170A533B87 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6E61951FA9AF85D31B0E45895E6DB190 /* JumioLiveness.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		325B7EFB0604EE3BFCB71A35AD7982D9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				60B930D749C787DC92992F59AF09249E /* JumioDefaultUI.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		333773DBE584B4F7CA6C5C6F6B147F11 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				96062D52EDE505835B513009C522D967 /* Jumio.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3EA4DF3ECC656B63128453C7A2C5FAB4 /* Jumio */ = {
-			isa = PBXGroup;
-			children = (
-				AA316EADEC22D08E6624082179ECB2AB /* DefaultUI */,
-				C13B3C3FE8FF7A6DAE8B60410E02B6B3 /* IProov */,
-				859F823B45C7BD350CC6EB125E169CF9 /* Jumio */,
-				DF73DA0E6201A91702635B7A9C6BFD5F /* Liveness */,
-				8682CE0E6C879996B44A48BCEDC4EE8F /* Support Files */,
-			);
-			name = Jumio;
-			path = Jumio;
+			name = DCSApplyCardSDK;
+			path = DCSApplyCardSDK;
 			sourceTree = "<group>";
 		};
 		3F69A24781918D38881B1D767B95BF24 /* Products */ = {
@@ -204,15 +155,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3FC0E557C6A48E7AB987020167947042 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D48D3E1E185A0B5A4888BDB603C0FC37 /* iProov */,
-				3EA4DF3ECC656B63128453C7A2C5FAB4 /* Jumio */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5200AE9A8EA0658B26A80FC292FBBFA9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,23 +163,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		63B858488A9DC063B5E9EB1F9135990E /* DCSApplyCardSDK */ = {
+		580AC8ED666389E298B7F8AF75AAD1B2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7744FF7075949898CBE550B91FD9F4AE /* Frameworks */,
-				039BAEC1201BFE901344D07F95966CBE /* Pod */,
-				2681704FC8BD012B346BB127F304F6B4 /* Support Files */,
+				7D3C357014AB9794281318E78793C58F /* iProov-xcframeworks.sh */,
+				E43AABB9FDA4079552E8456ECBAC3351 /* iProov.debug.xcconfig */,
+				2C018CFDB915F1DCE9F10A77F34EA04B /* iProov.release.xcconfig */,
 			);
-			name = DCSApplyCardSDK;
-			path = "/Users/ran/Desktop/company/public/dcs-apply-card-sdk";
-			sourceTree = "<absolute>";
-		};
-		7744FF7075949898CBE550B91FD9F4AE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DB689BC6DFFF10C4AFBE7597FF17A33 /* DcsCardSdk.xcframework */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/iProov";
 			sourceTree = "<group>";
 		};
 		7F13F2F9BD3421F04CF521ABEB278CBE /* Pods-dcs-apply-card-sdk-demo */ = {
@@ -257,75 +191,105 @@
 			path = "Target Support Files/Pods-dcs-apply-card-sdk-demo";
 			sourceTree = "<group>";
 		};
-		801FFFBEC6261D01938F8B4E8D7EDD5F /* Frameworks */ = {
+		80E4562DC3A3467670EDC70B781A05C7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD8E7607A2DB8ADFFFC992E25446806E /* iProov.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		859F823B45C7BD350CC6EB125E169CF9 /* Jumio */ = {
-			isa = PBXGroup;
-			children = (
-				333773DBE584B4F7CA6C5C6F6B147F11 /* Frameworks */,
-			);
-			name = Jumio;
-			sourceTree = "<group>";
-		};
-		8682CE0E6C879996B44A48BCEDC4EE8F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76C3D193BA1F8FE407F8F47A7A666F4C /* Jumio-xcframeworks.sh */,
-				EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */,
-				56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */,
+				D70BA45CC6C4D5EDF1FD7563E314E8BA /* Jumio-xcframeworks.sh */,
+				330B21C4CBD9F73F17784C236C9A3451 /* Jumio.debug.xcconfig */,
+				960C69644F00D8FBDF7804C1531ABCA7 /* Jumio.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Jumio";
 			sourceTree = "<group>";
 		};
-		8CDB3C26EB674DF2402F7C986C4BEF7C /* Support Files */ = {
+		852F2034F2CD9831ADE6A748313D399E /* Jumio */ = {
 			isa = PBXGroup;
 			children = (
-				F59B67E4B793D1A3C51FEAA11E3921B9 /* iProov-xcframeworks.sh */,
-				22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */,
-				5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */,
+				B3912961400F6B876B7E99891ADEE5EF /* DefaultUI */,
+				B2771CA798B94136D42B9AD51A5FA359 /* IProov */,
+				8F5032BCD3A97468DEF1444D13AF617F /* Jumio */,
+				BD6F0CD4A41B6381B9A145C301FCBCA9 /* Liveness */,
+				80E4562DC3A3467670EDC70B781A05C7 /* Support Files */,
+			);
+			name = Jumio;
+			path = Jumio;
+			sourceTree = "<group>";
+		};
+		8F5032BCD3A97468DEF1444D13AF617F /* Jumio */ = {
+			isa = PBXGroup;
+			children = (
+				913DBF435676710622C994A109F64361 /* Frameworks */,
+			);
+			name = Jumio;
+			sourceTree = "<group>";
+		};
+		913DBF435676710622C994A109F64361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C303C178F38467371D2D80906626D3 /* Jumio.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E8974E9F2ECCF4828E7F3EBCD99229C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D114DA8E498B2CD040C6422AAC16B676 /* DCSApplyCardSDK-xcframeworks.sh */,
+				C8F9EE1D9B2D32AEB664E0F570616684 /* DCSApplyCardSDK.debug.xcconfig */,
+				E423DD986EE495981691974E6B126FB8 /* DCSApplyCardSDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/iProov";
+			path = "../Target Support Files/DCSApplyCardSDK";
 			sourceTree = "<group>";
 		};
-		9C36F40BB5CD33E59AB533AD3B96BF01 /* Development Pods */ = {
+		9EB41931F8EB2D794442F0A80990DE06 /* iProov */ = {
 			isa = PBXGroup;
 			children = (
-				63B858488A9DC063B5E9EB1F9135990E /* DCSApplyCardSDK */,
+				F738D6F44C46B43DA3FD95C2FBE1649C /* Frameworks */,
+				580AC8ED666389E298B7F8AF75AAD1B2 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = iProov;
+			path = iProov;
 			sourceTree = "<group>";
 		};
-		AA316EADEC22D08E6624082179ECB2AB /* DefaultUI */ = {
+		B0BD66F89FFCC287DC3600E9A7EA9944 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				325B7EFB0604EE3BFCB71A35AD7982D9 /* Frameworks */,
+				0C5B778DF95A388149B1B154EFC71D14 /* JumioLiveness.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2771CA798B94136D42B9AD51A5FA359 /* IProov */ = {
+			isa = PBXGroup;
+			children = (
+				EB3684740FC546F122BFC92EF56C8514 /* Frameworks */,
+			);
+			name = IProov;
+			sourceTree = "<group>";
+		};
+		B3912961400F6B876B7E99891ADEE5EF /* DefaultUI */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBE78FAA1F654859A1E72A524B3FBD /* Frameworks */,
 			);
 			name = DefaultUI;
 			sourceTree = "<group>";
 		};
-		C13B3C3FE8FF7A6DAE8B60410E02B6B3 /* IProov */ = {
+		BD6F0CD4A41B6381B9A145C301FCBCA9 /* Liveness */ = {
 			isa = PBXGroup;
 			children = (
-				062265620F43C8E668F81971C9FE49DB /* Frameworks */,
+				B0BD66F89FFCC287DC3600E9A7EA9944 /* Frameworks */,
 			);
-			name = IProov;
+			name = Liveness;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9C36F40BB5CD33E59AB533AD3B96BF01 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				3FC0E557C6A48E7AB987020167947042 /* Pods */,
+				062B89D47071279106CDD1D4D4BE3082 /* Pods */,
 				3F69A24781918D38881B1D767B95BF24 /* Products */,
 				5200AE9A8EA0658B26A80FC292FBBFA9 /* Targets Support Files */,
 			);
@@ -339,22 +303,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D48D3E1E185A0B5A4888BDB603C0FC37 /* iProov */ = {
+		D42663024E53CDBD64EE0DF79803260B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				801FFFBEC6261D01938F8B4E8D7EDD5F /* Frameworks */,
-				8CDB3C26EB674DF2402F7C986C4BEF7C /* Support Files */,
+				A1805BC668A3666EEBC3634693515B6A /* DcsCardSdk.xcframework */,
 			);
-			name = iProov;
-			path = iProov;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF73DA0E6201A91702635B7A9C6BFD5F /* Liveness */ = {
+		DCBBE78FAA1F654859A1E72A524B3FBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C205F5A51A06C803D6EF4170A533B87 /* Frameworks */,
+				9EEE9E08B48185DBC00832308DB72082 /* JumioDefaultUI.xcframework */,
 			);
-			name = Liveness;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
@@ -363,6 +325,22 @@
 				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB3684740FC546F122BFC92EF56C8514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F137D8B1EFB57AC522AD33AA674E80 /* JumioIProov.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F738D6F44C46B43DA3FD95C2FBE1649C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC56117F12432C86A1CE90848823D57C /* iProov.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,9 +369,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				D67AB18CDC68C903EF0B14C2480664FF /* PBXTargetDependency */,
-				49D98B8D8E19C3FCD85523ADC7711D4F /* PBXTargetDependency */,
-				F97E3661EB89F7B8C5E67FE985E3257D /* PBXTargetDependency */,
+				8848410C11A03D706E6AB8AAFFB6A960 /* PBXTargetDependency */,
+				CC02695544F617FDDCCA5C5714CA8B51 /* PBXTargetDependency */,
+				AE9B3A85FC9DD2495E759B23C8FB2709 /* PBXTargetDependency */,
 			);
 			name = "Pods-dcs-apply-card-sdk-demo";
 			productName = Pods_dcs_apply_card_sdk_demo;
@@ -443,7 +421,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24B13CA247E57C980F6514BB5AE49FF2 /* [CP] Copy XCFrameworks */ = {
+		4B43E59C5AA8EE3AEF5E2F0A8A513275 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,7 +438,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Jumio/Jumio-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67E0F19EA78628B04A1F08FBAF93365B /* [CP] Copy XCFrameworks */ = {
+		595D0EE0CB55B6F2AC323BB0D16BD407 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,39 +486,76 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49D98B8D8E19C3FCD85523ADC7711D4F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Jumio;
-			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
-			targetProxy = 0274422CA778A4511702753356215C6B /* PBXContainerItemProxy */;
-		};
-		5E1D824D55CF28DCE71D44A4510DC64D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Jumio;
-			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
-			targetProxy = A975D47DACD0A48529A6510F54E272C5 /* PBXContainerItemProxy */;
-		};
-		BDF397813CC8B75384BF4C0535C74ECA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = iProov;
-			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
-			targetProxy = 359A6F1DE7EEE4B474AD3A049ECC4221 /* PBXContainerItemProxy */;
-		};
-		D67AB18CDC68C903EF0B14C2480664FF /* PBXTargetDependency */ = {
+		8848410C11A03D706E6AB8AAFFB6A960 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DCSApplyCardSDK;
 			target = E5AC5AC934E2329318F0521CB7331825 /* DCSApplyCardSDK */;
-			targetProxy = F194370D75FE2283C249831E72505E72 /* PBXContainerItemProxy */;
+			targetProxy = FA52DDA58C71F51D386F6AD4991FCB8B /* PBXContainerItemProxy */;
 		};
-		F97E3661EB89F7B8C5E67FE985E3257D /* PBXTargetDependency */ = {
+		A4AC6F7CC653F3427B7493AFC11B8C09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = iProov;
 			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
-			targetProxy = 80C334C6D5036F9AB47C41F7B8FA849C /* PBXContainerItemProxy */;
+			targetProxy = 805F2A986A904A49C8A5E2B49A232FC6 /* PBXContainerItemProxy */;
+		};
+		AC25B5BD20E8AE4A73D40C75725C7EA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jumio;
+			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
+			targetProxy = BF212D7429E318949CC318CB89B9ADF9 /* PBXContainerItemProxy */;
+		};
+		AE9B3A85FC9DD2495E759B23C8FB2709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iProov;
+			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
+			targetProxy = DF2C40483EF45BCDA58A3BF32436B1BF /* PBXContainerItemProxy */;
+		};
+		CC02695544F617FDDCCA5C5714CA8B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jumio;
+			target = 2F89EB14AF5857747BDD74A05B1DAE59 /* Jumio */;
+			targetProxy = 81F7DC5C99BC27CAFB92AC1EF3D4FB49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1D9A9C46F316838E852F0F1A4353484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C018CFDB915F1DCE9F10A77F34EA04B /* iProov.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F7C203EF703FD39ED9A6A9293EC7F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330B21C4CBD9F73F17784C236C9A3451 /* Jumio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,9 +622,28 @@
 			};
 			name = Debug;
 		};
+		4EF2E587C43476BFAD658B8CECBC21A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960C69644F00D8FBDF7804C1531ABCA7 /* Jumio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6D7AD30DF55BE5B1F628B344A101ABC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D1005199A23D922B128B70F1DDA9D41 /* DCSApplyCardSDK.debug.xcconfig */;
+			baseConfigurationReference = C8F9EE1D9B2D32AEB664E0F570616684 /* DCSApplyCardSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -663,43 +697,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		81B97B433D5E58F695F189B304F15795 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDE159DD4EBE78F601579FBD6840B08D /* Jumio.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		852CAC58D93D327D020D6F9F03ED6AF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DEA8AA48E5ECC74EA59DDB66C2299B /* Jumio.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -805,7 +802,7 @@
 		};
 		AF7033D38D5705136CA77C4CAFB4E801 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4358AE5C63F6CF51A11BFD77B72C841 /* DCSApplyCardSDK.release.xcconfig */;
+			baseConfigurationReference = E423DD986EE495981691974E6B126FB8 /* DCSApplyCardSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -822,28 +819,9 @@
 			};
 			name = Release;
 		};
-		B0CEF657BB8DA00E927506A533942C87 /* Release */ = {
+		FCD604E2F32023302A0D591488708DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5879D5335DB1262D796D917EE8D9102F /* iProov.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BF189A33E1433E686ED9FB3FDE1B4AC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22ED8B0FA2C44E6C5805D2617B81F890 /* iProov.debug.xcconfig */;
+			baseConfigurationReference = E43AABB9FDA4079552E8456ECBAC3351 /* iProov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -862,15 +840,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		344CF0228B15FD37D8DAF0C98E0A2722 /* Build configuration list for PBXAggregateTarget "iProov" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF189A33E1433E686ED9FB3FDE1B4AC8 /* Debug */,
-				B0CEF657BB8DA00E927506A533942C87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -889,11 +858,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EF30808211605CE3FE5A5552D1DB85E /* Build configuration list for PBXAggregateTarget "Jumio" */ = {
+		901F8C4F68C367CB1DF8DAF1D58EBE8A /* Build configuration list for PBXAggregateTarget "Jumio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81B97B433D5E58F695F189B304F15795 /* Debug */,
-				852CAC58D93D327D020D6F9F03ED6AF5 /* Release */,
+				1F7C203EF703FD39ED9A6A9293EC7F24 /* Debug */,
+				4EF2E587C43476BFAD658B8CECBC21A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -903,6 +872,15 @@
 			buildConfigurations = (
 				6D7AD30DF55BE5B1F628B344A101ABC8 /* Debug */,
 				AF7033D38D5705136CA77C4CAFB4E801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C602E7F168C51B747A62D0A026A03A /* Build configuration list for PBXAggregateTarget "iProov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD604E2F32023302A0D591488708DF5 /* Debug */,
+				1D9A9C46F316838E852F0F1A4353484A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,1 @@
+import{r as t,b7 as r,b as s,e}from"./index-6964e077.js";import{R as a}from"./result-b9965da2.js";import"./ClockCircleFill-3427bb0d.js";const i=t.memo(()=>(r(),s(),e(a,{status:"error",title:"403"})));export{i as default};
