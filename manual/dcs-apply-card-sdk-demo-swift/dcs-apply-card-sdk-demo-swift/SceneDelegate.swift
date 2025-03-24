@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import DcsCardSdk
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let urlContext = URLContexts.first else { return }
+        let url = urlContext.url
+        if url.scheme == "dcssdk" || url.scheme == "dcssdksit" {
+            DCSCard.sharedInstance().setURLParams(url)
+        }
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

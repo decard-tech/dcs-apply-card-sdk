@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <DcsCardSdk/DCSCard.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    // Set scheme callback parameters
+    if ([url.scheme isEqualToString:@"dcssdk"] || [url.scheme isEqualToString:@"dcssdksit"]){
+        [[DCSCard sharedInstance] setURLParams:url];
+    }
     return YES;
 }
 
