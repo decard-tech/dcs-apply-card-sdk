@@ -2,6 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSCameraUsageDescription</key>
+    <string>$(PRODUCT_NAME) 将使用摄像头扫描您的身份证件</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>$(PRODUCT_NAME) 需要访问相册上传证件照片</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>$(PRODUCT_NAME) 需要麦克风进行活体检测</string>
+
+    <key>NSFaceIDUsageDescription</key>
+    <string>$(PRODUCT_NAME) 使用 Face ID 进行生物识别验证</string>
+    
+    <!-- 禁用加密协议 (iOS 14+ 适配) -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- 支持文件共享（扫描结果导出） -->
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
