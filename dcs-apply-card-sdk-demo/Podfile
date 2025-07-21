@@ -2,5 +2,5 @@ platform :ios, '14.0'
 use_frameworks! # 必须启用动态框架
 
 target 'dcs-apply-card-sdk-demo' do
-  pod 'DCSApplyCardSDK', '1.4.5'
+  pod 'DCSApplyCardSDK', '1.4.6'
 end
